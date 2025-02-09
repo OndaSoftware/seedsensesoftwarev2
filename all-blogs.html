@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Blogs - SeedSense</title>
+    <meta name="description" content="Explore our latest blog posts on SeedSense, providing insights and updates on seed trial management.">
+    <link rel="stylesheet" href="seedsense.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="seedsense.html">
+                    <img src="assets/images/sslogo.png" alt="SeedSense Logo" />
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="features.html">Our Software</a></li>
+                    <li><a href="benefits.html">Why SeedSense?</a></li>
+                    <li><a href="about.html">Who We Are</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a href="#contact" class="btn btn-primary">Request a Demo</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section" id="all-blogs">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Explore Our Latest Blogs</h1>
+                <p>Discover insights and updates on seed trial management with SeedSense.</p>
+            </div>
+            <div class="hero-media">
+                <img src="assets/images/seedstockimage1.jpg" alt="Blog Hero Image" class="hero-img" />
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="blog-list">
+            <article class="card">
+                <h2><a href="blog1.html">Blog Post Title 1</a></h2>
+                <p>Short description or excerpt of the blog post...</p>
+            </article>
+            <article class="card">
+                <h2><a href="blog2.html">Blog Post Title 2</a></h2>
+                <p>Short description or excerpt of the blog post...</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <a href="https://ondasoftware.com" class="footer-logo">
+                    <img src="assets/images/sslogo.png" alt="SeedSense Logo" />
+                </a>
+                <p>&copy; <span id="year"></span> <a href="https://ondasoftware.com">Onda Software. All rights reserved.</a></p>
+                <p>
+                    <a href="https://ondasoftware.com/seedsensepolicy" style="text-decoration: none; color: inherit;">Privacy Policy | Terms Of Service</a>
+                </p>
+            </div>
+            <div class="footer-right">
+                <div class="button-container">
+                    <a href="about.html" class="btn btn-primary">Who We Are</a>
+                    <p></p>
+                    <a href="all-blogs.html" class="btn btn-secondary">Explore Our Blogs</a>
+                    <p></p>
+                  </div>
+                <p>Learn more about how SeedSense is transforming seed trials for companies around the world.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html> 

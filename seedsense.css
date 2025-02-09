@@ -27,14 +27,11 @@
 
 /* 2. BASE STYLES */
 
-html,
 body {
-  font-family: var(--font-primary), sans-serif;
-  color: var(--text-color);
-  background-color: var(--background-color);
-  font-size: 16px;
-  line-height: 1.5;
-  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
 img,
@@ -46,21 +43,23 @@ iframe {
   border: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 600;
-  margin-bottom: 0.5em;
-  line-height: 1.2;
-  color: var(--text-color);
+h1 {
+  font-size: 2.5rem;
+  color: #336846;
+  margin-bottom: 1rem;
+}
+
+h2, h3 {
+  font-size: 1.8rem;
+  color: #28593b;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 p {
-  margin-bottom: 1em;
-  color: var(--text-color);
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 1rem;
 }
 
 a {
@@ -69,14 +68,19 @@ a {
 }
 
 ul {
-  list-style: none;
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
 }
 
 .container {
-  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1.5rem 0;
+  padding: 20px;
 }
 
 /* 3. BUTTONS */
@@ -97,18 +101,21 @@ ul {
   background-color: var(--primary-color);
   color: #fff;
 }
+
 .btn-primary:hover {
   background-color: var(--button-hover);
   color: var(--primary-color);
 }
 
 .btn-secondary {
-  background-color: var(--secondary-color);
-  color: #fff;
+  background-color: #e6f7ed; /* Light green background */
+  color: #3e7f4c; /* Text color */
+  border: 1px solid #3e7f4c; /* Optional: add a border to match */
 }
+
 .btn-secondary:hover {
-  background-color: var(--button-hover);
-  color: var(--secondary-color);
+  background-color: #d4f0e8; /* Lighter hover color */
+  transform: scale(1.05);
 }
 
 .btn-large {
@@ -291,18 +298,6 @@ ul {
   }
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .hero-section {
-    padding: 3rem 0;
-  }
-  .hero-section .hero-text h1 {
-    font-size: 2.5rem;
-  }
-  .hero-section .hero-text p {
-    font-size: 1.2rem;
-  }
-}
 /* 6. INFO SECTION */
 .info-section {
   background-color: var(--background-color);
@@ -413,6 +408,7 @@ ul {
     gap: 1.5rem;
   }
 }
+
 /* 7. FEATURES SECTION */
 
 .feature-section {
@@ -710,6 +706,7 @@ ul {
     margin-left: auto;
   }
 }
+
 /* Enhanced Contact/Demo Section */
 .contact-demo-section {
   background: linear-gradient(135deg, #f0f8f3, #e6f7ed);
@@ -788,6 +785,7 @@ ul {
     font-size: 1.5rem;
   }
 }
+
 /* Fade-in Section Animation */
 .fade-in {
   opacity: 0;
@@ -895,6 +893,7 @@ ul {
     margin-bottom: 1rem;
   }
 }
+
 /* Benefits Section Styling */
 .benefits-section {
   background-color: var(--background-color-light);
@@ -975,6 +974,7 @@ ul {
     font-size: 0.95rem;
   }
 }
+
 /* Feature Section Cards */
 .feature-section {
   padding: 4rem 0;
@@ -1047,6 +1047,7 @@ ul {
     flex-direction: column;
   }
 }
+
 /* Universal Card Style */
 .card {
   background-color: #fff;
@@ -1113,8 +1114,14 @@ ul {
   .card ul li {
     font-size: 1rem;
   }
+
+  .blog-list article {
+    flex: 1 1 100%; /* Stack articles on smaller screens */
+  }
 }
-/* Features Section Cards */
+
+/* 8. FEATURES SECTION */
+
 .features-section {
   padding: 4rem 0;
   background: #f8faf9;
@@ -1182,17 +1189,20 @@ ul {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Adjustments */
+/* Responsive Adjustments for Features Section */
 @media (max-width: 768px) {
   .features-section .card {
     flex-direction: column;
+    text-align: center;
   }
 
   .features-section .card.reverse-layout {
     flex-direction: column;
   }
 }
-/* Contact/Demo Buttons */
+
+/* 9. CONTACT/DEMO BUTTONS */
+
 .contact-buttons {
   display: flex;
   flex-direction: column;
@@ -1210,22 +1220,32 @@ ul {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.btn-primary {
+.contact-demo .btn.btn-primary {
   background-color: #28593b;
   color: #fff;
 }
 
-.btn-primary:hover {
+.contact-demo .btn.btn-primary:hover {
   background-color: #1e472d;
   transform: scale(1.05);
 }
 
-.btn-secondary {
+.contact-demo .btn.btn-secondary {
   background-color: #e6f7ed;
   color: #3e7f4c;
+  border: 1px solid #3e7f4c;
 }
 
-.btn-secondary:hover {
-  background-color: #e6f7ed;
+.contact-demo .btn.btn-secondary:hover {
+  background-color: #d4f0e8;
   transform: scale(1.05);
+}
+
+h2 {
+    color: #28593b; /* Change to a more distinct color */
+    font-size: 1.8rem; /* Increase font size */
+    margin-top: 2rem; /* Add more space above */
+    margin-bottom: 1rem; /* Add space below */
+    border-bottom: 2px solid #e6f7ed; /* Add a subtle underline */
+    padding-bottom: 0.5rem; /* Add padding below the text */
 }
