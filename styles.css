@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 1em;
+}
+
+.blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.blog-list article {
+    background-color: #f4f4f4;
+    padding: 1em;
+    border-radius: 5px;
+    flex: 1 1 calc(33.333% - 1em);
+    box-sizing: border-box;
+}
+
+.blog-list article h2 {
+    margin-top: 0;
+}
+
+.blog-list article a {
+    text-decoration: none;
+    color: #333;
+}
+
+.blog-list article a:hover {
+    color: #007BFF;
+} 
