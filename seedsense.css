@@ -713,76 +713,40 @@ li {
   padding: 4rem 0;
   text-align: center;
   position: relative;
-  overflow: hidden;
 }
 
-.contact-demo-section::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 200px;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--primary-color);
-  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
-  z-index: 1;
+.contact-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
-.contact-demo-section::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 200px;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--primary-color);
-  clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);
-  z-index: 1;
-}
-
-.contact-demo {
+.btn-large {
   position: relative;
-  z-index: 2;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  padding: 2rem 1.5rem;
-  margin: 0 auto;
-  max-width: 500px;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
-.contact-demo h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: var(--primary-color);
+.contact-info {
+  display: block;
+  font-size: 0.9rem;
+  opacity: 0;
+  max-height: 0;
+  transition: all 0.3s ease;
+  color: inherit;
 }
 
-.contact-demo p {
-  font-size: 1rem;
-  color: var(--text-color);
-  margin-bottom: 0.5rem;
+.btn:hover .contact-info {
+  opacity: 1;
+  max-height: 1.5rem;
+  margin-top: 0.5rem;
 }
 
-.contact-demo a.btn {
-  display: inline-block;
-  margin-top: 1.5rem;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .contact-demo-section::before,
-  .contact-demo-section::after {
-    height: 100px;
-  }
-
-  .contact-demo {
-    padding: 1.5rem;
-  }
-
-  .contact-demo h2 {
-    font-size: 1.5rem;
+@media (min-width: 768px) {
+  .contact-buttons {
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -1211,13 +1175,24 @@ li {
 }
 
 .contact-demo .btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  font-size: 1.2rem;
-  text-align: center;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.contact-info {
+  display: block;
+  font-size: 0.9rem;
+  opacity: 0;
+  max-height: 0;
+  transition: all 0.3s ease;
+  color: inherit;
+}
+
+.btn:hover .contact-info {
+  opacity: 1;
+  max-height: 1.5rem;
+  margin-top: 0.5rem;
 }
 
 .contact-demo .btn.btn-primary {
