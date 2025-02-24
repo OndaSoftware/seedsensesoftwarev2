@@ -108,13 +108,14 @@ li {
 }
 
 .btn-secondary {
-  background-color: #e6f7ed; /* Light green background */
-  color: #3e7f4c; /* Text color */
-  border: 1px solid #3e7f4c; /* Optional: add a border to match */
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  transition: all 0.3s ease;
 }
 
 .btn-secondary:hover {
-  background-color: #d4f0e8; /* Lighter hover color */
+  background-color: var(--button-hover);
   transform: scale(1.05);
 }
 
@@ -259,6 +260,10 @@ li {
   
   .main-nav a {
     font-size: 0.9rem;
+  }
+
+  .header-cta .btn-secondary {
+    display: none;
   }
 }
 
@@ -769,6 +774,9 @@ li {
   }
   .header-cta {
     margin-left: auto;
+  }
+  .header-cta .btn-secondary {
+    display: none;
   }
 }
 
