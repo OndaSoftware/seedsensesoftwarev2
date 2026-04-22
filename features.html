@@ -15,6 +15,7 @@
   <meta name="description" content="Explore the advanced features of SeedSense, designed for efficiency and ease in seed trial management." />
   <title>Features - SeedSense</title>
   <link rel="stylesheet" href="seedsense.css" />
+  <link rel="icon" type="image/png" href="assets/images/sslogo.png" />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
 </head>
@@ -28,6 +29,7 @@
       </div>
       <nav class="main-nav">
         <ul>
+          <li><a href="index.html">Home</a></li>
           <li><a href="features.html">Our Software</a></li>
           <li><a href="benefits.html">Why SeedSense?</a></li>
           <li><a href="about.html">Who We Are</a></li>
@@ -47,9 +49,6 @@
         <h1>Discover the Advanced Features of SeedSense</h1>
         <p>SeedSense provides the tools you need to manage trials efficiently, collect accurate data, and make smarter decisions.</p>
       </div>
-      <div class="hero-media">
-        <img src="assets/images/bg11.jpg" alt="SeedSense Features" class="hero-img" />
-      </div>
     </div>
   </section>
 
@@ -66,7 +65,9 @@
           </ul>
         </div>
         <div class="card-image">
-          <img src="assets/images/offline.jpeg" alt="SeedSense Mobile App" />
+          <div class="sf-shot-frame">
+            <img src="assets/images/offline.jpeg" alt="SeedSense Mobile App" />
+          </div>
         </div>
       </div>
 
@@ -81,7 +82,9 @@
           </ul>
         </div>
         <div class="card-image">
-          <img src="assets/images/ssmap.PNG" alt="Integrated GPS and Mapping" />
+          <div class="sf-shot-frame">
+            <img src="assets/images/ssmap.PNG" alt="Integrated GPS and Mapping" />
+          </div>
         </div>
       </div>
 
@@ -96,7 +99,9 @@
           </ul>
         </div>
         <div class="card-image">
-          <img src="assets/images/sseval.png" alt="Grading and Evaluation Options" />
+          <div class="sf-shot-frame">
+            <img src="assets/images/sseval.png" alt="Grading and Evaluation Options" />
+          </div>
         </div>
       </div>
 
@@ -111,7 +116,9 @@
           </ul>
         </div>
         <div class="card-image">
-          <img src="assets/images/ssdata.jpeg" alt="Dynamic Data Management" />
+          <div class="sf-shot-frame">
+            <img src="assets/images/ssdata.jpeg" alt="Dynamic Data Management" />
+          </div>
         </div>
       </div>
 
@@ -126,7 +133,9 @@
           </ul>
         </div>
         <div class="card-image">
-          <img src="assets/images/email.jpeg" alt="Custom Reports and Trial Maps" />
+          <div class="sf-shot-frame">
+            <img src="assets/images/email.jpeg" alt="Custom Reports and Trial Maps" />
+          </div>
         </div>
       </div>
     </div>
@@ -152,26 +161,45 @@
   </div>
 </section>
 
- <!-- FOOTER -->
+  <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="container footer-content">
-      <div class="footer-left">
-        <a href="https://ondasoftware.com" class="footer-logo">
-          <img src="assets/images/sslogo.png" alt="SeedSense Logo" />
-        </a>
-        <p>© <span id="year"></span> <a href="https://ondasoftware.com"> Onda Software. All rights reserved. </a> </p>
-        <p>
-          <a href="https://ondasoftware.com/seedsensepolicy" style="text-decoration: none; color: inherit;">Privacy Policy | Terms Of Service</a>
-        </p>
-      </div>
-      <div class="footer-right">
-        <div class="button-container">
-          <a href="about.html" class="btn btn-primary">Who We Are</a>
-          <p></p>
-          <a href="all-blogs.html" class="btn btn-secondary">Explore Our Blogs</a>
-          <p></p>
+    <div class="footer-main">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html">
+            <img src="assets/images/sslogo.png" alt="SeedSense Logo" class="footer-brand-logo" />
+          </a>
+          <p class="footer-tagline">The seed trial platform built for modern agribusiness.</p>
+          <a href="#contact" class="btn btn-primary footer-cta">Request a Demo</a>
         </div>
-        <p>Learn more about how SeedSense is transforming seed trials for companies around the world.</p>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Our Software</a></li>
+            <li><a href="benefits.html">Why SeedSense?</a></li>
+            <li><a href="about.html">Who We Are</a></li>
+            <li><a href="all-blogs.html">Blogs</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Get in Touch</h4>
+          <a href="tel:+17605500255" class="footer-contact-link">
+            <span class="footer-contact-icon">📞</span> +1 (760) 550-0255
+          </a>
+          <a href="mailto:sales@ondasoftware.com" class="footer-contact-link">
+            <span class="footer-contact-icon">✉️</span> sales@ondasoftware.com
+          </a>
+          <a href="https://app.seedsensesoftware.com/" class="footer-contact-link">
+            <span class="footer-contact-icon">🔐</span> Login to SeedSense
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© <span id="year"></span> <a href="https://ondasoftware.com">Onda Software</a>. All rights reserved.</p>
+        <a href="https://ondasoftware.com/seedsensepolicy">Privacy Policy | Terms Of Service</a>
       </div>
     </div>
   </footer>
