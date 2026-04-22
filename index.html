@@ -7,26 +7,712 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-HVG3W650FB');
   </script>
   <meta charset="UTF-8" />
   <meta name="description" content="SeedSense by Onda - A modern software platform to streamline seed trialing data for large and small seed companies." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SeedSense by Onda</title>
-  <!-- Link to your CSS file -->
   <link rel="stylesheet" href="seedsense.css" />
-  <!-- (Optional) Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-  <link
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-  rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+
+  <style>
+    /* ====================================================
+       HOME PAGE — APPLE-STYLE CINEMATIC REDESIGN
+    ==================================================== */
+
+    body { font-family: 'Inter', sans-serif; background: #fff; overflow-x: hidden; }
+
+    /* ---- HERO ---- */
+    .home-hero {
+      min-height: 100vh;
+      background: #f0f8f3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 7rem 2rem 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .home-hero::after {
+      content: '';
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(ellipse, rgba(40,89,59,0.06) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .home-hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 940px;
+      width: 100%;
+    }
+
+    .home-eyebrow {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--primary-color);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: hfadeUp 0.8s cubic-bezier(0.22,1,0.36,1) forwards 0.2s;
+    }
+
+    .home-eyebrow::before, .home-eyebrow::after {
+      content: '';
+      display: inline-block;
+      width: 1.75rem;
+      height: 1px;
+      background: rgba(40,89,59,0.4);
+    }
+
+    .home-hero h1 {
+      font-family: 'Fraunces', Georgia, serif !important;
+      font-size: clamp(3.6rem, 9vw, 7.2rem) !important;
+      font-weight: 600 !important;
+      color: #1a2e22 !important;
+      line-height: 1.0 !important;
+      letter-spacing: -0.025em;
+      margin: 0 0 1.75rem !important;
+      border: none !important;
+      padding: 0 !important;
+      opacity: 0;
+      animation: hfadeUp 1s cubic-bezier(0.22,1,0.36,1) forwards 0.4s;
+    }
+
+    .home-hero h1 em {
+      font-style: italic;
+      color: var(--primary-color);
+    }
+
+    .home-hero-sub {
+      font-size: clamp(1rem, 2vw, 1.22rem);
+      color: #607060;
+      line-height: 1.75;
+      max-width: 540px;
+      margin: 0 auto 2.75rem;
+      font-weight: 300;
+      opacity: 0;
+      animation: hfadeUp 1s cubic-bezier(0.22,1,0.36,1) forwards 0.6s;
+    }
+
+    .home-hero-ctas {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 4.5rem;
+      opacity: 0;
+      animation: hfadeUp 0.9s cubic-bezier(0.22,1,0.36,1) forwards 0.8s;
+    }
+
+    .btn-hero-primary {
+      background: var(--primary-color);
+      color: #fff !important;
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      font-size: 0.97rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: none;
+      transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+      display: inline-block;
+    }
+
+    .btn-hero-primary:hover {
+      background: #1e472d;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(40,89,59,0.3);
+    }
+
+    .btn-hero-secondary {
+      background: transparent;
+      color: var(--primary-color) !important;
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      font-size: 0.97rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1.5px solid rgba(40,89,59,0.3);
+      transition: all 0.25s ease;
+      display: inline-block;
+    }
+
+    .btn-hero-secondary:hover {
+      border-color: var(--primary-color);
+      background: rgba(40,89,59,0.04);
+      transform: translateY(-2px);
+    }
+
+    .home-hero-screenshot {
+      opacity: 0;
+      animation: hfadeUp 1.1s cubic-bezier(0.22,1,0.36,1) forwards 1s;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-shot-wrap {
+      display: inline-block;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 48px 100px rgba(10,26,16,0.18), 0 10px 28px rgba(10,26,16,0.1);
+      animation: heroFloat 5.5s ease-in-out infinite 2.2s;
+      max-width: 700px;
+      width: 90%;
+    }
+
+    .hero-shot-wrap img { display: block; width: 100%; height: auto; }
+
+    @keyframes heroFloat {
+      0%, 100% { transform: translateY(0px); }
+      50%       { transform: translateY(-14px); }
+    }
+
+    .hero-scroll-cue {
+      position: absolute;
+      bottom: 2.25rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.55rem;
+      opacity: 0;
+      animation: hfadeUp 0.8s ease forwards 1.6s;
+      z-index: 3;
+    }
+
+    .hero-scroll-cue .scline {
+      width: 1px;
+      height: 44px;
+      background: linear-gradient(to bottom, rgba(40,89,59,0.5), transparent);
+      animation: scPulse 2s ease-in-out infinite;
+    }
+
+    .hero-scroll-cue span {
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(40,89,59,0.4);
+    }
+
+    @keyframes scPulse {
+      0%, 100% { opacity: 0.35; }
+      50%       { opacity: 1; }
+    }
+
+    @keyframes hfadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ---- MARQUEE ---- */
+    .home-marquee {
+      background: var(--primary-color);
+      padding: 0.85rem 0;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .marquee-track {
+      display: inline-flex;
+      animation: mscroll 24s linear infinite;
+    }
+
+    .marquee-item {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.75);
+      padding: 0 2.5rem;
+    }
+
+    .marquee-sep { color: rgba(255,255,255,0.25); padding: 0; }
+
+    @keyframes mscroll {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    /* ---- SCROLL FEATURE SECTIONS ---- */
+    .scroll-feature {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 100vh;
+      align-items: stretch;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .sf-bg-cream { background: #f0f8f3; }
+    .sf-bg-white { background: #ffffff; }
+
+    /* Reverse: text on right, visual on left */
+    .scroll-feature.sf-rev { direction: rtl; }
+    .scroll-feature.sf-rev > * { direction: ltr; }
+
+    .sf-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 6rem 5rem 6rem 9%;
+    }
+
+    .scroll-feature.sf-rev .sf-text {
+      padding: 6rem 9% 6rem 5rem;
+    }
+
+    .sf-eyebrow {
+      font-size: 0.66rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--primary-color);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .sf-eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 1.5rem;
+      height: 1px;
+      background: var(--primary-color);
+    }
+
+    .sf-text h2 {
+      font-family: 'Fraunces', Georgia, serif !important;
+      font-size: clamp(2rem, 3vw, 2.9rem) !important;
+      font-weight: 600 !important;
+      color: #1a2e22 !important;
+      line-height: 1.15 !important;
+      margin: 0 0 1.25rem !important;
+      border: none !important;
+      padding: 0 !important;
+    }
+
+    .sf-text p {
+      font-size: 1.04rem;
+      color: #607060;
+      line-height: 1.8;
+      margin-bottom: 1.75rem;
+    }
+
+    .sf-bullets {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sf-bullets li {
+      font-size: 0.93rem;
+      color: #4a5e4a;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid rgba(163,201,168,0.32);
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      margin: 0;
+    }
+
+    .sf-bullets li:last-child { border-bottom: none; }
+
+    .sf-bullets li::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent-color);
+      flex-shrink: 0;
+    }
+
+    /* Photo side (full bleed with parallax) */
+    .sf-photo {
+      overflow: hidden;
+      position: relative;
+      min-height: 100vh;
+    }
+
+    .sf-photo img {
+      width: 100%;
+      height: 125%;
+      object-fit: cover;
+      object-position: center;
+      will-change: transform;
+      display: block;
+      transform: translateY(-12.5%);
+    }
+
+    /* Screenshot side (floating frame) */
+    .sf-shot {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4.5rem 4rem;
+    }
+
+    .sf-shot-frame {
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 36px 80px rgba(10,26,16,0.14), 0 8px 24px rgba(10,26,16,0.07);
+      will-change: transform;
+      max-width: 460px;
+      width: 100%;
+    }
+
+    .sf-shot-frame img { display: block; width: 100%; height: auto; }
+
+    /* ---- HOW IT WORKS (DARK) ---- */
+    .home-how {
+      background: #0a1a10;
+      padding: 8rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .home-how::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 700px;
+      height: 700px;
+      background: radial-gradient(circle, rgba(102,187,106,0.055) 0%, transparent 68%);
+      pointer-events: none;
+    }
+
+    .home-how-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .home-how-head {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: end;
+      margin-bottom: 4.5rem;
+    }
+
+    .home-how-head .how-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #66bb6a;
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    .home-how-head h2 {
+      font-family: 'Fraunces', Georgia, serif !important;
+      font-size: clamp(2rem, 4vw, 3.4rem) !important;
+      font-weight: 600 !important;
+      color: #fff !important;
+      line-height: 1.12 !important;
+      margin: 0 !important;
+      border: none !important;
+      padding: 0 !important;
+    }
+
+    .home-how-head p {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.45);
+      line-height: 1.72;
+      margin: 0;
+      padding-bottom: 0.25rem;
+    }
+
+    .how-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
+    }
+
+    .how-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      padding: 2.5rem 2rem;
+      transition: background 0.3s ease;
+    }
+
+    .how-card:first-child { border-radius: 16px 0 0 16px; }
+    .how-card:last-child  { border-radius: 0 16px 16px 0; }
+    .how-card:hover { background: rgba(255,255,255,0.058); }
+
+    .how-num {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 2.8rem;
+      font-weight: 300;
+      color: rgba(102,187,106,0.3);
+      line-height: 1;
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+
+    .how-icon {
+      width: 38px;
+      height: 38px;
+      background: rgba(102,187,106,0.1);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+    }
+
+    .how-icon i { font-size: 0.95rem; color: #66bb6a; }
+
+    .how-card h3 {
+      font-size: 1rem !important;
+      font-weight: 600 !important;
+      color: #fff !important;
+      margin: 0 0 0.6rem !important;
+      border: none !important;
+      padding: 0 !important;
+    }
+
+    .how-card p {
+      font-size: 0.86rem;
+      color: rgba(255,255,255,0.42);
+      line-height: 1.65;
+      margin: 0;
+    }
+
+    /* ---- STATS ---- */
+    .home-stats {
+      background: #f0f8f3;
+      padding: 5.5rem 2rem;
+      border-bottom: 1px solid rgba(163,201,168,0.35);
+    }
+
+    .home-stats-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .stat-cell {
+      text-align: center;
+      padding: 1.5rem 2rem;
+      border-right: 1px solid rgba(163,201,168,0.4);
+    }
+
+    .stat-cell:last-child { border-right: none; }
+
+    .stat-num {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 3.8rem;
+      font-weight: 600;
+      color: var(--primary-color);
+      line-height: 1;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-lbl {
+      font-size: 0.82rem;
+      color: #607060;
+      letter-spacing: 0.04em;
+      font-weight: 500;
+    }
+
+    /* ---- FINAL CTA ---- */
+    .home-cta {
+      background: #0a1a10;
+      padding: 9rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .home-cta::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 650px;
+      height: 650px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(102,187,106,0.065) 0%, transparent 68%);
+      pointer-events: none;
+    }
+
+    .home-cta-inner {
+      max-width: 660px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #66bb6a;
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+
+    .home-cta h2 {
+      font-family: 'Fraunces', Georgia, serif !important;
+      font-size: clamp(2.2rem, 5vw, 4rem) !important;
+      font-weight: 600 !important;
+      color: #fff !important;
+      line-height: 1.1 !important;
+      margin: 0 0 1.5rem !important;
+      border: none !important;
+      padding: 0 !important;
+    }
+
+    .home-cta p {
+      font-size: 1.08rem;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.72;
+      margin-bottom: 3rem;
+    }
+
+    .cta-btn-group {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .cta-btn {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem 2.25rem;
+      border-radius: 14px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      min-width: 158px;
+      transition: all 0.3s cubic-bezier(0.22,1,0.36,1);
+    }
+
+    .cta-btn-green {
+      background: var(--primary-color);
+      color: #fff !important;
+    }
+
+    .cta-btn-green:hover {
+      background: #1e472d;
+      transform: translateY(-3px);
+      box-shadow: 0 16px 40px rgba(40,89,59,0.38);
+    }
+
+    .cta-btn-ghost {
+      background: rgba(255,255,255,0.06);
+      color: rgba(255,255,255,0.82) !important;
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .cta-btn-ghost:hover {
+      background: rgba(255,255,255,0.1);
+      transform: translateY(-3px);
+    }
+
+    .cta-btn .cta-sub {
+      font-size: 0.76rem;
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      margin-top: 0;
+      color: rgba(255,255,255,0.6);
+      font-weight: 400;
+    }
+
+    .cta-btn:hover .cta-sub {
+      opacity: 1;
+      max-height: 1.5rem;
+      margin-top: 0.3rem;
+    }
+
+    /* ---- SCROLL REVEAL ---- */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.75s cubic-bezier(0.22,1,0.36,1),
+                  transform 0.75s cubic-bezier(0.22,1,0.36,1);
+    }
+    .reveal.in-view { opacity: 1; transform: translateY(0); }
+    .rd1 { transition-delay: 0.1s; }
+    .rd2 { transition-delay: 0.2s; }
+    .rd3 { transition-delay: 0.3s; }
+
+    /* ---- RESPONSIVE ---- */
+    @media (max-width: 960px) {
+      .scroll-feature {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        direction: ltr !important;
+      }
+      .scroll-feature > * { direction: ltr !important; }
+
+      .sf-photo { min-height: 55vw; max-height: 380px; }
+      .sf-photo img { height: 100%; transform: none; object-fit: cover; }
+
+      .sf-text,
+      .scroll-feature.sf-rev .sf-text {
+        padding: 4rem 2rem;
+      }
+
+      .home-how-head { grid-template-columns: 1fr; gap: 1.5rem; }
+      .how-grid { grid-template-columns: repeat(2, 1fr); }
+      .how-card:first-child { border-radius: 16px 0 0 0; }
+      .how-card:nth-child(2) { border-radius: 0 16px 0 0; }
+      .how-card:nth-child(3) { border-radius: 0 0 0 16px; }
+      .how-card:last-child   { border-radius: 0 0 16px 0; }
+
+      .home-stats-inner { grid-template-columns: 1fr; }
+      .stat-cell { border-right: none; border-bottom: 1px solid rgba(163,201,168,0.35); }
+      .stat-cell:last-child { border-bottom: none; }
+    }
+
+    @media (max-width: 620px) {
+      .home-hero { padding: 6rem 1.5rem 3.5rem; }
+      .home-how, .home-cta { padding: 5.5rem 1.5rem; }
+      .how-grid { grid-template-columns: 1fr; }
+      .how-card { border-radius: 0 !important; }
+      .how-card:first-child { border-radius: 14px 14px 0 0 !important; }
+      .how-card:last-child  { border-radius: 0 0 14px 14px !important; }
+      .cta-btn-group { flex-direction: column; align-items: center; }
+      .cta-btn { width: 100%; max-width: 300px; }
+    }
+  </style>
 </head>
+
 <body>
-  <!-- HEADER / NAVIGATION -->
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container nav-container">
       <div class="logo">
@@ -49,226 +735,222 @@
     </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero-section" id="hero">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <h1>Reinvent Your Seed Trials with SeedSense</h1>
-        <p>
-          Track field trials, manage product entries, and get real-time insights—
-          all with a single platform built for seed companies.
-        </p>
-
-      </div>
-
-      <div class="hero-media">
-        <img
-          src="assets/images/ssmap.PNG"
-          alt="SeedSense Map Dashboard"
-          class="hero-img"
-        />
-      </div>
-    </div>
-
-    <div class="hero-wave-divider">
-      <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
-        <path
-          d="M0,30 C360,60 1080,0 1440,30 L1440,0 L0,0 Z"
-          style="fill: #ffffff;"
-        ></path>
-      </svg>
-    </div>
-  </section>
-
- <!-- INFO SECTION -->
-<section class="info-section" id="info-section">
-  <div class="container info-container">
-    <div class="info-left">
-      <h2>Take Control of Your Seed Trials</h2>
-      <p>
-        No more endless spreadsheets or guesswork. SeedSense centralizes your trial data, helping you focus on results while streamlining your workflow.
+  <!-- HERO -->
+  <section class="home-hero">
+    <div class="home-hero-inner">
+      <div class="home-eyebrow">SeedSense by Onda Software</div>
+      <h1>Reinvent Your<br><em>Seed Trials.</em></h1>
+      <p class="home-hero-sub">
+        Track field trials, manage product entries, and get real-time insights—
+        all in a single platform built for seed companies.
       </p>
-      <a
-        href="benefits.html"
-        class="btn btn-secondary btn-large"
-      >
-      See All The Ways We Can Help Your Seed Business Here
-      </a>
-
-      <div class="info-icons">
-        <div class="info-icon">
-          <i class="fas fa-users"></i>
-          <div>
-            <h3>Better Decisions</h3>
-            <p>With all your company's trials at your fingertips, be able to identify what is going commercial - quickly.</p>
-          </div>
-        </div>
-        <div class="info-icon">
-          <i class="fas fa-database"></i>
-          <div>
-            <h3>Centralized Data</h3>
-            <p>Store all trial information in one platform, ensuring consistent, accurate data across your team.</p>
-          </div>
-        </div>
-        <div class="info-icon">
-          <i class="fas fa-clock"></i>
-          <div>
-            <h3>Real-Time Access</h3>
-            <p>Access the latest trial data instantly, whether you're in the office or out in the field.</p>
-          </div>
-        </div>
-        <div class="info-icon">
-          <i class="fas fa-tasks"></i>
-          <div>
-            <h3>Streamlined Task Management</h3>
-            <p>Use task assignments to keep trials on track and ensure nothing gets overlooked during the season.</p>
-          </div>
+      <div class="home-hero-ctas">
+        <a href="#contact" class="btn-hero-primary">Request a Demo</a>
+        <a href="features.html" class="btn-hero-secondary">See the Software</a>
+      </div>
+      <div class="home-hero-screenshot">
+        <div class="hero-shot-wrap">
+          <img src="assets/images/ssmap.PNG" alt="SeedSense Map Dashboard" />
         </div>
       </div>
     </div>
-
-    <div class="info-right">
-      <img
-        src="assets/images/sstasks.PNG"
-        alt="SeedSense Tasks Example"
-      />
+    <div class="hero-scroll-cue">
+      <div class="scline"></div>
+      <span>Scroll</span>
     </div>
-  </div>
-</section>
- <!-- UPDATED FEATURE SECTION -->
-<section class="feature-section" id="features">
-  <div class="container">
-    <h2>Key Features</h2>
-    <p class="section-intro">
-      From sowing instructions to harvest data, SeedSense keeps every stage of your seed trials organized.
-    </p>
-    <a
-  href="features.html"
-  class="btn btn-secondary btn-large"
->
-  See More Of Our Features Here
-</a>
+  </section>
 
-    <div class="feature-card">
-      <div class="feature-card-content">
-        <h3>Intuitive Evaluations & Scoring</h3>
-        <p>Easily log scores, observations, and attach photos in real time. Let your team evaluate crop performance from the field or the lab.</p>
-      </div>
-      <div class="feature-card-image">
-        <img src="assets/images/sseval.png" alt="SeedSense Evaluation Screen" />
-      </div>
-    </div>
-
-    <div class="feature-card reverse-layout">
-      <div class="feature-card-content">
-        <h3>Fully Customizable Crop Traits</h3>
-        <p>Track exactly what matters to you—size, color, growth rate, or any custom traits you need. Perfect for specialized breeding programs.</p>
-      </div>
-      <div class="feature-card-image">
-        <img src="assets/images/sstraits.png" alt="SeedSense Custom Traits View" />
-      </div>
+  <!-- MARQUEE -->
+  <div class="home-marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item">Offline-First Mobile App</span>
+      <span class="marquee-sep">·</span>
+      <span class="marquee-item">GPS Trial Mapping</span>
+      <span class="marquee-sep">·</span>
+      <span class="marquee-item">Real-Time Data Access</span>
+      <span class="marquee-sep">·</span>
+      <span class="marquee-item">Custom Crop Traits</span>
+      <span class="marquee-sep">·</span>
+      <span class="marquee-item">Automated Reports</span>
+      <span class="marquee-sep">·</span>
+      <span class="marquee-item">Task Management</span>
+      <span class="marquee-sep">·</span>
+      <span class="marquee-item">Dealer Communication</span>
+      <span class="marquee-sep">·</span>
+      <!-- duplicate for seamless loop -->
+      <span class="marquee-item">Offline-First Mobile App</span>
+      <span class="marquee-sep">·</span>
+      <span class="marquee-item">GPS Trial Mapping</span>
+      <span class="marquee-sep">·</span>
+      <span class="marquee-item">Real-Time Data Access</span>
+      <span class="marquee-sep">·</span>
+      <span class="marquee-item">Custom Crop Traits</span>
+      <span class="marquee-sep">·</span>
+      <span class="marquee-item">Automated Reports</span>
+      <span class="marquee-sep">·</span>
+      <span class="marquee-item">Task Management</span>
+      <span class="marquee-sep">·</span>
+      <span class="marquee-item">Dealer Communication</span>
+      <span class="marquee-sep">·</span>
     </div>
   </div>
-</section>
 
- <!-- ========== HOW IT WORKS SECTION ========== -->
-<section id="how-it-works" class="fade-in">
-  <div class="container">
-    <h2>How It Works</h2>
-    <div class="steps">
-      <!-- Step 1: Plan Your Trial -->
-      <div class="step">
-        <div class="step-icon">
-          <i class="fas fa-seedling"></i>
-        </div>
-        <div class="step-content">
-          <strong>Plant Your Trial</strong>
-          <p>Log trial details like location, grower, crop variety, trial layout, and initial tasks to get started on the right foot.</p>
-        </div>
-      </div>
-
-      <!-- Step 2: Manage Tasks -->
-      <div class="step">
-        <div class="step-icon">
-          <i class="fas fa-tasks"></i>
-        </div>
-        <div class="step-content">
-          <strong>Manage Tasks</strong>
-          <p>Stay organized throughout the season by using tasks for thinning, monitoring, and collaborating with team members or farmers in the field.</p>
-        </div>
-      </div>
-
-      <!-- Step 3: Evaluate Your Trial -->
-      <div class="step">
-        <div class="step-icon">
-          <i class="fas fa-edit"></i>
-        </div>
-        <div class="step-content">
-          <strong>Evaluate Your Trial</strong>
-          <p>Use SeedSense to collect all evaluation data, including customized traits for each crop and high-quality images once the trial is mature.</p>
-        </div>
-      </div>
-
-      <!-- Step 4: Report and Share Data -->
-      <div class="step">
-        <div class="step-icon">
-          <i class="fas fa-share-alt"></i>
-        </div>
-        <div class="step-content">
-          <strong>Report and Share Data</strong>
-          <p>Generate trial maps and evaluation reports to share via PDF or email, or access evaluations anywhere through the SeedSense cloud catalog.</p>
-        </div>
-      </div>
+  <!-- FEATURE 1: Offline — photo right -->
+  <section class="scroll-feature sf-bg-white">
+    <div class="sf-text reveal">
+      <span class="sf-eyebrow">Mobile &amp; Field-Ready</span>
+      <h2>Works everywhere.<br>Even without signal.</h2>
+      <p>SeedSense's offline-first mobile app means your team records trial data deep in the field, with or without connectivity. Everything syncs the moment you're back online.</p>
+      <ul class="sf-bullets">
+        <li>Full offline functionality on iOS &amp; Android</li>
+        <li>Automatic background sync on reconnect</li>
+        <li>Photo capture and field annotations</li>
+      </ul>
     </div>
-  </div>
-</section>
-  <!-- VIDEO PLACEHOLDER (COMMENTED OUT) -->
-  <!--
-  <section id="video-demo" class="fade-in">
-    <div class="container">
-      <h2>See SeedSense in Action</h2>
-      <div class="video-wrapper">
-        <iframe
-          src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-          title="SeedSense Demo Video"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+    <div class="sf-photo">
+      <img src="assets/images/offline.jpeg" alt="Field work with SeedSense" class="parallax-photo" />
+    </div>
+  </section>
+
+  <!-- FEATURE 2: GPS Map — screenshot left, text right -->
+  <section class="scroll-feature sf-bg-cream sf-rev">
+    <div class="sf-text reveal">
+      <span class="sf-eyebrow">GPS &amp; Mapping</span>
+      <h2>See every trial,<br>precisely located.</h2>
+      <p>Visualize all your trial locations on an interactive map. Share with your team, navigate to remote field sites, and coordinate across geographies with confidence.</p>
+      <ul class="sf-bullets">
+        <li>Precise GPS trial location tracking</li>
+        <li>Shareable maps for field teams</li>
+        <li>Navigate to any trial site instantly</li>
+      </ul>
+    </div>
+    <div class="sf-shot sf-bg-cream">
+      <div class="sf-shot-frame parallax-frame reveal rd1">
+        <img src="assets/images/ssmap.PNG" alt="GPS Map View in SeedSense" />
       </div>
     </div>
   </section>
-  -->
 
- <!-- CONTACT / DEMO SECTION -->
-<section class="contact-demo-section" id="contact">
-  <div class="container">
-    <div class="contact-demo">
-      <h2>Contact Us</h2>
-      <p>Ready to get started with SeedSense? We're here to assist you.</p>
+  <!-- FEATURE 3: Evaluations — screenshot right, text left -->
+  <section class="scroll-feature sf-bg-white">
+    <div class="sf-text reveal">
+      <span class="sf-eyebrow">Evaluations &amp; Scoring</span>
+      <h2>Grade with precision.<br>Decide with confidence.</h2>
+      <p>Log crop scores, custom trait observations, and photos in real time from any device. Customizable scoring templates mean you track exactly what matters for your program.</p>
+      <ul class="sf-bullets">
+        <li>Customizable crop trait templates</li>
+        <li>Photo-attached field evaluations</li>
+        <li>Side-by-side performance comparisons</li>
+      </ul>
+    </div>
+    <div class="sf-shot sf-bg-white">
+      <div class="sf-shot-frame parallax-frame reveal rd1">
+        <img src="assets/images/sseval.png" alt="Evaluation screen in SeedSense" />
+      </div>
+    </div>
+  </section>
 
-      <div class="contact-buttons">
-        <a href="tel:+17605500255" class="btn btn-primary btn-large">
-          <span class="button-text">Call Us</span>
-          <span class="contact-info">+1 (760) 550-0255</span>
+  <!-- FEATURE 4: Reports — photo left, text right -->
+  <section class="scroll-feature sf-bg-cream sf-rev">
+    <div class="sf-text reveal">
+      <span class="sf-eyebrow">Reports &amp; Sharing</span>
+      <h2>From field data<br>to boardroom report.</h2>
+      <p>Generate professional trial maps and evaluation reports at the click of a button. Share with farmers, suppliers, and sales teams via PDF or email—no formatting required.</p>
+      <ul class="sf-bullets">
+        <li>Auto-generated PDF trial reports</li>
+        <li>Email sharing to any stakeholder</li>
+        <li>Cloud-accessible evaluation catalog</li>
+      </ul>
+    </div>
+    <div class="sf-photo">
+      <img src="assets/images/email.jpeg" alt="Report sharing with SeedSense" class="parallax-photo" />
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="home-how">
+    <div class="home-how-inner">
+      <div class="home-how-head">
+        <div>
+          <span class="how-label">How It Works</span>
+          <h2>From planting to<br>report in four steps.</h2>
+        </div>
+        <p>SeedSense keeps every stage of your seed trials organized—from the first seed in the ground to the final report in the inbox.</p>
+      </div>
+      <div class="how-grid">
+        <div class="how-card reveal">
+          <span class="how-num">01</span>
+          <div class="how-icon"><i class="fas fa-seedling"></i></div>
+          <h3>Plant Your Trial</h3>
+          <p>Log trial details: location, grower, crop variety, layout, and initial tasks to get started.</p>
+        </div>
+        <div class="how-card reveal rd1">
+          <span class="how-num">02</span>
+          <div class="how-icon"><i class="fas fa-tasks"></i></div>
+          <h3>Manage Tasks</h3>
+          <p>Assign thinning, monitoring, and field tasks with full team visibility and accountability.</p>
+        </div>
+        <div class="how-card reveal rd2">
+          <span class="how-num">03</span>
+          <div class="how-icon"><i class="fas fa-edit"></i></div>
+          <h3>Evaluate Your Trial</h3>
+          <p>Collect scores, custom traits, and field photos on any device—even offline in the field.</p>
+        </div>
+        <div class="how-card reveal rd3">
+          <span class="how-num">04</span>
+          <div class="how-icon"><i class="fas fa-share-alt"></i></div>
+          <h3>Report &amp; Share</h3>
+          <p>Generate and distribute trial maps and PDF reports to farmers, suppliers, and sales teams.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="home-stats">
+    <div class="home-stats-inner">
+      <div class="stat-cell reveal">
+        <span class="stat-num">100%</span>
+        <span class="stat-lbl">Offline Capable</span>
+      </div>
+      <div class="stat-cell reveal rd1">
+        <span class="stat-num">0</span>
+        <span class="stat-lbl">Spreadsheets Needed</span>
+      </div>
+      <div class="stat-cell reveal rd2">
+        <span class="stat-num">1</span>
+        <span class="stat-lbl">Platform for Everything</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="home-cta" id="contact">
+    <div class="home-cta-inner">
+      <span class="cta-label reveal">Get Started</span>
+      <h2 class="reveal rd1">Leave the spreadsheets behind.</h2>
+      <p class="reveal rd2">Join seed companies using SeedSense to run faster, more accurate trials—starting today.</p>
+      <div class="cta-btn-group reveal rd3">
+        <a href="tel:+17605500255" class="cta-btn cta-btn-green">
+          <span>Call Us</span>
+          <span class="cta-sub">+1 (760) 550-0255</span>
         </a>
-        <a href="mailto:sales@ondasoftware.com" class="btn btn-secondary btn-large">
-          <span class="button-text">Email Us</span>
-          <span class="contact-info">sales@ondasoftware.com</span>
+        <a href="mailto:sales@ondasoftware.com" class="cta-btn cta-btn-ghost">
+          <span>Email Us</span>
+          <span class="cta-sub">sales@ondasoftware.com</span>
         </a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-   <!-- FOOTER -->
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-content">
       <div class="footer-left">
         <a href="https://ondasoftware.com" class="footer-logo">
           <img src="assets/images/sslogo.png" alt="SeedSense Logo" />
         </a>
-        <p>© <span id="year"></span> <a href="https://ondasoftware.com"> Onda Software. All rights reserved. </a> </p>
+        <p>© <span id="year"></span> <a href="https://ondasoftware.com"> Onda Software. All rights reserved.</a></p>
         <p>
           <a href="https://ondasoftware.com/seedsensepolicy" style="text-decoration: none; color: inherit;">Privacy Policy | Terms Of Service</a>
         </p>
@@ -287,6 +969,46 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    /* ---- Scroll reveal ---- */
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in-view'); });
+    }, { threshold: 0.1, rootMargin: '0px 0px -48px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+    /* ---- Parallax ---- */
+    const photos  = document.querySelectorAll('.parallax-photo');
+    const frames  = document.querySelectorAll('.parallax-frame');
+
+    function updateParallax() {
+      const vH = window.innerHeight;
+
+      photos.forEach(img => {
+        const side = img.closest('.sf-photo');
+        if (!side) return;
+        const rect = side.getBoundingClientRect();
+        const progress = (vH - rect.top) / (vH + rect.height);
+        const clamped  = Math.max(0, Math.min(1, progress));
+        const y = (clamped - 0.5) * -100;
+        img.style.transform = `translateY(calc(-12.5% + ${y}px))`;
+      });
+
+      frames.forEach(frame => {
+        const rect = frame.getBoundingClientRect();
+        const progress = (vH - rect.top) / (vH + rect.height);
+        const clamped  = Math.max(0, Math.min(1, progress));
+        const y = (clamped - 0.5) * -55;
+        frame.style.transform = `translateY(${y}px)`;
+      });
+    }
+
+    let raf = null;
+    window.addEventListener('scroll', () => {
+      if (!raf) raf = requestAnimationFrame(() => { updateParallax(); raf = null; });
+    }, { passive: true });
+
+    updateParallax();
   </script>
 </body>
 </html>
