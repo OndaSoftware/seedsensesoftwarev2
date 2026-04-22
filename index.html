@@ -13,6 +13,7 @@
   <meta name="description" content="SeedSense by Onda - A modern software platform to streamline seed trialing data for large and small seed companies." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SeedSense by Onda</title>
+  <link rel="icon" type="image/png" href="assets/images/sslogo.png" />
   <link rel="stylesheet" href="seedsense.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,14 +30,14 @@
 
     /* ---- HERO ---- */
     .home-hero {
-      min-height: 100vh;
+      min-height: 80vh;
       background: #f0f8f3;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 7rem 2rem 4rem;
+      padding: 5rem 2rem 3rem;
       position: relative;
       overflow: hidden;
     }
@@ -173,8 +174,8 @@
       overflow: hidden;
       box-shadow: 0 48px 100px rgba(10,26,16,0.18), 0 10px 28px rgba(10,26,16,0.1);
       animation: heroFloat 5.5s ease-in-out infinite 2.2s;
-      max-width: 700px;
-      width: 90%;
+      max-width: 220px;
+      width: 60%;
     }
 
     .hero-shot-wrap img { display: block; width: 100%; height: auto; }
@@ -222,40 +223,132 @@
       to   { opacity: 1; transform: translateY(0); }
     }
 
-    /* ---- MARQUEE ---- */
-    .home-marquee {
-      background: var(--primary-color);
-      padding: 0.85rem 0;
-      overflow: hidden;
-      white-space: nowrap;
+    /* ---- TRUSTED BY SECTION ---- */
+    .home-trusted-bar {
+      background: #fff;
+      border-top: 1px solid rgba(163,201,168,0.4);
+      border-bottom: 1px solid rgba(163,201,168,0.4);
+      padding: 3.5rem 2rem;
     }
 
-    .marquee-track {
-      display: inline-flex;
-      animation: mscroll 24s linear infinite;
+    .home-trusted-bar-inner {
+      max-width: 1000px;
+      margin: 0 auto;
     }
 
-    .marquee-item {
+    .trusted-bar-label {
       font-size: 0.68rem;
       font-weight: 700;
-      letter-spacing: 0.2em;
+      letter-spacing: 0.22em;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.75);
-      padding: 0 2.5rem;
+      color: #9aab9a;
+      display: block;
+      text-align: center;
+      margin-bottom: 2rem;
     }
 
-    .marquee-sep { color: rgba(255,255,255,0.25); padding: 0; }
+    .trusted-bar-logo-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
 
-    @keyframes mscroll {
-      from { transform: translateX(0); }
-      to   { transform: translateX(-50%); }
+    .trusted-bar-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      padding: 0.6rem 1.4rem;
+      border-radius: 12px;
+      border: 1.5px solid rgba(163,201,168,0.4);
+      transition: all 0.2s ease;
+      background: #f9fdf9;
+    }
+
+    .trusted-bar-item:hover {
+      border-color: var(--primary-color);
+      box-shadow: 0 4px 16px rgba(40,89,59,0.1);
+    }
+
+    .trusted-bar-favicon {
+      width: 36px;
+      height: 36px;
+      border-radius: 6px;
+      flex-shrink: 0;
+    }
+
+    .trusted-bar-logo {
+      height: 150px;
+      width: auto;
+      max-width: 600px;
+      object-fit: contain;
+    }
+
+    .trusted-stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: rgba(163,201,168,0.25);
+      border: 1px solid rgba(163,201,168,0.3);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    .trusted-stat {
+      background: #fff;
+      padding: 1.5rem 1.25rem;
+      text-align: center;
+    }
+
+    .trusted-stat-num {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--primary-color);
+      display: block;
+      line-height: 1;
+      margin-bottom: 0.4rem;
+    }
+
+    .trusted-stat-desc {
+      font-size: 0.8rem;
+      color: #607060;
+      line-height: 1.45;
+    }
+
+    .trusted-case-intro {
+      font-size: 1rem;
+      color: #4a5e4a;
+      line-height: 1.75;
+      max-width: 680px;
+      margin: 0 auto 2rem;
+      text-align: center;
+    }
+
+    .trusted-case-result {
+      font-size: 0.9rem;
+      color: #607060;
+      line-height: 1.7;
+      max-width: 600px;
+      margin: 1.75rem auto 0;
+      text-align: center;
+      font-style: italic;
+    }
+
+    @media (max-width: 720px) {
+      .trusted-stats { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 420px) {
+      .trusted-stats { grid-template-columns: 1fr; }
     }
 
     /* ---- SCROLL FEATURE SECTIONS ---- */
     .scroll-feature {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      min-height: 100vh;
+      min-height: 380px;
       align-items: stretch;
       overflow: hidden;
       position: relative;
@@ -272,11 +365,11 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 6rem 5rem 6rem 9%;
+      padding: 3.5rem 3.5rem 3.5rem 7%;
     }
 
     .scroll-feature.sf-rev .sf-text {
-      padding: 6rem 9% 6rem 5rem;
+      padding: 3.5rem 7% 3.5rem 3.5rem;
     }
 
     .sf-eyebrow {
@@ -346,21 +439,23 @@
       flex-shrink: 0;
     }
 
-    /* Photo side (full bleed with parallax) */
+    /* Photo side — contained phone screenshot (same as sf-shot) */
     .sf-photo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2.5rem 2rem;
       overflow: hidden;
       position: relative;
-      min-height: 100vh;
     }
 
     .sf-photo img {
-      width: 100%;
-      height: 125%;
-      object-fit: cover;
-      object-position: center;
-      will-change: transform;
       display: block;
-      transform: translateY(-12.5%);
+      max-width: 200px;
+      width: 100%;
+      height: auto;
+      border-radius: 28px;
+      box-shadow: 0 20px 50px rgba(10,26,16,0.14), 0 4px 16px rgba(10,26,16,0.07);
     }
 
     /* Screenshot side (floating frame) */
@@ -368,15 +463,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 4.5rem 4rem;
+      padding: 2.5rem 2rem;
     }
 
     .sf-shot-frame {
-      border-radius: 22px;
+      border-radius: 28px;
       overflow: hidden;
-      box-shadow: 0 36px 80px rgba(10,26,16,0.14), 0 8px 24px rgba(10,26,16,0.07);
+      box-shadow: 0 20px 50px rgba(10,26,16,0.14), 0 4px 16px rgba(10,26,16,0.07);
       will-change: transform;
-      max-width: 460px;
+      max-width: 200px;
       width: 100%;
     }
 
@@ -760,42 +855,23 @@
     </div>
   </section>
 
-  <!-- MARQUEE -->
-  <div class="home-marquee" aria-hidden="true">
-    <div class="marquee-track">
-      <span class="marquee-item">Offline-First Mobile App</span>
-      <span class="marquee-sep">·</span>
-      <span class="marquee-item">GPS Trial Mapping</span>
-      <span class="marquee-sep">·</span>
-      <span class="marquee-item">Real-Time Data Access</span>
-      <span class="marquee-sep">·</span>
-      <span class="marquee-item">Custom Crop Traits</span>
-      <span class="marquee-sep">·</span>
-      <span class="marquee-item">Automated Reports</span>
-      <span class="marquee-sep">·</span>
-      <span class="marquee-item">Task Management</span>
-      <span class="marquee-sep">·</span>
-      <span class="marquee-item">Dealer Communication</span>
-      <span class="marquee-sep">·</span>
-      <!-- duplicate for seamless loop -->
-      <span class="marquee-item">Offline-First Mobile App</span>
-      <span class="marquee-sep">·</span>
-      <span class="marquee-item">GPS Trial Mapping</span>
-      <span class="marquee-sep">·</span>
-      <span class="marquee-item">Real-Time Data Access</span>
-      <span class="marquee-sep">·</span>
-      <span class="marquee-item">Custom Crop Traits</span>
-      <span class="marquee-sep">·</span>
-      <span class="marquee-item">Automated Reports</span>
-      <span class="marquee-sep">·</span>
-      <span class="marquee-item">Task Management</span>
-      <span class="marquee-sep">·</span>
-      <span class="marquee-item">Dealer Communication</span>
-      <span class="marquee-sep">·</span>
+  <!-- TRUSTED BY -->
+  <div class="home-trusted-bar">
+    <div class="home-trusted-bar-inner">
+      <span class="trusted-bar-label">Trusted by</span>
+      <div class="trusted-bar-logo-row">
+        <a href="https://www.seedway.com/" target="_blank" rel="noopener" class="trusted-bar-item">
+          <img src="assets/images/seedway-favicon.png" alt="Seedway" class="trusted-bar-favicon" />
+          <img src="assets/images/seedway-logo.svg" alt="Seedway" class="trusted-bar-logo" />
+        </a>
+      </div>
+      <p class="trusted-case-intro">Seedway — one of the US's leading full-line seed companies — needed one place to centralize trial data, share results with growers and suppliers, and keep field teams productive without internet. SeedSense delivered all three.</p>
+
+      <p class="trusted-case-result">Standardized evaluations across the entire organization. Automated trial maps and reports sent directly to growers, suppliers, and internal teams. Stronger supplier relationships worldwide.</p>
     </div>
   </div>
 
-  <!-- FEATURE 1: Offline — photo right -->
+  <!-- FEATURE 1: Offline — screenshot right -->
   <section class="scroll-feature sf-bg-white">
     <div class="sf-text reveal">
       <span class="sf-eyebrow">Mobile &amp; Field-Ready</span>
@@ -807,8 +883,10 @@
         <li>Photo capture and field annotations</li>
       </ul>
     </div>
-    <div class="sf-photo">
-      <img src="assets/images/offline.jpeg" alt="Field work with SeedSense" class="parallax-photo" />
+    <div class="sf-shot sf-bg-white">
+      <div class="sf-shot-frame reveal rd1">
+        <img src="assets/images/offline.jpeg" alt="Field work with SeedSense" />
+      </div>
     </div>
   </section>
 
@@ -850,7 +928,7 @@
     </div>
   </section>
 
-  <!-- FEATURE 4: Reports — photo left, text right -->
+  <!-- FEATURE 4: Reports — screenshot left, text right -->
   <section class="scroll-feature sf-bg-cream sf-rev">
     <div class="sf-text reveal">
       <span class="sf-eyebrow">Reports &amp; Sharing</span>
@@ -862,8 +940,10 @@
         <li>Cloud-accessible evaluation catalog</li>
       </ul>
     </div>
-    <div class="sf-photo">
-      <img src="assets/images/email.jpeg" alt="Report sharing with SeedSense" class="parallax-photo" />
+    <div class="sf-shot sf-bg-cream">
+      <div class="sf-shot-frame reveal rd1">
+        <img src="assets/images/email.jpeg" alt="Report sharing with SeedSense" />
+      </div>
     </div>
   </section>
 
@@ -984,15 +1064,7 @@
     function updateParallax() {
       const vH = window.innerHeight;
 
-      photos.forEach(img => {
-        const side = img.closest('.sf-photo');
-        if (!side) return;
-        const rect = side.getBoundingClientRect();
-        const progress = (vH - rect.top) / (vH + rect.height);
-        const clamped  = Math.max(0, Math.min(1, progress));
-        const y = (clamped - 0.5) * -100;
-        img.style.transform = `translateY(calc(-12.5% + ${y}px))`;
-      });
+      // sf-photo images are now contained phone screenshots — no parallax needed
 
       frames.forEach(frame => {
         const rect = frame.getBoundingClientRect();
