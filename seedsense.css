@@ -649,35 +649,133 @@ li {
 /* 12. FOOTER */
 
 .site-footer {
-  background-color: var(--background-color);
-  border-top: 1px solid var(--border-color);
-  padding: 2rem 0;
+  background-color: #0f2318;
+  color: rgba(255,255,255,0.75);
 }
 
-.footer-content {
+.footer-main {
+  padding: 4rem 0 3rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.footer-brand-logo {
+  height: 36px;
+  margin-bottom: 1.25rem;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+}
+
+.footer-tagline {
+  font-size: 0.925rem;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 1.5rem;
+  max-width: 260px;
+}
+
+.footer-cta {
+  display: inline-block;
+  font-size: 0.875rem;
+  padding: 0.6rem 1.4rem;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+  margin-bottom: 1.25rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-links ul li a {
+  color: rgba(255,255,255,0.75);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.footer-links ul li a:hover {
+  color: #fff;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.footer-contact-link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: rgba(255,255,255,0.75);
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  transition: color 0.2s;
+}
+
+.footer-contact-link:hover {
+  color: #fff;
+}
+
+.footer-contact-icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 1.25rem 0;
+}
+
+.footer-bottom-inner {
+  display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
+  font-size: 0.825rem;
+  color: rgba(255,255,255,0.4);
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.footer-left {
-  max-width: 300px;
+.footer-bottom-inner a {
+  color: rgba(255,255,255,0.4);
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
-.footer-left img {
-  height: 40px;
-  margin-bottom: 1rem;
+.footer-bottom-inner a:hover {
+  color: rgba(255,255,255,0.75);
 }
 
-.footer-right h3 {
-  margin-bottom: 0.5rem;
-  font-size: 1.25rem;
-}
-
-.footer-right p {
-  margin-bottom: 0.5rem;
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .footer-bottom-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 /* 13. RESPONSIVE BREAKPOINTS */
