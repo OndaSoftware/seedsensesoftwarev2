@@ -188,11 +188,12 @@
     .hero-scroll-cue {
       position: absolute;
       bottom: 2.25rem;
-      left: 50%;
-      transform: translateX(-50%);
+      left: 0;
+      right: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       gap: 0.55rem;
       opacity: 0;
       animation: hfadeUp 0.8s ease forwards 1.6s;
@@ -247,101 +248,51 @@
       margin-bottom: 2rem;
     }
 
-    .trusted-bar-logo-row {
+    .trusted-bar-side {
       display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 1rem;
-      margin-bottom: 2.5rem;
+      gap: 3.5rem;
     }
 
-    .trusted-bar-item {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      text-decoration: none;
-      padding: 0.6rem 1.4rem;
-      border-radius: 12px;
-      border: 1.5px solid rgba(163,201,168,0.4);
-      transition: all 0.2s ease;
-      background: #f9fdf9;
-    }
-
-    .trusted-bar-item:hover {
-      border-color: var(--primary-color);
-      box-shadow: 0 4px 16px rgba(40,89,59,0.1);
-    }
-
-    .trusted-bar-favicon {
-      width: 36px;
-      height: 36px;
-      border-radius: 6px;
+    .trusted-bar-logo-link {
       flex-shrink: 0;
+      display: block;
+      text-decoration: none;
+      transition: opacity 0.2s ease;
     }
+
+    .trusted-bar-logo-link:hover { opacity: 0.75; }
 
     .trusted-bar-logo {
-      height: 150px;
+      height: 160px;
       width: auto;
-      max-width: 600px;
       object-fit: contain;
-    }
-
-    .trusted-stats {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1px;
-      background: rgba(163,201,168,0.25);
-      border: 1px solid rgba(163,201,168,0.3);
-      border-radius: 14px;
-      overflow: hidden;
-    }
-
-    .trusted-stat {
-      background: #fff;
-      padding: 1.5rem 1.25rem;
-      text-align: center;
-    }
-
-    .trusted-stat-num {
-      font-family: 'Fraunces', Georgia, serif;
-      font-size: 2rem;
-      font-weight: 600;
-      color: var(--primary-color);
       display: block;
-      line-height: 1;
-      margin-bottom: 0.4rem;
     }
 
-    .trusted-stat-desc {
-      font-size: 0.8rem;
-      color: #607060;
-      line-height: 1.45;
+    .trusted-bar-text {
+      border-left: 1.5px solid rgba(163,201,168,0.45);
+      padding-left: 3rem;
     }
 
     .trusted-case-intro {
       font-size: 1rem;
       color: #4a5e4a;
       line-height: 1.75;
-      max-width: 680px;
-      margin: 0 auto 2rem;
-      text-align: center;
+      margin: 0 0 0.75rem;
     }
 
     .trusted-case-result {
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       color: #607060;
       line-height: 1.7;
-      max-width: 600px;
-      margin: 1.75rem auto 0;
-      text-align: center;
       font-style: italic;
+      margin: 0;
     }
 
     @media (max-width: 720px) {
-      .trusted-stats { grid-template-columns: repeat(2, 1fr); }
-    }
-    @media (max-width: 420px) {
-      .trusted-stats { grid-template-columns: 1fr; }
+      .trusted-bar-side { flex-direction: column; gap: 2rem; align-items: flex-start; }
+      .trusted-bar-text { border-left: none; border-top: 1.5px solid rgba(163,201,168,0.45); padding-left: 0; padding-top: 1.5rem; }
     }
 
     /* ---- SCROLL FEATURE SECTIONS ---- */
@@ -842,11 +793,6 @@
       <div class="home-hero-ctas">
         <a href="#contact" class="btn-hero-primary">Request a Demo</a>
       </div>
-      <div class="home-hero-screenshot">
-        <div class="hero-shot-wrap">
-          <img src="assets/images/ssmap.PNG" alt="SeedSense Map Dashboard" />
-        </div>
-      </div>
     </div>
     <div class="hero-scroll-cue">
       <div class="scline"></div>
@@ -858,15 +804,15 @@
   <div class="home-trusted-bar">
     <div class="home-trusted-bar-inner">
       <span class="trusted-bar-label">Trusted by</span>
-      <div class="trusted-bar-logo-row">
-        <a href="https://www.seedway.com/" target="_blank" rel="noopener" class="trusted-bar-item">
-          <img src="assets/images/seedway-favicon.png" alt="Seedway" class="trusted-bar-favicon" />
+      <div class="trusted-bar-side">
+        <a href="https://www.seedway.com/" target="_blank" rel="noopener" class="trusted-bar-logo-link">
           <img src="assets/images/seedway-logo.svg" alt="Seedway" class="trusted-bar-logo" />
         </a>
+        <div class="trusted-bar-text">
+          <p class="trusted-case-intro">Seedway — one of the US's leading full-line seed companies — needed one place to centralize trial data, share results with growers and suppliers, and keep field teams productive without internet. SeedSense delivered all three.</p>
+          <p class="trusted-case-result">Standardized evaluations across the entire organization. Automated trial maps and reports sent directly to growers, suppliers, and internal teams. Stronger supplier relationships worldwide.</p>
+        </div>
       </div>
-      <p class="trusted-case-intro">Seedway — one of the US's leading full-line seed companies — needed one place to centralize trial data, share results with growers and suppliers, and keep field teams productive without internet. SeedSense delivered all three.</p>
-
-      <p class="trusted-case-result">Standardized evaluations across the entire organization. Automated trial maps and reports sent directly to growers, suppliers, and internal teams. Stronger supplier relationships worldwide.</p>
     </div>
   </div>
 
