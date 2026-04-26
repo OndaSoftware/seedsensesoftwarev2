@@ -124,50 +124,74 @@
         </div>
     </div>
 
-    <section class="contact-demo-section" id="contact">
-        <div class="container">
-            <div class="contact-demo">
-                <h2>Contact Us</h2>
-                <p>Ready to get started with SeedSense? We're here to assist you.</p>
-                <div class="contact-buttons">
-                    <a href="tel:+17605500255" class="btn btn-primary btn-large">
-                        <span class="button-text">Call Us</span>
-                        <span class="contact-info">+1 (760) 550-0255</span>
-                    </a>
-                    <a href="mailto:sales@ondasoftware.com" class="btn btn-secondary btn-large">
-                        <span class="button-text">Email Us</span>
-                        <span class="contact-info">sales@ondasoftware.com</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+      <section class="home-cta" id="contact">
+    <div class="home-cta-inner">
+      <span class="cta-label reveal">Get Started</span>
+      <h2 class="reveal rd1">Leave the spreadsheets behind.</h2>
+      <p class="reveal rd2">Join seed companies using SeedSense to run faster, more accurate trials—starting today.</p>
+      <div class="cta-btn-group reveal rd3">
+        <a href="tel:+17605500255" class="cta-btn cta-btn-green">
+          <span>Call Us</span>
+          <span class="cta-sub">+1 (760) 550-0255</span>
+        </a>
+        <a href="mailto:sales@ondasoftware.com" class="cta-btn cta-btn-ghost">
+          <span>Email Us</span>
+          <span class="cta-sub">sales@ondasoftware.com</span>
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <footer class="site-footer">
-        <div class="container footer-content">
-            <div class="footer-left">
-                <a href="https://ondasoftware.com" class="footer-logo">
-                    <img src="assets/images/sslogo.png" alt="SeedSense Logo" />
-                </a>
-                <p>&copy; <span id="year"></span> <a href="https://ondasoftware.com">Onda Software. All rights reserved.</a></p>
-                <p>
-                    <a href="https://ondasoftware.com/seedsensepolicy" style="text-decoration: none; color: inherit;">Privacy Policy | Terms Of Service</a>
-                </p>
-            </div>
-            <div class="footer-right">
-                <div class="button-container">
-                    <a href="about.html" class="btn btn-primary">Who We Are</a>
-                    <p></p>
-                    <a href="all-blogs.html" class="btn btn-secondary">Explore Our Blogs</a>
-                    <p></p>
-                </div>
-                <p>Learn more about how SeedSense is transforming seed trials for companies around the world.</p>
-            </div>
+      <footer class="site-footer">
+    <div class="footer-main">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html">
+            <img src="assets/images/sslogo.png" alt="SeedSense Logo" class="footer-brand-logo" />
+          </a>
+          <p class="footer-tagline">The seed trial platform built for modern agribusiness.</p>
+          <a href="#contact" class="btn btn-primary footer-cta">Request a Demo</a>
         </div>
-    </footer>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="benefits.html">Why SeedSense?</a></li>
+            <li><a href="about.html">Who We Are</a></li>
+            <li><a href="all-blogs.html">Blogs</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Get in Touch</h4>
+          <a href="tel:+17605500255" class="footer-contact-link">
+            +1 (760) 550-0255
+          </a>
+          <a href="mailto:sales@ondasoftware.com" class="footer-contact-link">
+            sales@ondasoftware.com
+          </a>
+          <a href="https://app.seedsensesoftware.com/" class="footer-contact-link">
+            Login to SeedSense
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© <span id="year"></span> <a href="https://ondasoftware.com">Onda Software</a>. All rights reserved.</p>
+        <a href="https://ondasoftware.com/seedsensepolicy">Privacy Policy | Terms Of Service</a>
+      </div>
+    </div>
+  </footer>
 
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
+
+  <script>
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in-view'); });
+    }, { threshold: 0.1, rootMargin: '0px 0px -48px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+  </script>
 </body>
 </html>

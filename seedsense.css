@@ -2060,3 +2060,136 @@ h2 {
     padding: 2.5rem 0 2rem;
   }
 }
+/* ---- HOME CTA / CONTACT SECTION (shared across all pages) ---- */
+.home-cta {
+  background: #0a1a10;
+  padding: 9rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-cta::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 650px;
+  height: 650px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(102,187,106,0.065) 0%, transparent 68%);
+  pointer-events: none;
+}
+
+.home-cta-inner {
+  max-width: 660px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.cta-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #66bb6a;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.home-cta h2 {
+  font-family: 'Fraunces', Georgia, serif !important;
+  font-size: clamp(2.2rem, 5vw, 4rem) !important;
+  font-weight: 600 !important;
+  color: #fff !important;
+  line-height: 1.1 !important;
+  margin: 0 0 1.5rem !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.home-cta p {
+  font-size: 1.08rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.72;
+  margin-bottom: 3rem;
+}
+
+.cta-btn-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-btn {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 2.25rem;
+  border-radius: 14px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  min-width: 158px;
+  transition: all 0.3s cubic-bezier(0.22,1,0.36,1);
+}
+
+.cta-btn-green {
+  background: var(--primary-color, #2d5a3d);
+  color: #fff !important;
+}
+
+.cta-btn-green:hover {
+  background: #1e472d;
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(40,89,59,0.38);
+}
+
+.cta-btn-ghost {
+  background: rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.82) !important;
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.cta-btn-ghost:hover {
+  background: rgba(255,255,255,0.1);
+  transform: translateY(-3px);
+}
+
+.cta-btn .cta-sub {
+  font-size: 0.76rem;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  margin-top: 0;
+  color: rgba(255,255,255,0.6);
+  font-weight: 400;
+}
+
+.cta-btn:hover .cta-sub {
+  opacity: 1;
+  max-height: 1.5rem;
+  margin-top: 0.3rem;
+}
+
+/* ---- SCROLL REVEAL (shared) ---- */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s cubic-bezier(0.22,1,0.36,1),
+              transform 0.75s cubic-bezier(0.22,1,0.36,1);
+}
+.reveal.in-view { opacity: 1; transform: translateY(0); }
+.rd1 { transition-delay: 0.1s; }
+.rd2 { transition-delay: 0.2s; }
+.rd3 { transition-delay: 0.3s; }
+
+@media (max-width: 620px) {
+  .home-cta { padding: 5.5rem 1.5rem; }
+  .cta-btn-group { flex-direction: column; align-items: center; }
+  .cta-btn { width: 100%; max-width: 300px; }
+}
