@@ -7,19 +7,264 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-HVG3W650FB');
   </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Explore how SeedSense benefits your team and improves trial management efficiency." />
-  <title>What We Do For You - SeedSense</title>
-  <link rel="stylesheet" href="seedsense.css" />
+  <title>Why SeedSense? - SeedSense</title>
   <link rel="icon" type="image/png" href="assets/images/sslogo.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="seedsense.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300;1,9..144,600&display=swap" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', sans-serif; background: #fff; overflow-x: hidden; }
+
+    /* ---- PAGE HERO ---- */
+    .page-hero {
+      min-height: 55vh;
+      background: #f0f8f3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 8rem 2rem 5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .page-hero::after {
+      content: '';
+      position: absolute;
+      top: 35%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 700px; height: 700px;
+      background: radial-gradient(ellipse, rgba(40,89,59,0.07) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .page-hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 720px;
+    }
+
+    .page-eyebrow {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--primary-color);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+    }
+
+    .page-eyebrow::before,
+    .page-eyebrow::after {
+      content: '';
+      display: inline-block;
+      width: 1.75rem; height: 1px;
+      background: rgba(40,89,59,0.4);
+    }
+
+    .page-hero h1 {
+      font-family: 'Fraunces', Georgia, serif !important;
+      font-size: clamp(3rem, 7vw, 5.5rem) !important;
+      font-weight: 600 !important;
+      color: #1a2e22 !important;
+      line-height: 1.05 !important;
+      letter-spacing: -0.02em;
+      margin: 0 0 1.5rem !important;
+      border: none !important;
+      padding: 0 !important;
+    }
+
+    .page-hero p {
+      font-size: clamp(1rem, 2vw, 1.18rem);
+      color: #607060;
+      line-height: 1.75;
+      max-width: 520px;
+      margin: 0 auto;
+      font-weight: 300;
+    }
+
+    /* ---- BENEFITS SECTION ---- */
+    .benefits-intro {
+      padding: 6rem 2rem 2rem;
+      text-align: center;
+    }
+
+    .section-eyebrow {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--primary-color);
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    .benefits-intro h2 {
+      font-family: 'Fraunces', Georgia, serif !important;
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem) !important;
+      font-weight: 600 !important;
+      color: #1a2e22 !important;
+      margin: 0 0 1rem !important;
+      border: none !important;
+      padding: 0 !important;
+    }
+
+    .benefits-intro p {
+      font-size: 1.04rem;
+      color: #607060;
+      max-width: 520px;
+      margin: 0 auto;
+      line-height: 1.72;
+    }
+
+    .benefits-wrap {
+      padding: 0 2rem 8rem;
+      background: #fff;
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: rgba(163,201,168,0.25);
+      max-width: 1100px;
+      margin: 4rem auto 0;
+      border: 1px solid rgba(163,201,168,0.3);
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .benefit-item {
+      background: #fff;
+      padding: 2.75rem 2.25rem;
+      transition: background 0.25s ease;
+    }
+
+    .benefit-item:hover { background: #f9fdf9; }
+
+    .benefit-icon {
+      width: 42px; height: 42px;
+      background: rgba(40,89,59,0.08);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .benefit-icon i { font-size: 1rem; color: var(--primary-color); }
+
+    .benefit-item h3 {
+      font-family: 'Fraunces', Georgia, serif !important;
+      font-size: 1.22rem !important;
+      font-weight: 600 !important;
+      color: #1a2e22 !important;
+      margin: 0 0 0.75rem !important;
+      border: none !important;
+      padding: 0 !important;
+    }
+
+    .benefit-item p {
+      font-size: 0.95rem;
+      color: #607060;
+      line-height: 1.72;
+      margin: 0 0 1.25rem;
+    }
+
+    .benefit-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      border-top: 1px solid rgba(163,201,168,0.35);
+      padding-top: 1rem;
+    }
+
+    .benefit-list li {
+      font-size: 0.875rem;
+      color: #4a5e4a;
+      padding: 0.45rem 0;
+      display: flex; align-items: center; gap: 0.65rem;
+    }
+
+    .benefit-list li::before {
+      content: '';
+      display: inline-block;
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: var(--accent-color, #66bb6a);
+      flex-shrink: 0;
+    }
+
+    /* Featured card — full-width row below the grid */
+    .benefit-item-featured {
+      display: flex;
+      gap: 2.5rem;
+      align-items: flex-start;
+      background: #fff;
+      border: 1px solid rgba(163,201,168,0.3);
+      border-radius: 20px;
+      padding: 2.75rem 2.25rem;
+      max-width: 1100px;
+      margin: 1px auto 0;
+      transition: background 0.25s ease;
+    }
+
+    .benefit-item-featured:hover { background: #f9fdf9; }
+
+    .benefit-item-featured .benefit-icon { flex-shrink: 0; }
+
+    .benefit-item-featured .benefit-body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 3rem;
+      flex: 1;
+    }
+
+    .benefit-item-featured h3 {
+      font-family: 'Fraunces', Georgia, serif !important;
+      font-size: 1.22rem !important;
+      font-weight: 600 !important;
+      color: #1a2e22 !important;
+      margin: 0 0 0.75rem !important;
+      border: none !important;
+      padding: 0 !important;
+      grid-column: 1 / -1;
+    }
+
+    .benefit-item-featured p {
+      font-size: 0.95rem;
+      color: #607060;
+      line-height: 1.72;
+      margin: 0;
+    }
+
+    .benefit-item-featured .benefit-list {
+      border-top: none;
+      padding-top: 0;
+      align-self: start;
+    }
+
+    @media (max-width: 900px) {
+      .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+      .benefit-item-featured .benefit-body { grid-template-columns: 1fr; }
+      .benefit-item-featured { flex-direction: column; }
+    }
+
+    @media (max-width: 560px) {
+      .benefits-grid { grid-template-columns: 1fr; }
+      .page-hero { min-height: 50vh; padding: 6rem 1.5rem 4rem; }
+    }
+  </style>
 </head>
 <body>
+
   <header class="site-header">
     <div class="container nav-container">
       <div class="logo">
@@ -42,89 +287,105 @@
     </div>
   </header>
 
-  <section class="hero-section" id="benefits">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <h1>What We Do For You</h1>
-        <p>See how SeedSense makes trial management easier and more impactful for your business.</p>
-      </div>
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <div class="page-eyebrow">Why SeedSense</div>
+      <h1>Built for the way<br>you work the field.</h1>
+      <p>From centralized data to real-time collaboration, SeedSense gives your team every advantage — in the office and out in the field.</p>
     </div>
   </section>
 
-  <section id="benefits" class="benefits-section">
-    <div class="container">
-      <div class="benefit-card">
-        <h2>Centralized Trial Data</h2>
-        <p>Stop relying on disconnected tools like spreadsheets and outdated software. With SeedSense, all your trial data is stored in one easy-to-access platform.</p>
-        <ul>
-          <li>Eliminate errors caused by manual data entry.</li>
-          <li>Ensure consistent and reliable data for every trial.</li>
-          <li>Free up your team's time to focus on results.</li>
+  <!-- BENEFITS GRID -->
+  <div class="benefits-wrap">
+    <div class="benefits-intro">
+      <span class="section-eyebrow">The Advantage</span>
+      <h2>Everything your trials need.<br>Nothing they don't.</h2>
+      <p>Seven core capabilities that save time, reduce errors, and help your team make better decisions, faster.</p>
+    </div>
+
+    <div class="benefits-grid reveal">
+      <div class="benefit-item">
+        <div class="benefit-icon"><i class="fas fa-database"></i></div>
+        <h3>Centralized Trial Data</h3>
+        <p>Stop relying on disconnected tools like spreadsheets. All your trial data lives in one easy-to-access platform.</p>
+        <ul class="benefit-list">
+          <li>Eliminate errors from manual data entry</li>
+          <li>Consistent, reliable data for every trial</li>
+          <li>Free your team to focus on results</li>
         </ul>
       </div>
 
-      <div class="benefit-card">
-        <h2>Streamlined Task Management</h2>
-        <p>Keep your team organized and on track while giving managers full visibility into the progress of every trial.</p>
-        <ul>
-          <li>Assign tasks and track their completion in real time.</li>
-          <li>Stay ahead with alerts for overdue tasks.</li>
-          <li>Ensure accountability with a clear activity log.</li>
+      <div class="benefit-item">
+        <div class="benefit-icon"><i class="fas fa-tasks"></i></div>
+        <h3>Streamlined Task Management</h3>
+        <p>Keep your team organized and give managers full visibility into the progress of every trial.</p>
+        <ul class="benefit-list">
+          <li>Assign and track tasks in real time</li>
+          <li>Stay ahead with overdue alerts</li>
+          <li>Clear activity log for accountability</li>
         </ul>
       </div>
 
-      <div class="benefit-card">
-        <h2>Real-Time Data Access</h2>
-        <p>Make informed decisions faster by giving your team immediate access to trial data as soon as it's available.</p>
-        <ul>
-          <li>Access your data from anywhere, on any device.</li>
-          <li>Keep everyone updated with the latest information.</li>
-          <li>Respond quickly to changes and challenges.</li>
+      <div class="benefit-item">
+        <div class="benefit-icon"><i class="fas fa-bolt"></i></div>
+        <h3>Real-Time Data Access</h3>
+        <p>Make faster decisions by giving your team immediate access to trial data as soon as it's available.</p>
+        <ul class="benefit-list">
+          <li>Access from anywhere, any device</li>
+          <li>Everyone sees the latest information</li>
+          <li>Respond quickly to changes</li>
         </ul>
       </div>
 
-      <div class="benefit-card">
-        <h2>Effortless Data Sharing</h2>
-        <p>Share trial results with farmers, suppliers, and other stakeholders quickly and securely.</p>
-        <ul>
-          <li>Export data in formats tailored to your needs.</li>
-          <li>Set permissions to ensure data privacy.</li>
-          <li>Improve collaboration across teams and partners.</li>
+      <div class="benefit-item">
+        <div class="benefit-icon"><i class="fas fa-share-alt"></i></div>
+        <h3>Effortless Data Sharing</h3>
+        <p>Share trial results with farmers, suppliers, and stakeholders quickly and securely.</p>
+        <ul class="benefit-list">
+          <li>Export in formats tailored to your needs</li>
+          <li>Set permissions to protect data privacy</li>
+          <li>Better collaboration across teams</li>
         </ul>
       </div>
 
-      <div class="benefit-card">
-        <h2>Better Decision-Making</h2>
+      <div class="benefit-item">
+        <div class="benefit-icon"><i class="fas fa-chart-line"></i></div>
+        <h3>Better Decision-Making</h3>
         <p>Make smarter business decisions with insights generated from comprehensive trial data.</p>
-        <ul>
-          <li>Identify trends and patterns with analytics tools.</li>
-          <li>Plan ahead with detailed reports.</li>
-          <li>Empower your team to act confidently.</li>
+        <ul class="benefit-list">
+          <li>Identify trends with analytics tools</li>
+          <li>Plan ahead with detailed reports</li>
+          <li>Empower your team to act confidently</li>
         </ul>
       </div>
 
-      <div class="benefit-card">
-        <h2>Improved Efficiency</h2>
-        <p>Reduce time spent on administrative tasks and focus on what matters most—your trials and results.</p>
-        <ul>
-          <li>Automate repetitive tasks to save time.</li>
-          <li>Simplify workflows with user-friendly tools.</li>
-          <li>Boost productivity across your organization.</li>
+      <div class="benefit-item">
+        <div class="benefit-icon"><i class="fas fa-rocket"></i></div>
+        <h3>Improved Efficiency</h3>
+        <p>Reduce time spent on admin tasks and focus on what matters most — your trials and results.</p>
+        <ul class="benefit-list">
+          <li>Automate repetitive tasks</li>
+          <li>Simplified, user-friendly workflows</li>
+          <li>Boost productivity organization-wide</li>
         </ul>
       </div>
 
-      <div class="benefit-card">
-        <h2>Stronger Collaboration</h2>
+    </div>
+
+    <div class="benefit-item-featured reveal">
+      <div class="benefit-icon"><i class="fas fa-users"></i></div>
+      <div class="benefit-body">
+        <h3>Stronger Collaboration</h3>
         <p>Ensure everyone is on the same page with synchronized data and intuitive communication tools.</p>
-        <ul>
-          <li>Seamlessly integrate with existing software systems.</li>
-          <li>Facilitate real-time communication across teams.</li>
-          <li>Create a unified approach to achieving goals.</li>
+        <ul class="benefit-list">
+          <li>Integrates with existing systems</li>
+          <li>Real-time communication across teams</li>
+          <li>Unified approach to achieving goals</li>
         </ul>
       </div>
     </div>
-  </section>
-
+  </div>
 
   <!-- CONTACT / DEMO SECTION -->
   <section class="home-cta" id="contact">
@@ -146,7 +407,7 @@
   </section>
 
   <!-- FOOTER -->
-    <footer class="site-footer">
+  <footer class="site-footer">
     <div class="footer-main">
       <div class="container footer-grid">
         <div class="footer-brand">
@@ -186,10 +447,10 @@
       </div>
     </div>
   </footer>
+
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-
   <script>
     const revealObs = new IntersectionObserver((entries) => {
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in-view'); });
