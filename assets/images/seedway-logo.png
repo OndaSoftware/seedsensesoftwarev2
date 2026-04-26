@@ -1,0 +1,1872 @@
+<!doctype html>
+<html lang="en-US" class="front ">
+
+
+<head>
+  <!--BE Head: Start-->
+  
+<!-- be_ixf, sdk, gho-->
+<meta name="be:sdk" content="php_sdk_1.5.1" />
+<meta name="be:timer" content="47ms" />
+<meta name="be:orig_url" content="https%3A%2F%2Fwww.seedway.com%2Fwp-content%2Fthemes%2Fseedway%2Fimages%2Fseedway-logo.png" />
+<meta name="be:norm_url" content="https%3A%2F%2Fwww.seedway.com%2Fwp-content%2Fthemes%2Fseedway%2Fimages%2Fseedway-logo.png" />
+<meta name="be:capsule_url" content="https%3A%2F%2Fixfd-api.bc0a.com%2Fapi%2Fixf%2F1.0.0%2Fget_capsule%2Ff00000000218560%2F152649308" />
+<meta name="be:api_dt" content="Zy_2023;Zm_06;Zd_08;Zh_13;Zmh_44;p_epoch:1686231879941" />
+<meta name="be:mod_dt" content="Zy_2023;Zm_06;Zd_08;Zh_13;Zmh_44;p_epoch:1686231879941" />
+<meta name="be:diag" content="O4FJGi8eiL49o7rZKoblQ1KXFavQE3g9AgXVdRVi0JLjxo1J47CK+fylaMcgk5yV8V1gINIC0HUhafhlFfpphTaNfTrYWkVtlZVTJ3+HLtue3XgRe9JDn/pcFPSdXnbfvm9NvW8JbJUnFqQwhIVFmgO7vm1ZhlTVe9p/JTN13bVM0iDT2WBT0RiYR/pOqR1qSTI+gP3Fg9/PFs1Izg7KjlVP3kuPSNOAFSUYjhsCoPnPxJdr3+uhnkiqpExDkm99AgACQ5K1Bpaw36NJxYh/yTUMQ3V9Wi/Cslnv7XCJUQDHM7G87YgAV9Qb5xNVbSMd4Iy1SPZc0gfHgR+Y1cAq3hZoltSBeqLszyQj8EViDbmYn04EXGf9BEN6o+6YVECJiu0+5BTWhos+fyxWBmvQsq7r5aGlIDufSx3oXMwLlgASx91JAUu1tRbxyb4m8wm9khHByY8ZJoKEa1f+Rcoufjw5aLV2ZwLv0BS3ICsy1+T3+P5hoj0LlPFLvSz+sC/N4xYLrOrJHL4Yags2Kaz4hrsPgxiPlecRErBwPtYH0q1p71J0/PbygYJvfZo1hP9XgtxzUJPGrunBAPhMsE7ZGdmynsuOdShHcEYHpewUBbNS6xI9xsmzee48ObzOfi7f0W+1s0vQNWxD1Bplf8MwjVT9RVmhskFlYX6TnBaRcYM0Bm4IAhcBmHbQF3cbcLd0sNmfwFh3ppzir3O6dMXGc07EefONiaJN7pOcjpCUbHsOa8F+yzj53ZdgAoKVz68FTcwQkuIIw47+GFj6r+Ca2ZZqHnZK9pD02RCa13ZpT60Vut+24HRR4W69CgsNAB2nZTVf/8UMRCjkPYBjQl7L1hDK98xn2C/Jv+fhK3xRrxJS5Yif2SkAeKRqcX9CG7MiHB5WR3rD31cVqlhuHtGzpsHU7MjY8nPTxJ3yCwwlxmI01FuXCzbuK/JILmJ2YOByvRsLp7RqkXObRVAOLbWzhj2S2ebKNFteDxVEdBY6T/XWgMNngMNvzOlfGu8vxgpLKljThhSKsKU5PZoNpxWDjAAZtD0yp0w/36BPwhsuQxDxylD6nNQPUJKYLJGb5fx42OC1UwnoRENM/weJUHULg6CvF42zmUxCLbmeNctHee50XiIssjvZipLkyALCiGKVRyn0WTYKU/PtZcccEXLZaCIRyddKBfeo0CfElmtHiE3in9xhItUO30+eEB1I4N3QsxD+96T2f07uFRQ5cNm6nP1Ep4G2BcwDPTx/kCdjksOR+Oi7pOUG2dEx1PotYdk8/mVmhM3L2L20/XZ0asviA0abMWD80s5TXUQFEryIJlMCuwaztvkzz44ersXLc35stD088/vGbE3MzygWfkDYCjLiQ+/86WFpR7FcCj2ss7bSGkpQgDNgt8/GTDtEBFMMk4h2qF9RRBWyyYBkIeoDZBf4cnAe0r7R8INwvkt1kGX9qW/XeeXEb7tbaUcr5DG6aO2hmkj7AOcaDt4L5n5yv1WrSE5tqWjlRP6Om7YAtbGdw5WZ8W28EvipA5HVY+A7BjPOAHL7ZPDn7ZEOw9DBydyPmolSpb/nZmtLYE/TGvrd/1YvLFmcedCcqqbOn+MDYv+D+4YL0uMhK3C++QNExcwi//T24+BGZYHvb+MbnAIPFSH3ZnE+obvIJ8xcfk0DV1KCJZkm5AJ7uFfvUConJZF8K60L5V4inCb8K0Rz46E4hhQ+A6had6HbQ2OdaCYCuRC+D4zAjNWiXCIbJjHLLJKYTgOz1bfCH1qPb/2Bek1i6hXdwG3uLhPMQqTSCJfLbstcYJ172RwyKSXvotdlZBRQxWkDvfs1PNhaIAiNUoE6fnNxynBJitMbY0tPkHi/cVZtZ/Wo/YwjG+8WPRY5U4vaKl31nIjRPJka7fgJ3QnD5me0K8y74uPtj5ccMb8W7L2Bj/dmLBKOR0GamHf2lZuVMc6PMjzffI1bwgD3Mib2BDvbpRWTK+yFq2/UYSfknS0dv49P8l2oT1tTOlNww4lbdEA+GDKgNNYC3KIahoUXktRpUfHiw2YSrw7weQLAw0BoY3d53k4vbsYgLrXQ2ltzHmsq25/7ZX1+sn3YaVUOtgbABnKJm7ECOeOdaHYcbBVUgidwfWP2UxD5Ui8Xn1uzlP22sXs3pc5O2L9XRJvN14N7y3j6/dooD6Cj/idtOzBaepbLtw730yVmrLK6Q4lobyO2nzyl2Sx7cID2un/axdsoFg2+6VGi7nQodIgD3o7VjtO9aRh0WGCd7Dp6B40JJdJVObJD47uIzDPd6Dvs3RqDRH7Yc42anX7EK9Ga3G6m6KYvn/l+tMmoHZH1SzECtZuRanrDbaWgrjDtKS7ifHyIX1LZql3gsNz+IdoiGXNbF2lkhkxBMQ/x2yhwr6YdE8xqiJjXgv4FQiLVz2CrEfdCiLW1zC7fh7spjZuAHokKM9PoEn7OL48VgFtTVEzkwCgfVE+0++jvekf1kVSsp1Q5f89YdOpKGmD4v2VWXS2+e0nKIiy9773+TtdA4uZVPH3pzldBIwKXFa3EkI0=" />
+<meta name="be:messages" content="false" />
+<script type='text/javascript'>
+if (window.BEJSSDKObserver === undefined) {
+  (function(BEJSSDKObserver, $, undefined) {
+    var observer = void 0;
+    var listeners = [];
+    var readySet = [];
+    var doc = window.document;
+    var MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
+
+    function checkSelector(selector, fn, indexList) {
+      var elements = doc.querySelectorAll(selector);
+  /**
+    issues on IE @see https://www.codesd.com/item/javascript-es6-not-a-function-error.html
+    elements = Array.from(elements);
+
+    */
+    for (var i = 0, len = elements.length; i < len; i++) {
+      /* -1 means all instances */
+      if (indexList != -1 && !(i in indexList)) {
+        continue;
+      }
+      var element = elements[i];
+      for (var j = 0; j < readySet.length; j++) {
+        if (readySet[j] == element.className || readySet[j] == element.id) {
+          return;
+        }
+      }
+      if (element.className) {
+        readySet.push(element.className);
+      }
+      if (element.id) {
+        readySet.push(element.id);
+      }
+
+      if (!element.ready || MutationObserver==null) {
+        element.ready = true;
+        fn.call(element, element);
+      }
+    }
+  }
+
+  function checkListeners() {
+    listeners.forEach(function (listener) {
+      return checkSelector(listener.selector, listener.fn, listener.indexList);
+    });
+  }
+
+  function removeListener(selector, fn) {
+    var i = listeners.length;
+    while (i--) {
+      var listener = listeners[i];
+      if (listener.selector === selector && listener.fn === fn) {
+        listeners.splice(i, 1);
+        if (!listeners.length && observer) {
+          observer.disconnect();
+          observer = null;
+        }
+      }
+    }
+  }
+
+/**
+ * Fire event on first js selector
+ * @param selector string to watch on
+ * @param fn       callback function
+ * @param index_list can be undefined which means only first one
+ *                   or -1 which means all
+ *                   or a list of allowable indexes
+ */
+ BEJSSDKObserver.jsElementReady = function(selector, fn, index_list) {
+  if (index_list === undefined) {
+    index_list = [];
+    index_list.push(0);
+  }
+
+  if (MutationObserver != null) {
+    if (!observer) {
+      observer = new MutationObserver(checkListeners);
+      observer.observe(doc.documentElement, {
+        childList: true,
+        subtree: true
+      });
+    }
+    listeners.push({ selector: selector, fn: fn, indexList: index_list });
+  } else {
+    /* <= IE8 */
+    if (!document.addEventListener) {
+      /* log("<=IE8 attachEvent assignment"); */
+      document.addEventListener = document.attachEvent;
+    }
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var elements = doc.querySelectorAll(selector);
+      for (var i = 0, len = elements.length; i < len; i++) {
+        /* -1 means all instances */
+        if (index_list != -1 && !(i in index_list)) {
+          continue;
+        }
+        var element = elements[i];
+        element.ready = true;
+        fn.call(element, element);
+      }
+    });
+  }
+
+  checkSelector(selector, fn, index_list);
+  return function () {
+    return removeListener(selector, fn);
+  };
+};
+}(window.BEJSSDKObserver = window.BEJSSDKObserver || {}));
+}
+var jsElementReady = window.BEJSSDKObserver.jsElementReady;
+
+if (window.BELinkBlockGenerator === undefined) {
+  (function(BELinkBlockGenerator, $, undefined) {
+    BELinkBlockGenerator.MAXIMUM_HEADLINE_LENGTH = 100;
+    BELinkBlockGenerator.MAXIMUM_DESC_LENGTH = 200;
+
+    BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_URL_TYPE = 0;
+    BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_HEADLINE_TYPE = 1;
+    BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_DESCRIPTION_TYPE = 2;
+    BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_IMAGE_TYPE = 3;
+
+    BELinkBlockGenerator.REPLACEMENT_STRATEGY_OVERWRITE = 0;
+    BELinkBlockGenerator.REPLACEMENT_STRATEGY_POST_APPEND_ELEMENT = 1;
+    BELinkBlockGenerator.REPLACEMENT_STRATEGY_PRE_APPEND_ELEMENT = 2;
+    BELinkBlockGenerator.REPLACEMENT_STRATEGY_PRE_APPEND_PARENT = 3;
+
+    BELinkBlockGenerator.setMaximumHeadlineLength = function(length) {
+      BELinkBlockGenerator.MAXIMUM_HEADLINE_LENGTH = length;
+    };
+
+    BELinkBlockGenerator.setMaximumDescriptionLength = function(length) {
+      BELinkBlockGenerator.MAXIMUM_DESC_LENGTH = length;
+    };
+
+    BELinkBlockGenerator.generateIndividualLinks = function(parentElement, linkStructure, link) {
+      var link_level_element_tag = linkStructure[0];
+      var link_level_element = document.createElement(link_level_element_tag);
+      var link_attribute_dictionary = linkStructure[1];
+      var allowable_elements = linkStructure[2];
+      var children_link_structures = linkStructure[3];
+      for (var link_attribute_key in link_attribute_dictionary) {
+        link_level_element.setAttribute(link_attribute_key, link_attribute_dictionary[link_attribute_key]);
+      }
+
+      var added_something = false;
+      if (allowable_elements.indexOf(BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_URL_TYPE)>=0) {
+        link_level_element.setAttribute('href', link.url);
+        added_something = true;
+      }
+      if (allowable_elements.indexOf(BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_HEADLINE_TYPE)>=0 && link.h1) {
+        var headline_text = link.h1;
+        if (headline_text.length > BELinkBlockGenerator.MAXIMUM_HEADLINE_LENGTH) {
+          headline_text = headline_text.substring(0, BELinkBlockGenerator.MAXIMUM_HEADLINE_LENGTH) + '...';
+        }
+        var text_node = document.createTextNode(headline_text);
+        link_level_element.appendChild(text_node);
+        added_something = true;
+      }
+      if (allowable_elements.indexOf(BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_DESCRIPTION_TYPE)>=0 && link.desc) {
+        var desc_text = link.desc;
+        if (desc_text.length > BELinkBlockGenerator.MAXIMUM_DESC_LENGTH) {
+          desc_text = desc_text.substring(0, BELinkBlockGenerator.MAXIMUM_DESC_LENGTH) + '...';
+        }
+        var text_node = document.createTextNode(desc_text);
+        link_level_element.appendChild(text_node);
+        added_something = true;
+      }
+      if (allowable_elements.indexOf(BELinkBlockGenerator.IND_LINK_BLOCK_TYPE_IMAGE_TYPE)>=0 && link.image) {
+        link_level_element.setAttribute('src', link.image);
+        added_something = true;
+      }
+/**
+    don't emit for empty links, desc, headline, image
+    except for parent structures where allowable_length=0
+    */
+    if (!added_something && allowable_elements.length != 0) {
+
+      return;
+    }
+    /* go depth first */
+    for (var childrenIndex=0; childrenIndex<children_link_structures.length; childrenIndex++) {
+      var childLinkStructure = children_link_structures[childrenIndex];
+      BELinkBlockGenerator.generateIndividualLinks(link_level_element, childLinkStructure, link);
+    }
+    parentElement.appendChild(link_level_element);
+  };
+
+  BELinkBlockGenerator.insertLinkBlocks = function(targetElement, replacementStrategy, overallStructure, linkStructure, links,
+                                                   titleStructure) {
+    if (targetElement == null) {
+      return;
+    }
+
+    if (replacementStrategy == BELinkBlockGenerator.REPLACEMENT_STRATEGY_OVERWRITE) {
+      while (targetElement.firstChild) {
+        targetElement.removeChild(targetElement.firstChild);
+      }
+    }
+
+    var previousElement = targetElement;
+    for (var i=0;i<overallStructure.length;i++) {
+      var level_definition = overallStructure[i];
+      var level_element_tag = level_definition[0];
+      var level_element = document.createElement(level_element_tag);
+      var attribute_dictionary = level_definition[1];
+      for (var attribute_key in attribute_dictionary) {
+        level_element.setAttribute(attribute_key, attribute_dictionary[attribute_key]);
+      }
+
+      /* need to place title structure */
+      if (titleStructure && titleStructure[0] == i) {
+        var title_element_tag = titleStructure[1];
+        var title_element = document.createElement(title_element_tag);
+        var title_attribute_dictionary = titleStructure[2];
+        var title_text_content = titleStructure[3];
+        for (var title_attribute_key in title_attribute_dictionary) {
+          title_element.setAttribute(title_attribute_key, title_attribute_dictionary[title_attribute_key]);
+        }
+
+        var title_text_node = document.createTextNode(title_text_content);
+        title_element.appendChild(title_text_node);
+
+
+        level_element.appendChild(title_element);
+      }
+
+      /* last level place links */
+      if (i == overallStructure.length-1) {
+        for (var link_i=0; link_i < links.length; link_i++) {
+          var link = links[link_i];
+          for (var linkStructureIndex=0;linkStructureIndex < linkStructure.length; linkStructureIndex++) {
+            BELinkBlockGenerator.generateIndividualLinks(level_element, linkStructure[linkStructureIndex], link)
+          }
+        }
+      }
+
+      /* first level child we need to check placement */
+      if (previousElement == targetElement) {
+        if (replacementStrategy == BELinkBlockGenerator.REPLACEMENT_STRATEGY_PRE_APPEND_ELEMENT) {
+          /* 2 means insert right before */
+          previousElement.insertBefore(level_element, targetElement.firstChild);
+        } else if (replacementStrategy == BELinkBlockGenerator.REPLACEMENT_STRATEGY_PRE_APPEND_PARENT) {
+          /* 3 means insert right before at parent level */
+          var parentElement = previousElement.parentElement;
+          parentElement.insertBefore(level_element, previousElement);
+        } else {
+          previousElement.appendChild(level_element);
+        }
+      } else {
+        previousElement.appendChild(level_element);
+      }
+      previousElement = level_element;
+    }
+  };
+}(window.BELinkBlockGenerator = window.BELinkBlockGenerator || {}))
+};
+</script>
+
+<style>
+.be-ix-link-block{clear:both;}
+.be-ix-link-block .be-related-link-container{display:block;text-align:center;padding:10px 0 0 0}
+.be-ix-link-block .be-related-link-container .be-label{display: inline-block;padding-right:30px;}
+.be-ix-link-block .be-related-link-container .be-list{list-style:none;margin:0;padding:0}
+.be-ix-link-block .be-related-link-container .be-list .be-list-item{margin:0;padding:0}
+.be-ix-link-block .be-related-link-container .be-list .be-list-item a{text-decoration:none;}
+.be-ix-link-block .be-related-link-container .be-list .be-list-item a:hover{color:#ABACAD;}
+.be-ix-link-block .be-related-link-container .be-list{display:inline-block;width:auto}
+.be-ix-link-block .be-related-link-container .be-list .be-list-item{display:inline-block;margin-right:20px}
+.be-ix-link-block .be-related-link-container .be-list .be-list-item:last-child{margin-right:0}
+@media (max-width: 767px) {
+.be-ix-link-block .be-related-link-container{text-align: center; padding:10px 0;}
+.be-ix-link-block .be-related-link-container .be-label {width: 100%;}
+.be-ix-link-block .be-related-link-container .be-list {display: block;width: 100%;}
+.be-ix-link-block .be-related-link-container .be-list .be-list-item {display: block;margin-right: 0;}
+}
+</style>
+
+
+<script data-cfasync="false" id="marvel" data-customerid="f00000000218560" src="https://marvel-b2-cdn.bc0a.com/marvel.js"></script>
+
+
+<script type='text/javascript'>
+function updateBodyContent(bodyElement) {
+}
+
+try {
+   jsElementReady('head', updateBodyContent)
+} catch (err) {
+}
+
+</script>
+
+
+  <!--BE Head: End-->
+
+  <!-- Google Tag Manager -->
+  <script>
+  (function(w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+      'gtm.start': new Date().getTime(),
+      event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src =
+      'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-TXWTBBB');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GE7W016NVY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-GE7W016NVY');
+  </script>
+
+
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="https://use.typekit.net/ocm7fpq.css" as="script">
+  <title>Page not found | Seedway</title>
+
+<!-- The SEO Framework -->
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.seedway.com/#/schema/WebSite","url":"https://www.seedway.com/","name":"Seedway","description":"Innovative, Quality Seed Products and Services","inLanguage":"en-US","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.seedway.com/search/{search_term_string}/"},"query-input":"required name=search_term_string"},"publisher":{"@type":"Organization","@id":"https://www.seedway.com/#/schema/Organization","name":"Seedway","url":"https://www.seedway.com/","logo":{"@type":"ImageObject","url":"https://www.seedway.com/app/uploads/2019/04/cropped-favicon.png","contentUrl":"https://www.seedway.com/app/uploads/2019/04/cropped-favicon.png","width":512,"height":512}}},{"@type":"WebPage","name":"Page not found | Seedway","inLanguage":"en-US","isPartOf":{"@id":"https://www.seedway.com/#/schema/WebSite"},"breadcrumb":{"@type":"BreadcrumbList","@id":"https://www.seedway.com/#/schema/BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":"https://www.seedway.com/","name":"Seedway"},{"@type":"ListItem","position":2,"name":"Page not found"}]}}]}</script>
+<!-- / The SEO Framework | 5.73ms meta | 6.99ms boot -->
+
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+
+<!-- This site is optimized with the Schema Premium ver.1.2.7.2 - https://schema.press -->
+<!-- Schema Premium Plugin -->
+
+<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.seedway.com/wp/wp-includes/css/dist/block-library/style.min.css?ver=6.9.4' type='text/css' media='all' />
+
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<link rel='stylesheet' id='wc-blocks-style-css' href='https://www.seedway.com/app/plugins/woocommerce/assets/client/blocks/wc-blocks.css?ver=wc-10.6.1' type='text/css' media='all' />
+
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='sr7css-css' href='//www.seedway.com/app/plugins/revslider/public/css/sr7.css?ver=6.7.40' type='text/css' media='all' />
+<link rel='stylesheet' id='roots-share-buttons-css' href='https://www.seedway.com/app/plugins/roots-share-buttons-master/assets/styles/share-buttons.css?ver=6.9.4' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css' href='https://www.seedway.com/app/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=10.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css' href='https://www.seedway.com/app/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=10.6.1' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css' href='https://www.seedway.com/app/plugins/woocommerce/assets/css/woocommerce.css?ver=10.6.1' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+/*# sourceURL=woocommerce-inline-inline-css */
+</style>
+<link rel='stylesheet' id='gks-tc-buttons-css' href='https://www.seedway.com/app/plugins/yoo-slider-premium/css/gks-tc-buttons.css?ver=6.9.4' type='text/css' media='all' />
+<link rel='stylesheet' id='gks-font-awesome-css' href='https://www.seedway.com/app/plugins/yoo-slider-premium/css/fontawesome/font-awesome.css?ver=6.9.4' type='text/css' media='all' />
+<link rel='stylesheet' id='gks-owl-carousel-css' href='https://www.seedway.com/app/plugins/yoo-slider-premium/css/viewer/owl-carousel/assets/owl.carousel.css?ver=6.9.4' type='text/css' media='all' />
+<link rel='stylesheet' id='gks-owl-layout-css' href='https://www.seedway.com/app/plugins/yoo-slider-premium/css/viewer/owl-carousel/layout.css?ver=6.9.4' type='text/css' media='all' />
+<link rel='stylesheet' id='gks-owl-animate-css' href='https://www.seedway.com/app/plugins/yoo-slider-premium/css/viewer/owl-carousel/animate.css?ver=6.9.4' type='text/css' media='all' />
+<link rel='stylesheet' id='gks-owl-animations-css' href='https://www.seedway.com/app/plugins/yoo-slider-premium/css/premium/gks-owl-animations.css?ver=6.9.4' type='text/css' media='all' />
+<link rel='stylesheet' id='gks-lightgallery-css' href='https://www.seedway.com/app/plugins/yoo-slider-premium/css/premium/lightgallery/css/lightgallery.css?ver=6.9.4' type='text/css' media='all' />
+<link rel='stylesheet' id='gks-lg-transitions-css' href='https://www.seedway.com/app/plugins/yoo-slider-premium/css/premium/lightgallery/css/lg-transitions.css?ver=6.9.4' type='text/css' media='all' />
+<link rel='stylesheet' id='gks-captions-css' href='https://www.seedway.com/app/plugins/yoo-slider-premium/css/premium/gks-captions.css?ver=6.9.4' type='text/css' media='all' />
+<link rel='stylesheet' id='gks-thumbnail-scroller-css' href='https://www.seedway.com/app/plugins/yoo-slider-premium/css/premium/thumbnail-scroller/scroller.css?ver=6.9.4' type='text/css' media='all' />
+<link rel='stylesheet' id='gks-lg-styles-css' href='https://www.seedway.com/app/plugins/yoo-slider-premium/css/premium/gks-lg-styles.css?ver=6.9.4' type='text/css' media='all' />
+<link rel='stylesheet' id='gks-main-front-css' href='https://www.seedway.com/app/plugins/yoo-slider-premium/css/gks-main-front.css?ver=6.9.4' type='text/css' media='all' />
+<style id='gks-custom-styles-17-inline-css' type='text/css'>
+
+    			#gks-slider-17 .owl-carousel {
+    				padding-left: 50px;
+    				padding-right: 50px;
+    			}
+          @media only screen and (max-width: 600px) {
+            #gks-slider-17 .owl-carousel {
+      				padding-left: 0px;
+      				padding-right: 0px;
+      			}
+          }
+          #gks-slider-17 .gks-slider-onslide-details { top: 0;padding: 10px; }#gks-slider-17 .owl-carousel .gks-slider-cell:hover .gks-slider-onslide-details {
+                    opacity: 1;
+                }#gks-slider-17 .gks-slider-cell-content-image {
+                        height: 450px;
+                      }#gks-slider-17 .owl-carousel .gks-slider-cell-content { background-color: rgba(238,238,238,0.65098039215686);padding: 0px; }#gks-slider-17 .owl-carousel .gks-slider-cell:hover .gks-slider-cell-content { background-color: rgba(224,224,224,0.74901960784314); }#gks-slider-17 .owl-carousel .gks-slide-border {  }#gks-slider-17 .owl-carousel .gks-slider-cell-content {
+                    
+                  }
+           #gks-slider-17 .owl-carousel .gks-slider-cell:hover .gks-slider-overlay {
+  	          background-color: rgba(0,0,0,0.65098039215686) !important;
+  	          opacity: 1;
+	            
+           }#gks-slider-17 .owl-carousel .gks-slider-cell .gks-slider-button-icon {
+                  color: #000000;
+                  background-color: rgba(255,255,255,0.65098039215686);
+              }
+              #gks-slider-17 .owl-carousel .gks-slider-cell .gks-slider-button-icon:hover {
+                  background-color: rgba(255,255,255,0.74901960784314);
+              }
+              #gks-slider-17 .owl-carousel .gks-slider-cell .gks-slide-txt-btn {
+                  color: #000 ;
+                  border-color: #000 ;
+                  text-decoration: none;
+                  margin-top: 10px;
+              }
+                #gks-slider-17 .gks-slider-image-wrapper {
+                    height: 450px;
+                }
+            
+      #gks-slider-17 .gks-slider-image,
+      #gks-slider-17 .gks-tile-img {
+        background-size: cover;
+        background-position: center;
+      }
+
+      #gks-slider-17 .gks-slider-overlay-caption {
+          background-color: rgba(0,0,0,0.65098039215686) !important;
+      }
+
+      
+
+      #gks-slider-17 .gks-slider-ctrl-prev,
+	    #gks-slider-17 .gks-slider-ctrl-next {top: calc(50% - 15px); transform: translateY(calc(-50% - 7px));
+            }
+        
+            #gks-slider-17 .owl-dots .owl-dot span {
+                margin: 5px 5px;
+                width: 12px;
+                height: 12px;
+            }
+            #gks-slider-17 .owl-dots .owl-dots {
+                line-height: 12px;
+            }
+		
+             #gks-slider-17 .owl-dots .owl-dot span {
+                -webkit-border-radius: 30px;
+                -moz-border-radius: 30px;
+                border-radius: 30px;
+            }
+            #gks-slider-17.gks-slider-layout .gks-slider-overlay-caption {
+                    left: 50%;
+                    bottom: 10px;
+                    transform: translateX(-50%);
+                
+                background-color: rgba(0,0,0,0.65098039215686);
+            }
+            #gks-slider-17 .gks-slider-title {
+                color: #ffffff;
+                font-size: 18px;
+                line-height: 20px;
+                text-align: center;
+                margin-top: 5px;
+                margin-bottom: 5px;
+        
+                font-weight: bold;
+            
+            }
+            #gks-slider-17 .gks-slider-desc,
+            #gks-slider-17 .gks-slider-details {
+                color: #ffffff;
+                font-size: 13px;
+                line-height: 15px;
+                text-align: center;
+        
+            font-weight: normal;
+        
+            }
+        
+              #gks-slider-17 .gks-slide-txt-btn {
+                  font-size: 13px !important;
+                  line-height: 15px !important;
+                  align-self: center;
+          
+              font-weight: normal;
+          } #gks-slider-17.gks-slider-mobile .gks-slider-overlay-caption {
+                    width: calc(100% - 20px);
+                } #gks-slider-17:not(.gks-slider-mobile) .gks-slider-overlay-caption {
+                    min-width: 60%;
+                }#gks-slider-17 .gks-slider-overlay-caption.gks-info-opened {
+                max-height: calc(100% - 20px);
+          }
+            #gks-slider-17 .gks-slider-ctrl-prev,
+            #gks-slider-17 .gks-slider-ctrl-next {
+        
+                margin-left: 0px;
+                margin-right: 0px;
+            
+                padding: 0px;
+            }
+            #gks-slider-17 .gks-slider-ctrl-prev .gks-fa,
+            #gks-slider-17 .gks-slider-ctrl-next .gks-fa {
+                color: #e2e2e2;
+                font-size: 60px;
+                width: 60px;
+                height: 60px;
+            }
+        
+            #gks-slider-17 .gks-slider-ctrl-prev:hover .gks-fa,
+            #gks-slider-17 .gks-slider-ctrl-next:hover .gks-fa,
+            #gks-slider-17 .gks-slider-ctrl-prev:active .gks-fa,
+            #gks-slider-17 .gks-slider-ctrl-next:active .gks-fa {
+                color: #ffffff;
+            }
+
+            #gks-slider-17.gks-slider-layout .owl-dots .owl-dot span,
+            #gks-slider-17.gks-slider-layout .owl-dots .owl-dot span {
+                background: #b1b0b0;
+            }
+
+            #gks-slider-17.gks-slider-layout .owl-dots .owl-dot.active span,
+            #gks-slider-17.gks-slider-layout .owl-dots .owl-dot:hover span {
+                background: #000000;
+            }
+
+        
+            #gks-slider-17.gks-slider-layout .owl-dots {
+               padding-top: 10px;
+            }
+            
+        
+                .fixed-size.fixed-size-17.lg-outer .lg-sub-html {
+          top: 0;
+          bottom: auto!important;
+          background: transparent!important;
+          width: 50%;
+        }
+        .fixed-size.fixed-size-17.lg-outer .lg-inner .lg-img-wrap {
+          padding: 40px 5px 10px 5px;
+        }
+      
+
+
+              .lg-backdrop.gks-popup-backdrop-17 {
+          background-color: #ffffff;
+        }
+      
+
+      
+/*# sourceURL=gks-custom-styles-17-inline-css */
+</style>
+<style id='gks-custom-styles-19-inline-css' type='text/css'>
+
+    			#gks-slider-19 .owl-carousel {
+    				padding-left: 50px;
+    				padding-right: 50px;
+    			}
+          @media only screen and (max-width: 600px) {
+            #gks-slider-19 .owl-carousel {
+      				padding-left: 0px;
+      				padding-right: 0px;
+      			}
+          }
+          #gks-slider-19 .gks-slider-onslide-details { padding: 10px; }#gks-slider-19 .owl-carousel .gks-slider-cell:hover .gks-slider-onslide-details {
+                    opacity: 1;
+                }#gks-slider-19 .gks-slider-cell-content-image {
+                        height: 200px;
+                      }#gks-slider-19 .owl-carousel .gks-slider-cell-content { background-color: rgba(238,238,238,0);padding: 0px; }#gks-slider-19 .owl-carousel .gks-slider-cell:hover .gks-slider-cell-content { background-color: rgba(224,224,224,0.74901960784314); }#gks-slider-19 .owl-carousel .gks-slide-border {  }#gks-slider-19 .owl-carousel .gks-slider-cell-content {
+                    
+                  }
+           #gks-slider-19 .owl-carousel .gks-slider-cell:hover .gks-slider-overlay {
+  	          background-color: rgba(0,0,0,0.30196078431373) !important;
+  	          opacity: 1;
+	            
+           }#gks-slider-19 .owl-carousel .gks-slider-cell .gks-slider-button { opacity:0; }#gks-slider-19 .owl-carousel .gks-slider-cell:hover .gks-slider-button { opacity:1; }#gks-slider-19 .owl-carousel .gks-slider-cell .gks-slider-button-icon {
+                  color: #dd3333;
+                  background-color: rgb(0,0,0);
+              }
+              #gks-slider-19 .owl-carousel .gks-slider-cell .gks-slider-button-icon:hover {
+                  background-color: rgba(255,255,255,0.74901960784314);
+              }
+              #gks-slider-19 .owl-carousel .gks-slider-cell .gks-slide-txt-btn {
+                  color: #000 ;
+                  border-color: #000 ;
+                  text-decoration: none;
+                  margin-top: 10px;
+              }
+                #gks-slider-19 .gks-slider-image-wrapper {
+                    height: 200px;
+                }
+            
+      #gks-slider-19 .gks-slider-image,
+      #gks-slider-19 .gks-tile-img {
+        background-size: cover;
+        background-position: center;
+      }
+
+      #gks-slider-19 .gks-slider-overlay-caption {
+          background-color: rgba(0,0,0,0.30196078431373) !important;
+      }
+
+      
+
+      #gks-slider-19 .gks-slider-ctrl-prev,
+	    #gks-slider-19 .gks-slider-ctrl-next {top: calc(50% - 15px); transform: translateY(calc(-50% - 7px));
+            }
+        
+              #gks-slider-19 .gks-slider-ctrl-prev,
+    	        #gks-slider-19 .gks-slider-ctrl-next {
+                opacity: 0;
+              }
+
+              #gks-slider-19.gks-slider-layout:hover .gks-slider-ctrl-prev,
+    	        #gks-slider-19.gks-slider-layout:hover .gks-slider-ctrl-next {
+                opacity: 1;
+              }
+          
+            #gks-slider-19 .owl-dots .owl-dot span {
+                margin: 5px 5px;
+                width: 12px;
+                height: 12px;
+            }
+            #gks-slider-19 .owl-dots .owl-dots {
+                line-height: 12px;
+            }
+		#gks-slider-19.gks-slider-layout .gks-slider-overlay-caption {
+                    right: 10px;
+                    top: 10px;
+                    margin-left: 10px;
+                
+                background-color: rgba(0,0,0,0.30196078431373);
+            }
+            #gks-slider-19 .gks-slider-title {
+                color: #898989;
+                font-size: 22px;
+                line-height: 24px;
+                text-align: center;
+                margin-top: 5px;
+                margin-bottom: 5px;
+        
+                font-weight: bold;
+            
+            }
+            #gks-slider-19 .gks-slider-desc,
+            #gks-slider-19 .gks-slider-details {
+                color: #8c8c8c;
+                font-size: 13px;
+                line-height: 15px;
+                text-align: center;
+        
+            font-weight: normal;
+        
+            }
+        
+              #gks-slider-19 .gks-slide-txt-btn {
+                  font-size: 13px !important;
+                  line-height: 15px !important;
+                  align-self: center;
+          
+              font-weight: normal;
+          } #gks-slider-19.gks-slider-mobile .gks-slider-overlay-caption {} #gks-slider-19:not(.gks-slider-mobile) .gks-slider-overlay-caption {
+                    max-width: 60%;
+                }#gks-slider-19 .gks-slider-overlay-caption.gks-info-opened {
+                max-height: calc(100% - 20px);
+          }
+            #gks-slider-19 .gks-slider-ctrl-prev,
+            #gks-slider-19 .gks-slider-ctrl-next {
+        
+                margin-left: 0px;
+                margin-right: 0px;
+            
+                padding: 0px;
+            }
+            #gks-slider-19 .gks-slider-ctrl-prev .gks-fa,
+            #gks-slider-19 .gks-slider-ctrl-next .gks-fa {
+                color: #dddddd;
+                font-size: 60px;
+                width: 60px;
+                height: 60px;
+            }
+        
+            #gks-slider-19 .gks-slider-ctrl-prev:hover .gks-fa,
+            #gks-slider-19 .gks-slider-ctrl-next:hover .gks-fa,
+            #gks-slider-19 .gks-slider-ctrl-prev:active .gks-fa,
+            #gks-slider-19 .gks-slider-ctrl-next:active .gks-fa {
+                color: #dd3333;
+            }
+
+            #gks-slider-19.gks-slider-layout .owl-dots .owl-dot span,
+            #gks-slider-19.gks-slider-layout .owl-dots .owl-dot span {
+                background: #dd3333;
+            }
+
+            #gks-slider-19.gks-slider-layout .owl-dots .owl-dot.active span,
+            #gks-slider-19.gks-slider-layout .owl-dots .owl-dot:hover span {
+                background: #636363;
+            }
+
+        
+            #gks-slider-19.gks-slider-layout .owl-dots {
+               padding-top: 10px;
+            }
+            
+                .gks-carousel	.gks-slider-slide-caption {
+                  justify-content: flex-start; /* flex-start | flex-end | center */
+                }
+              
+        
+                .fixed-size.fixed-size-19.lg-outer .lg-sub-html {
+          top: 0;
+          bottom: auto!important;
+          background: transparent!important;
+          width: 50%;
+        }
+        .fixed-size.fixed-size-19.lg-outer .lg-inner .lg-img-wrap {
+          padding: 40px 5px 10px 5px;
+        }
+      
+
+
+              .lg-backdrop.gks-popup-backdrop-19 {
+          background-color: #ffffff;
+        }
+      
+
+      
+/*# sourceURL=gks-custom-styles-19-inline-css */
+</style>
+<link rel='stylesheet' id='gks-default-google-fonts-20-css' href='https://fonts.googleapis.com/css?family=Abel%3Anormal%2Cbold%2Citalic&#038;ver=6.9.4' type='text/css' media='all' />
+<style id='gks-custom-styles-20-inline-css' type='text/css'>
+#gks-slider-20 .gks-slider-cell *:not(i) { font-family: Abel; }#gks-scroller-20 *:not(i) { font-family: Abel; }.gks-lg-popup-20 *:not(.lg-icon) { font-family: Abel; }
+    			#gks-slider-20 .owl-carousel {
+    				padding-left: 50px;
+    				padding-right: 50px;
+    			}
+          @media only screen and (max-width: 600px) {
+            #gks-slider-20 .owl-carousel {
+      				padding-left: 0px;
+      				padding-right: 0px;
+      			}
+          }
+          #gks-slider-20 .gks-slider-onslide-details { padding: 10px; }#gks-slider-20 .owl-carousel .gks-slider-cell:hover .gks-slider-onslide-details {
+                    opacity: 1;
+                }#gks-slider-20 .gks-slider-cell-content-image {
+                        height: 200px;
+                      }#gks-slider-20 .owl-carousel .gks-slider-cell-content { background-color: rgba(238,238,238,0);padding: 0px; }#gks-slider-20 .owl-carousel .gks-slider-cell:hover .gks-slider-cell-content { background-color: rgba(224,224,224,0.74901960784314); }#gks-slider-20 .owl-carousel .gks-slide-border {  }#gks-slider-20 .owl-carousel .gks-slider-cell-content {
+                    
+                  }
+           #gks-slider-20 .owl-carousel .gks-slider-cell:hover .gks-slider-overlay {
+  	          background-color: rgba(0,0,0,0.30196078431373) !important;
+  	          opacity: 1;
+	            
+           }#gks-slider-20 .owl-carousel .gks-slider-cell .gks-slider-button { opacity:0; }#gks-slider-20 .owl-carousel .gks-slider-cell:hover .gks-slider-button { opacity:1; }#gks-slider-20 .owl-carousel .gks-slider-cell .gks-slider-button-icon {
+                  color: #dd3333;
+                  background-color: rgb(0,0,0);
+              }
+              #gks-slider-20 .owl-carousel .gks-slider-cell .gks-slider-button-icon:hover {
+                  background-color: rgba(255,255,255,0.74901960784314);
+              }
+              #gks-slider-20 .owl-carousel .gks-slider-cell .gks-slide-txt-btn {
+                  color: #000 ;
+                  border-color: #000 ;
+                  text-decoration: none;
+                  margin-top: 10px;
+              }
+                #gks-slider-20 .gks-slider-image-wrapper {
+                    height: 200px;
+                }
+            
+      #gks-slider-20 .gks-slider-image,
+      #gks-slider-20 .gks-tile-img {
+        background-size: cover;
+        background-position: center;
+      }
+
+      #gks-slider-20 .gks-slider-overlay-caption {
+          background-color: rgba(0,0,0,0.30196078431373) !important;
+      }
+
+      
+
+      #gks-slider-20 .gks-slider-ctrl-prev,
+	    #gks-slider-20 .gks-slider-ctrl-next {top: calc(50% - 15px); transform: translateY(calc(-50% - 7px));
+            }
+        
+              #gks-slider-20 .gks-slider-ctrl-prev,
+    	        #gks-slider-20 .gks-slider-ctrl-next {
+                opacity: 0;
+              }
+
+              #gks-slider-20.gks-slider-layout:hover .gks-slider-ctrl-prev,
+    	        #gks-slider-20.gks-slider-layout:hover .gks-slider-ctrl-next {
+                opacity: 1;
+              }
+          
+            #gks-slider-20 .owl-dots .owl-dot span {
+                margin: 5px 5px;
+                width: 12px;
+                height: 12px;
+            }
+            #gks-slider-20 .owl-dots .owl-dots {
+                line-height: 12px;
+            }
+		#gks-slider-20.gks-slider-layout .gks-slider-overlay-caption {
+                    right: 10px;
+                    top: 10px;
+                    margin-left: 10px;
+                
+                background-color: rgba(0,0,0,0.30196078431373);
+            }
+            #gks-slider-20 .gks-slider-title {
+                color: #dd3333;
+                font-size: 25px;
+                line-height: 27px;
+                text-align: center;
+                margin-top: 5px;
+                margin-bottom: 5px;
+        
+                font-weight: bold;
+            
+            }
+            #gks-slider-20 .gks-slider-desc,
+            #gks-slider-20 .gks-slider-details {
+                color: #8c8c8c;
+                font-size: 13px;
+                line-height: 15px;
+                text-align: center;
+        
+            font-weight: normal;
+        
+            }
+        
+              #gks-slider-20 .gks-slide-txt-btn {
+                  font-size: 13px !important;
+                  line-height: 15px !important;
+                  align-self: center;
+          
+              font-weight: normal;
+          } #gks-slider-20.gks-slider-mobile .gks-slider-overlay-caption {} #gks-slider-20:not(.gks-slider-mobile) .gks-slider-overlay-caption {
+                    max-width: 60%;
+                }#gks-slider-20 .gks-slider-overlay-caption.gks-info-opened {
+                max-height: calc(100% - 20px);
+          }
+            #gks-slider-20 .gks-slider-ctrl-prev,
+            #gks-slider-20 .gks-slider-ctrl-next {
+        
+                margin-left: 0px;
+                margin-right: 0px;
+            
+                padding: 0px;
+            }
+            #gks-slider-20 .gks-slider-ctrl-prev .gks-fa,
+            #gks-slider-20 .gks-slider-ctrl-next .gks-fa {
+                color: #dddddd;
+                font-size: 60px;
+                width: 60px;
+                height: 60px;
+            }
+        
+            #gks-slider-20 .gks-slider-ctrl-prev:hover .gks-fa,
+            #gks-slider-20 .gks-slider-ctrl-next:hover .gks-fa,
+            #gks-slider-20 .gks-slider-ctrl-prev:active .gks-fa,
+            #gks-slider-20 .gks-slider-ctrl-next:active .gks-fa {
+                color: #dd3333;
+            }
+
+            #gks-slider-20.gks-slider-layout .owl-dots .owl-dot span,
+            #gks-slider-20.gks-slider-layout .owl-dots .owl-dot span {
+                background: #dd3333;
+            }
+
+            #gks-slider-20.gks-slider-layout .owl-dots .owl-dot.active span,
+            #gks-slider-20.gks-slider-layout .owl-dots .owl-dot:hover span {
+                background: #636363;
+            }
+
+        
+            #gks-slider-20.gks-slider-layout .owl-dots {
+               padding-top: 10px;
+            }
+            
+                .gks-carousel	.gks-slider-slide-caption {
+                  justify-content: flex-start; /* flex-start | flex-end | center */
+                }
+              
+        
+                .fixed-size.fixed-size-20.lg-outer .lg-sub-html {
+          top: 0;
+          bottom: auto!important;
+          background: transparent!important;
+          width: 50%;
+        }
+        .fixed-size.fixed-size-20.lg-outer .lg-inner .lg-img-wrap {
+          padding: 40px 5px 10px 5px;
+        }
+      
+
+
+              .lg-backdrop.gks-popup-backdrop-20 {
+          background-color: #ffffff;
+        }
+      
+
+      
+/*# sourceURL=gks-custom-styles-20-inline-css */
+</style>
+<style id='gks-custom-styles-21-inline-css' type='text/css'>
+
+    			#gks-slider-21 .owl-carousel {
+    				padding-left: 50px;
+    				padding-right: 50px;
+    			}
+          @media only screen and (max-width: 600px) {
+            #gks-slider-21 .owl-carousel {
+      				padding-left: 0px;
+      				padding-right: 0px;
+      			}
+          }
+          #gks-slider-21 .gks-slider-onslide-details { padding: 10px; }#gks-slider-21 .owl-carousel .gks-slider-cell:hover .gks-slider-onslide-details {
+                    opacity: 1;
+                }#gks-slider-21 .gks-slider-cell-content-image {
+                        height: 200px;
+                      }#gks-slider-21 .owl-carousel .gks-slider-cell-content { background-color: rgba(238,238,238,0);padding: 0px; }#gks-slider-21 .owl-carousel .gks-slider-cell:hover .gks-slider-cell-content { background-color: rgba(224,224,224,0.74901960784314); }#gks-slider-21 .owl-carousel .gks-slide-border {  }#gks-slider-21 .owl-carousel .gks-slider-cell-content {
+                    
+                  }
+           #gks-slider-21 .owl-carousel .gks-slider-cell:hover .gks-slider-overlay {
+  	          background-color: rgba(0,0,0,0.30196078431373) !important;
+  	          opacity: 1;
+	            
+           }#gks-slider-21 .owl-carousel .gks-slider-cell .gks-slider-button { opacity:0; }#gks-slider-21 .owl-carousel .gks-slider-cell:hover .gks-slider-button { opacity:1; }#gks-slider-21 .owl-carousel .gks-slider-cell .gks-slider-button-icon {
+                  color: #dd3333;
+                  background-color: rgb(0,0,0);
+              }
+              #gks-slider-21 .owl-carousel .gks-slider-cell .gks-slider-button-icon:hover {
+                  background-color: rgba(255,255,255,0.74901960784314);
+              }
+              #gks-slider-21 .owl-carousel .gks-slider-cell .gks-slide-txt-btn {
+                  color: #000 ;
+                  border-color: #000 ;
+                  text-decoration: none;
+                  margin-top: 10px;
+              }
+                #gks-slider-21 .gks-slider-image-wrapper {
+                    height: 200px;
+                }
+            
+      #gks-slider-21 .gks-slider-image,
+      #gks-slider-21 .gks-tile-img {
+        background-size: cover;
+        background-position: center;
+      }
+
+      #gks-slider-21 .gks-slider-overlay-caption {
+          background-color: rgba(0,0,0,0.30196078431373) !important;
+      }
+
+      
+
+      #gks-slider-21 .gks-slider-ctrl-prev,
+	    #gks-slider-21 .gks-slider-ctrl-next {top: calc(50% - 15px); transform: translateY(calc(-50% - 7px));
+            }
+        
+              #gks-slider-21 .gks-slider-ctrl-prev,
+    	        #gks-slider-21 .gks-slider-ctrl-next {
+                opacity: 0;
+              }
+
+              #gks-slider-21.gks-slider-layout:hover .gks-slider-ctrl-prev,
+    	        #gks-slider-21.gks-slider-layout:hover .gks-slider-ctrl-next {
+                opacity: 1;
+              }
+          
+            #gks-slider-21 .owl-dots .owl-dot span {
+                margin: 5px 5px;
+                width: 12px;
+                height: 12px;
+            }
+            #gks-slider-21 .owl-dots .owl-dots {
+                line-height: 12px;
+            }
+		#gks-slider-21.gks-slider-layout .gks-slider-overlay-caption {
+                    right: 10px;
+                    top: 10px;
+                    margin-left: 10px;
+                
+                background-color: rgba(0,0,0,0.30196078431373);
+            }
+            #gks-slider-21 .gks-slider-title {
+                color: #898989;
+                font-size: 22px;
+                line-height: 24px;
+                text-align: center;
+                margin-top: 5px;
+                margin-bottom: 5px;
+        
+                font-weight: bold;
+            
+            }
+            #gks-slider-21 .gks-slider-desc,
+            #gks-slider-21 .gks-slider-details {
+                color: #8c8c8c;
+                font-size: 13px;
+                line-height: 15px;
+                text-align: center;
+        
+            font-weight: normal;
+        
+            }
+        
+              #gks-slider-21 .gks-slide-txt-btn {
+                  font-size: 13px !important;
+                  line-height: 15px !important;
+                  align-self: center;
+          
+              font-weight: normal;
+          } #gks-slider-21.gks-slider-mobile .gks-slider-overlay-caption {} #gks-slider-21:not(.gks-slider-mobile) .gks-slider-overlay-caption {
+                    max-width: 60%;
+                }#gks-slider-21 .gks-slider-overlay-caption.gks-info-opened {
+                max-height: calc(100% - 20px);
+          }
+            #gks-slider-21 .gks-slider-ctrl-prev,
+            #gks-slider-21 .gks-slider-ctrl-next {
+        
+                margin-left: 0px;
+                margin-right: 0px;
+            
+                padding: 0px;
+            }
+            #gks-slider-21 .gks-slider-ctrl-prev .gks-fa,
+            #gks-slider-21 .gks-slider-ctrl-next .gks-fa {
+                color: #dddddd;
+                font-size: 60px;
+                width: 60px;
+                height: 60px;
+            }
+        
+            #gks-slider-21 .gks-slider-ctrl-prev:hover .gks-fa,
+            #gks-slider-21 .gks-slider-ctrl-next:hover .gks-fa,
+            #gks-slider-21 .gks-slider-ctrl-prev:active .gks-fa,
+            #gks-slider-21 .gks-slider-ctrl-next:active .gks-fa {
+                color: #dd3333;
+            }
+
+            #gks-slider-21.gks-slider-layout .owl-dots .owl-dot span,
+            #gks-slider-21.gks-slider-layout .owl-dots .owl-dot span {
+                background: #dd3333;
+            }
+
+            #gks-slider-21.gks-slider-layout .owl-dots .owl-dot.active span,
+            #gks-slider-21.gks-slider-layout .owl-dots .owl-dot:hover span {
+                background: #636363;
+            }
+
+        
+            #gks-slider-21.gks-slider-layout .owl-dots {
+               padding-top: 10px;
+            }
+            
+                .gks-carousel	.gks-slider-slide-caption {
+                  justify-content: flex-start; /* flex-start | flex-end | center */
+                }
+              
+        
+                .fixed-size.fixed-size-21.lg-outer .lg-sub-html {
+          top: 0;
+          bottom: auto!important;
+          background: transparent!important;
+          width: 50%;
+        }
+        .fixed-size.fixed-size-21.lg-outer .lg-inner .lg-img-wrap {
+          padding: 40px 5px 10px 5px;
+        }
+      
+
+
+              .lg-backdrop.gks-popup-backdrop-21 {
+          background-color: #ffffff;
+        }
+      
+
+      
+/*# sourceURL=gks-custom-styles-21-inline-css */
+</style>
+<style id='gks-custom-styles-22-inline-css' type='text/css'>
+
+    			#gks-slider-22 .owl-carousel {
+    				padding-left: 50px;
+    				padding-right: 50px;
+    			}
+          @media only screen and (max-width: 600px) {
+            #gks-slider-22 .owl-carousel {
+      				padding-left: 0px;
+      				padding-right: 0px;
+      			}
+          }
+          
+            #gks-slider-22.gks-slider-mobile .gks-slider-title {
+                height: 20px;
+                overflow-y: hidden;
+            }
+
+            #gks-slider-22.gks-slider-mobile .gks-slider-desc {
+                height: 15px;
+                overflow-y: hidden;
+            }
+
+            #gks-slider-22.gks-slider-mobile .gks-slider-title + .gks-slider-desc {
+                height: 25px;
+                overflow-y: hidden;
+            }
+        
+                #gks-slider-22 .gks-slider-image-wrapper {
+                    height: 450px;
+                }
+            
+      #gks-slider-22 .gks-slider-image,
+      #gks-slider-22 .gks-tile-img {
+        background-size: cover;
+        background-position: center;
+      }
+
+      #gks-slider-22 .gks-slider-overlay-caption {
+          background-color: rgba(0,0,0,0.65098039215686) !important;
+      }
+
+      
+
+      #gks-slider-22 .gks-slider-ctrl-prev,
+	    #gks-slider-22 .gks-slider-ctrl-next {top: calc(50% - 15px); transform: translateY(calc(-50% - 7px));
+            }
+        
+            #gks-slider-22 .owl-dots .owl-dot span {
+                margin: 5px 5px;
+                width: 12px;
+                height: 12px;
+            }
+            #gks-slider-22 .owl-dots .owl-dots {
+                line-height: 12px;
+            }
+		
+             #gks-slider-22 .owl-dots .owl-dot span {
+                -webkit-border-radius: 30px;
+                -moz-border-radius: 30px;
+                border-radius: 30px;
+            }
+            #gks-slider-22.gks-slider-layout .gks-slider-overlay-caption {
+                    left: 50%;
+                    bottom: 10px;
+                    transform: translateX(-50%);
+                
+                background-color: rgba(0,0,0,0.65098039215686);
+            }
+            #gks-slider-22 .gks-slider-title {
+                color: #ffffff;
+                font-size: 18px;
+                line-height: 20px;
+                text-align: center;
+                margin-top: 5px;
+                margin-bottom: 5px;
+        
+                font-weight: bold;
+            
+            }
+            #gks-slider-22 .gks-slider-desc,
+            #gks-slider-22 .gks-slider-details {
+                color: #ffffff;
+                font-size: 13px;
+                line-height: 15px;
+                text-align: center;
+        
+            font-weight: normal;
+        
+            }
+        } #gks-slider-22.gks-slider-mobile .gks-slider-overlay-caption {
+                    width: calc(100% - 20px);
+                } #gks-slider-22:not(.gks-slider-mobile) .gks-slider-overlay-caption {
+                    min-width: 60%;
+                }#gks-slider-22 .gks-slider-overlay-caption.gks-info-opened {
+                max-height: calc(100% - 20px);
+          }
+            #gks-slider-22 .gks-slider-ctrl-prev,
+            #gks-slider-22 .gks-slider-ctrl-next {
+        
+                margin-left: 0px;
+                margin-right: 0px;
+            
+                padding: 0px;
+            }
+            #gks-slider-22 .gks-slider-ctrl-prev .gks-fa,
+            #gks-slider-22 .gks-slider-ctrl-next .gks-fa {
+                color: #e2e2e2;
+                font-size: 60px;
+                width: 60px;
+                height: 60px;
+            }
+        
+            #gks-slider-22 .gks-slider-ctrl-prev:hover .gks-fa,
+            #gks-slider-22 .gks-slider-ctrl-next:hover .gks-fa,
+            #gks-slider-22 .gks-slider-ctrl-prev:active .gks-fa,
+            #gks-slider-22 .gks-slider-ctrl-next:active .gks-fa {
+                color: #ffffff;
+            }
+
+            #gks-slider-22.gks-slider-layout .owl-dots .owl-dot span,
+            #gks-slider-22.gks-slider-layout .owl-dots .owl-dot span {
+                background: #b1b0b0;
+            }
+
+            #gks-slider-22.gks-slider-layout .owl-dots .owl-dot.active span,
+            #gks-slider-22.gks-slider-layout .owl-dots .owl-dot:hover span {
+                background: #000000;
+            }
+
+        
+            #gks-slider-22.gks-slider-layout .owl-dots {
+               padding-top: 10px;
+            }
+            
+        
+                .fixed-size.fixed-size-22.lg-outer .lg-sub-html {
+          top: 0;
+          bottom: auto!important;
+          background: transparent!important;
+          width: 50%;
+        }
+        .fixed-size.fixed-size-22.lg-outer .lg-inner .lg-img-wrap {
+          padding: 40px 5px 10px 5px;
+        }
+      
+
+
+              .lg-backdrop.gks-popup-backdrop-22 {
+          background-color: #ffffff;
+        }
+      
+
+      
+/*# sourceURL=gks-custom-styles-22-inline-css */
+</style>
+<link rel='stylesheet' id='dflip-style-css' href='https://www.seedway.com/app/plugins/3d-flipbook-dflip-lite/assets/css/dflip.min.css?ver=2.4.27' type='text/css' media='all' />
+<link rel='stylesheet' id='sv-wc-payment-gateway-payment-form-v5_15_12-css' href='https://www.seedway.com/app/plugins/woocommerce-gateway-firstdata/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/css/frontend/sv-wc-payment-gateway-payment-form.min.css?ver=5.15.12' type='text/css' media='all' />
+<link rel='stylesheet' id='sage/css-css' href='https://www.seedway.com/app/themes/seedway/dist/styles/main.css?ver=1.12' type='text/css' media='all' />
+<script type="text/javascript" id="woocommerce-google-analytics-integration-gtag-js-after">
+/* <![CDATA[ */
+/* Google Analytics for WooCommerce (gtag.js) */
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					// Set up default consent state.
+					for ( const mode of [{"analytics_storage":"denied","ad_storage":"denied","ad_user_data":"denied","ad_personalization":"denied","region":["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IS","IE","IT","LV","LI","LT","LU","MT","NL","NO","PL","PT","RO","SK","SI","ES","SE","GB","CH"]}] || [] ) {
+						gtag( "consent", "default", { "wait_for_update": 500, ...mode } );
+					}
+					gtag("js", new Date());
+					gtag("set", "developer_id.dOGY3NW", true);
+					gtag("config", "G-GE7W016NVY", {"track_404":true,"allow_google_signals":true,"logged_in":false,"linker":{"domains":[],"allow_incoming":true},"custom_map":{"dimension1":"logged_in"}});
+//# sourceURL=woocommerce-google-analytics-integration-gtag-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.seedway.com/app/plugins/revslider/public/js/libs/tptools.js?ver=6.7.40" id="tp-tools-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" src="//www.seedway.com/app/plugins/revslider/public/js/sr7.js?ver=6.7.40" id="sr7-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" src="https://www.seedway.com/wp/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/wp/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/app/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.10.6.1" id="wc-jquery-blockui-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="wc-add-to-cart-js-extra">
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"/wp/wp-admin/admin-ajax.php","wc_ajax_url":"/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https://www.seedway.com/cart/","is_cart":"","cart_redirect_after_add":"no"};
+//# sourceURL=wc-add-to-cart-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.seedway.com/app/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=10.6.1" id="wc-add-to-cart-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" src="https://www.seedway.com/app/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.10.6.1" id="wc-js-cookie-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="woocommerce-js-extra">
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"/wp/wp-admin/admin-ajax.php","wc_ajax_url":"/?wc-ajax=%%endpoint%%","i18n_password_show":"Show password","i18n_password_hide":"Hide password"};
+//# sourceURL=woocommerce-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.seedway.com/app/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=10.6.1" id="woocommerce-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" src="https://www.seedway.com/app/plugins/yoo-slider-premium/js/gks-main-front.js?ver=6.9.4" id="gks-main-front-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/app/plugins/yoo-slider-premium/js/premium/gks-main-front-premium.js?ver=6.9.4" id="gks-main-front-premium-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/app/plugins/yoo-slider-premium/js/gks-helper.js?ver=6.9.4" id="gks-helper-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/app/plugins/yoo-slider-premium/js/froogaloop2.min.js?ver=6.9.4" id="gks-froogaloop2-min-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/app/plugins/yoo-slider-premium/js/viewer/owl-carousel/owl.carousel.js?ver=6.9.4" id="gks-owl-carousel-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/app/plugins/yoo-slider-premium/js/premium/gks-lightgallery.js?ver=6.9.4" id="gks-lightgallery-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/app/plugins/yoo-slider-premium/js/premium/lightgallery-modules/lg-fullscreen.js?ver=6.9.4" id="gks-lg-fullscreen-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/app/plugins/yoo-slider-premium/js/premium/lightgallery-modules/lg-thumbnail.js?ver=6.9.4" id="gks-lg-thumbnail-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/app/plugins/yoo-slider-premium/js/premium/lightgallery-modules/lg-video.js?ver=6.9.4" id="gks-lg-video-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/app/plugins/yoo-slider-premium/js/premium/lightgallery-modules/lg-autoplay.js?ver=6.9.4" id="gks-lg-autoplay-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/app/plugins/yoo-slider-premium/js/premium/lightgallery-modules/lg-zoom.js?ver=6.9.4" id="gks-lg-zoom-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/app/plugins/yoo-slider-premium/js/premium/lightgallery-modules/lg-hash.js?ver=6.9.4" id="gks-lg-hash-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/app/plugins/yoo-slider-premium/js/premium/lightgallery-modules/lg-share.js?ver=6.9.4" id="gks-lg-share-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/app/plugins/yoo-slider-premium/js/premium/lightgallery-modules/lg-pager.js?ver=6.9.4" id="gks-lg-pager-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/app/plugins/yoo-slider-premium/js/viewer/thumbnail-scroller/scroller.js?ver=6.9.4" id="gks-thumbnail-scroller-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/app/plugins/yoo-slider-premium/js/gks-user-scripts.js?ver=6.9.4" id="gks-user-scripts-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/app/plugins/woocommerce/assets/js/jquery-payment/jquery.payment.min.js?ver=3.0.0-wc.10.6.1" id="wc-jquery-payment-js" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="sv-wc-payment-gateway-payment-form-v5_15_12-js-extra">
+/* <![CDATA[ */
+var sv_wc_payment_gateway_payment_form_params = {"order_button_text":"Place order","card_number_missing":"Card number is missing","card_number_invalid":"Card number is invalid","card_number_digits_invalid":"Card number is invalid (only digits allowed)","card_number_length_invalid":"Card number is invalid (wrong length)","card_type_invalid":"Card is invalid","card_type_invalid_specific_type":"{card_type} card is invalid","cvv_missing":"Card security code is missing","cvv_digits_invalid":"Card security code is invalid (only digits are allowed)","cvv_length_invalid":"Card security code is invalid (must be 3 or 4 digits)","card_exp_date_invalid":"Card expiration date is invalid","check_number_digits_invalid":"Check Number is invalid (only digits are allowed)","check_number_missing":"Check Number is missing","drivers_license_state_missing":"Driver's license state is missing","drivers_license_number_missing":"Driver's license number is missing","drivers_license_number_invalid":"Driver's license number is invalid","account_number_missing":"Account Number is missing","account_number_invalid":"Account Number is invalid (only digits are allowed)","account_number_length_invalid":"Account Number is invalid (must be between 5 and 17 digits)","routing_number_missing":"Routing Number is missing","routing_number_digits_invalid":"Routing Number is invalid (only digits are allowed)","routing_number_length_invalid":"Routing Number is invalid (must be 9 digits)"};
+//# sourceURL=sv-wc-payment-gateway-payment-form-v5_15_12-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.seedway.com/app/plugins/woocommerce-gateway-firstdata/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/dist/frontend/sv-wc-payment-gateway-payment-form.js?ver=5.15.12" id="sv-wc-payment-gateway-payment-form-v5_15_12-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/app/plugins/woocommerce-gateway-firstdata/assets/js/frontend/wc-first-data-payeezy-gateway-payment-form.min.js?ver=5.3.2" id="wc-first-data-payeezy-gateway-payment-form-js"></script>
+<script type="text/javascript" id="ajax_operation_script-js-extra">
+/* <![CDATA[ */
+var bigdatacloud_key = {"key":""};
+var myAjax = {"ajaxurl":"https://www.seedway.com/wp/wp-admin/admin-ajax.php"};
+//# sourceURL=ajax_operation_script-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.seedway.com/app/plugins/woocommerce-anti-fraud/assets/js/geoloc.js?ver=1.0" id="ajax_operation_script-js"></script>
+<link rel="https://api.w.org/" href="https://www.seedway.com/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.seedway.com/wp/xmlrpc.php?rsd" />
+
+		<!-- GA Google Analytics @ https://m0n.co/ga -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-GE7W016NVY"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-GE7W016NVY');
+		</script>
+
+	<meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="https://www.seedway.com"><link rel="alternate" href="https://www.seedway.com/wp-json/tribe/events/v1/" />		<script async src="https://www.googletagmanager.com/gtag/js?id=G-GE7W016NVY"></script> 		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-GE7W016NVY' );
+		  		</script>
+			<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<meta name="generator" content="Powered by Slider Revolution 6.7.40 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<link rel="icon" href="https://www.seedway.com/app/uploads/2019/04/cropped-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.seedway.com/app/uploads/2019/04/cropped-favicon-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.seedway.com/app/uploads/2019/04/cropped-favicon-300x300.png" />
+<meta name="msapplication-TileImage" content="https://www.seedway.com/app/uploads/2019/04/cropped-favicon-300x300.png" />
+<script>
+	window._tpt			??= {};
+	window.SR7			??= {};
+	_tpt.R				??= {};
+	_tpt.R.fonts		??= {};
+	_tpt.R.fonts.customFonts??= {};
+	SR7.devMode			=  false;
+	SR7.F 				??= {};
+	SR7.G				??= {};
+	SR7.LIB				??= {};
+	SR7.E				??= {};
+	SR7.E.gAddons		??= {};
+	SR7.E.php 			??= {};
+	SR7.E.nonce			= '7a914df703';
+	SR7.E.ajaxurl		= 'https://www.seedway.com/wp/wp-admin/admin-ajax.php';
+	SR7.E.resturl		= 'https://www.seedway.com/wp-json/';
+	SR7.E.slug_path		= 'revslider/revslider.php';
+	SR7.E.slug			= 'revslider';
+	SR7.E.plugin_url	= 'https://www.seedway.com/app/plugins/revslider/';
+	SR7.E.wp_plugin_url = 'https://www.seedway.com/app/plugins/';
+	SR7.E.revision		= '6.7.40';
+	SR7.E.fontBaseUrl	= '//fonts.googleapis.com/css2?family=';
+	SR7.G.breakPoints 	= [1240,1024,778,480];
+	SR7.G.fSUVW 		= false;
+	SR7.E.modules 		= ['module','page','slide','layer','draw','animate','srtools','canvas','defaults','carousel','navigation','media','modifiers','migration'];
+	SR7.E.libs 			= ['WEBGL'];
+	SR7.E.css 			= ['csslp','cssbtns','cssfilters','cssnav','cssmedia'];
+	SR7.E.resources		= {};
+	SR7.E.ytnc			= false;
+	SR7.JSON			??= {};
+/*! Slider Revolution 7.0 - Page Processor */
+!function(){"use strict";window.SR7??={},window._tpt??={},SR7.version="Slider Revolution 6.7.16",_tpt.getMobileZoom=()=>_tpt.is_mobile?document.documentElement.clientWidth/window.innerWidth:1,_tpt.getWinDim=function(t){_tpt.screenHeightWithUrlBar??=window.innerHeight;let e=SR7.F?.modal?.visible&&SR7.M[SR7.F.module.getIdByAlias(SR7.F.modal.requested)];_tpt.scrollBar=window.innerWidth!==document.documentElement.clientWidth||e&&window.innerWidth!==e.c.module.clientWidth,_tpt.winW=_tpt.getMobileZoom()*window.innerWidth-(_tpt.scrollBar||"prepare"==t?_tpt.scrollBarW??_tpt.mesureScrollBar():0),_tpt.winH=_tpt.getMobileZoom()*window.innerHeight,_tpt.winWAll=document.documentElement.clientWidth},_tpt.getResponsiveLevel=function(t,e){return SR7.G.fSUVW?_tpt.closestGE(t,window.innerWidth):_tpt.closestGE(t,_tpt.winWAll)},_tpt.mesureScrollBar=function(){let t=document.createElement("div");return t.className="RSscrollbar-measure",t.style.width="100px",t.style.height="100px",t.style.overflow="scroll",t.style.position="absolute",t.style.top="-9999px",document.body.appendChild(t),_tpt.scrollBarW=t.offsetWidth-t.clientWidth,document.body.removeChild(t),_tpt.scrollBarW},_tpt.loadCSS=async function(t,e,s){return s?_tpt.R.fonts.required[e].status=1:(_tpt.R[e]??={},_tpt.R[e].status=1),new Promise(((i,n)=>{if(_tpt.isStylesheetLoaded(t))s?_tpt.R.fonts.required[e].status=2:_tpt.R[e].status=2,i();else{const o=document.createElement("link");o.rel="stylesheet";let l="text",r="css";o["type"]=l+"/"+r,o.href=t,o.onload=()=>{s?_tpt.R.fonts.required[e].status=2:_tpt.R[e].status=2,i()},o.onerror=()=>{s?_tpt.R.fonts.required[e].status=3:_tpt.R[e].status=3,n(new Error(`Failed to load CSS: ${t}`))},document.head.appendChild(o)}}))},_tpt.addContainer=function(t){const{tag:e="div",id:s,class:i,datas:n,textContent:o,iHTML:l}=t,r=document.createElement(e);if(s&&""!==s&&(r.id=s),i&&""!==i&&(r.className=i),n)for(const[t,e]of Object.entries(n))"style"==t?r.style.cssText=e:r.setAttribute(`data-${t}`,e);return o&&(r.textContent=o),l&&(r.innerHTML=l),r},_tpt.collector=function(){return{fragment:new DocumentFragment,add(t){var e=_tpt.addContainer(t);return this.fragment.appendChild(e),e},append(t){t.appendChild(this.fragment)}}},_tpt.isStylesheetLoaded=function(t){let e=t.split("?")[0];return Array.from(document.querySelectorAll('link[rel="stylesheet"], link[rel="preload"]')).some((t=>t.href.split("?")[0]===e))},_tpt.preloader={requests:new Map,preloaderTemplates:new Map,show:function(t,e){if(!e||!t)return;const{type:s,color:i}=e;if(s<0||"off"==s)return;const n=`preloader_${s}`;let o=this.preloaderTemplates.get(n);o||(o=this.build(s,i),this.preloaderTemplates.set(n,o)),this.requests.has(t)||this.requests.set(t,{count:0});const l=this.requests.get(t);clearTimeout(l.timer),l.count++,1===l.count&&(l.timer=setTimeout((()=>{l.preloaderClone=o.cloneNode(!0),l.anim&&l.anim.kill(),void 0!==_tpt.gsap?l.anim=_tpt.gsap.fromTo(l.preloaderClone,1,{opacity:0},{opacity:1}):l.preloaderClone.classList.add("sr7-fade-in"),t.appendChild(l.preloaderClone)}),150))},hide:function(t){if(!this.requests.has(t))return;const e=this.requests.get(t);e.count--,e.count<0&&(e.count=0),e.anim&&e.anim.kill(),0===e.count&&(clearTimeout(e.timer),e.preloaderClone&&(e.preloaderClone.classList.remove("sr7-fade-in"),e.anim=_tpt.gsap.to(e.preloaderClone,.3,{opacity:0,onComplete:function(){e.preloaderClone.remove()}})))},state:function(t){if(!this.requests.has(t))return!1;return this.requests.get(t).count>0},build:(t,e="#ffffff",s="")=>{if(t<0||"off"===t)return null;const i=parseInt(t);if(t="prlt"+i,isNaN(i))return null;if(_tpt.loadCSS(SR7.E.plugin_url+"public/css/preloaders/t"+i+".css","preloader_"+t),isNaN(i)||i<6){const n=`background-color:${e}`,o=1===i||2==i?n:"",l=3===i||4==i?n:"",r=_tpt.collector();["dot1","dot2","bounce1","bounce2","bounce3"].forEach((t=>r.add({tag:"div",class:t,datas:{style:l}})));const d=_tpt.addContainer({tag:"sr7-prl",class:`${t} ${s}`,datas:{style:o}});return r.append(d),d}{let n={};if(7===i){let t;e.startsWith("#")?(t=e.replace("#",""),t=`rgba(${parseInt(t.substring(0,2),16)}, ${parseInt(t.substring(2,4),16)}, ${parseInt(t.substring(4,6),16)}, `):e.startsWith("rgb")&&(t=e.slice(e.indexOf("(")+1,e.lastIndexOf(")")).split(",").map((t=>t.trim())),t=`rgba(${t[0]}, ${t[1]}, ${t[2]}, `),t&&(n.style=`border-top-color: ${t}0.65); border-bottom-color: ${t}0.15); border-left-color: ${t}0.65); border-right-color: ${t}0.15)`)}else 12===i&&(n.style=`background:${e}`);const o=[10,0,4,2,5,9,0,4,4,2][i-6],l=_tpt.collector(),r=l.add({tag:"div",class:"sr7-prl-inner",datas:n});Array.from({length:o}).forEach((()=>r.appendChild(l.add({tag:"span",datas:{style:`background:${e}`}}))));const d=_tpt.addContainer({tag:"sr7-prl",class:`${t} ${s}`});return l.append(d),d}}},SR7.preLoader={show:(t,e)=>{"off"!==(SR7.M[t]?.settings?.pLoader?.type??"off")&&_tpt.preloader.show(e||SR7.M[t].c.module,SR7.M[t]?.settings?.pLoader??{color:"#fff",type:10})},hide:(t,e)=>{"off"!==(SR7.M[t]?.settings?.pLoader?.type??"off")&&_tpt.preloader.hide(e||SR7.M[t].c.module)},state:(t,e)=>_tpt.preloader.state(e||SR7.M[t].c.module)},_tpt.prepareModuleHeight=function(t){window.SR7.M??={},window.SR7.M[t.id]??={},"ignore"==t.googleFont&&(SR7.E.ignoreGoogleFont=!0);let e=window.SR7.M[t.id];if(null==_tpt.scrollBarW&&_tpt.mesureScrollBar(),e.c??={},e.states??={},e.settings??={},e.settings.size??={},t.fixed&&(e.settings.fixed=!0),e.c.module=document.querySelector("sr7-module#"+t.id),e.c.adjuster=e.c.module.getElementsByTagName("sr7-adjuster")[0],e.c.content=e.c.module.getElementsByTagName("sr7-content")[0],"carousel"==t.type&&(e.c.carousel=e.c.content.getElementsByTagName("sr7-carousel")[0]),null==e.c.module||null==e.c.module)return;t.plType&&t.plColor&&(e.settings.pLoader={type:t.plType,color:t.plColor}),void 0===t.plType||"off"===t.plType||SR7.preLoader.state(t.id)&&SR7.preLoader.state(t.id,e.c.module)||SR7.preLoader.show(t.id,e.c.module),_tpt.winW||_tpt.getWinDim("prepare"),_tpt.getWinDim();let s=""+e.c.module.dataset?.modal;"modal"==s||"true"==s||"undefined"!==s&&"false"!==s||(e.settings.size.fullWidth=t.size.fullWidth,e.LEV??=_tpt.getResponsiveLevel(window.SR7.G.breakPoints,t.id),t.vpt=_tpt.fillArray(t.vpt,5),e.settings.vPort=t.vpt[e.LEV],void 0!==t.el&&"720"==t.el[4]&&t.gh[4]!==t.el[4]&&"960"==t.el[3]&&t.gh[3]!==t.el[3]&&"768"==t.el[2]&&t.gh[2]!==t.el[2]&&delete t.el,e.settings.size.height=null==t.el||null==t.el[e.LEV]||0==t.el[e.LEV]||"auto"==t.el[e.LEV]?_tpt.fillArray(t.gh,5,-1):_tpt.fillArray(t.el,5,-1),e.settings.size.width=_tpt.fillArray(t.gw,5,-1),e.settings.size.minHeight=_tpt.fillArray(t.mh??[0],5,-1),e.cacheSize={fullWidth:e.settings.size?.fullWidth,fullHeight:e.settings.size?.fullHeight},void 0!==t.off&&(t.off?.t&&(e.settings.size.m??={})&&(e.settings.size.m.t=t.off.t),t.off?.b&&(e.settings.size.m??={})&&(e.settings.size.m.b=t.off.b),t.off?.l&&(e.settings.size.p??={})&&(e.settings.size.p.l=t.off.l),t.off?.r&&(e.settings.size.p??={})&&(e.settings.size.p.r=t.off.r),e.offsetPrepared=!0),_tpt.updatePMHeight(t.id,t,!0))},_tpt.updatePMHeight=(t,e,s)=>{let i=SR7.M[t];var n=i.settings.size.fullWidth?_tpt.winW:i.c.module.parentNode.offsetWidth;n=0===n||isNaN(n)?_tpt.winW:n;let o=i.settings.size.width[i.LEV]||i.settings.size.width[i.LEV++]||i.settings.size.width[i.LEV--]||n,l=i.settings.size.height[i.LEV]||i.settings.size.height[i.LEV++]||i.settings.size.height[i.LEV--]||0,r=i.settings.size.minHeight[i.LEV]||i.settings.size.minHeight[i.LEV++]||i.settings.size.minHeight[i.LEV--]||0;if(l="auto"==l?0:l,l=parseInt(l),"carousel"!==e.type&&(n-=parseInt(e.onw??0)||0),i.MP=!i.settings.size.fullWidth&&n<o||_tpt.winW<o?Math.min(1,n/o):1,e.size.fullScreen||e.size.fullHeight){let t=parseInt(e.fho)||0,s=(""+e.fho).indexOf("%")>-1;e.newh=_tpt.winH-(s?_tpt.winH*t/100:t)}else e.newh=i.MP*Math.max(l,r);if(e.newh+=(parseInt(e.onh??0)||0)+(parseInt(e.carousel?.pt)||0)+(parseInt(e.carousel?.pb)||0),void 0!==e.slideduration&&(e.newh=Math.max(e.newh,parseInt(e.slideduration)/3)),e.shdw&&_tpt.buildShadow(e.id,e),i.c.adjuster.style.height=e.newh+"px",i.c.module.style.height=e.newh+"px",i.c.content.style.height=e.newh+"px",i.states.heightPrepared=!0,i.dims??={},i.dims.moduleRect=i.c.module.getBoundingClientRect(),i.c.content.style.left="-"+i.dims.moduleRect.left+"px",!i.settings.size.fullWidth)return s&&requestAnimationFrame((()=>{n!==i.c.module.parentNode.offsetWidth&&_tpt.updatePMHeight(e.id,e)})),void _tpt.bgStyle(e.id,e,window.innerWidth==_tpt.winW,!0);_tpt.bgStyle(e.id,e,window.innerWidth==_tpt.winW,!0),requestAnimationFrame((function(){s&&requestAnimationFrame((()=>{n!==i.c.module.parentNode.offsetWidth&&_tpt.updatePMHeight(e.id,e)}))})),i.earlyResizerFunction||(i.earlyResizerFunction=function(){requestAnimationFrame((function(){_tpt.getWinDim(),_tpt.moduleDefaults(e.id,e),_tpt.updateSlideBg(t,!0)}))},window.addEventListener("resize",i.earlyResizerFunction))},_tpt.buildShadow=function(t,e){let s=SR7.M[t];null==s.c.shadow&&(s.c.shadow=document.createElement("sr7-module-shadow"),s.c.shadow.classList.add("sr7-shdw-"+e.shdw),s.c.content.appendChild(s.c.shadow))},_tpt.bgStyle=async(t,e,s,i,n)=>{const o=SR7.M[t];if((e=e??o.settings).fixed&&!o.c.module.classList.contains("sr7-top-fixed")&&(o.c.module.classList.add("sr7-top-fixed"),o.c.module.style.position="fixed",o.c.module.style.width="100%",o.c.module.style.top="0px",o.c.module.style.left="0px",o.c.module.style.pointerEvents="none",o.c.module.style.zIndex=5e3,o.c.content.style.pointerEvents="none"),null==o.c.bgcanvas){let t=document.createElement("sr7-module-bg"),l=!1;if("string"==typeof e?.bg?.color&&e?.bg?.color.includes("{"))if(_tpt.gradient&&_tpt.gsap)e.bg.color=_tpt.gradient.convert(e.bg.color);else try{let t=JSON.parse(e.bg.color);(t?.orig||t?.string)&&(e.bg.color=JSON.parse(e.bg.color))}catch(t){return}let r="string"==typeof e?.bg?.color?e?.bg?.color||"transparent":e?.bg?.color?.string??e?.bg?.color?.orig??e?.bg?.color?.color??"transparent";if(t.style["background"+(String(r).includes("grad")?"":"Color")]=r,("transparent"!==r||n)&&(l=!0),o.offsetPrepared&&(t.style.visibility="hidden"),e?.bg?.image?.src&&(t.style.backgroundImage=`url(${e?.bg?.image.src})`,t.style.backgroundSize=""==(e.bg.image?.size??"")?"cover":e.bg.image.size,t.style.backgroundPosition=e.bg.image.position,t.style.backgroundRepeat=""==e.bg.image.repeat||null==e.bg.image.repeat?"no-repeat":e.bg.image.repeat,l=!0),!l)return;o.c.bgcanvas=t,e.size.fullWidth?t.style.width=_tpt.winW-(s&&_tpt.winH<document.body.offsetHeight?_tpt.scrollBarW:0)+"px":i&&(t.style.width=o.c.module.offsetWidth+"px"),e.sbt?.use?o.c.content.appendChild(o.c.bgcanvas):o.c.module.appendChild(o.c.bgcanvas)}o.c.bgcanvas.style.height=void 0!==e.newh?e.newh+"px":("carousel"==e.type?o.dims.module.h:o.dims.content.h)+"px",o.c.bgcanvas.style.left=!s&&e.sbt?.use||o.c.bgcanvas.closest("SR7-CONTENT")?"0px":"-"+(o?.dims?.moduleRect?.left??0)+"px"},_tpt.updateSlideBg=function(t,e){const s=SR7.M[t];let i=s.settings;s?.c?.bgcanvas&&(i.size.fullWidth?s.c.bgcanvas.style.width=_tpt.winW-(e&&_tpt.winH<document.body.offsetHeight?_tpt.scrollBarW:0)+"px":preparing&&(s.c.bgcanvas.style.width=s.c.module.offsetWidth+"px"))},_tpt.moduleDefaults=(t,e)=>{let s=SR7.M[t];null!=s&&null!=s.c&&null!=s.c.module&&(s.dims??={},s.dims.moduleRect=s.c.module.getBoundingClientRect(),s.c.content.style.left="-"+s.dims.moduleRect.left+"px",s.c.content.style.width=_tpt.winW-_tpt.scrollBarW+"px","carousel"==e.type&&(s.c.module.style.overflow="visible"),_tpt.bgStyle(t,e,window.innerWidth==_tpt.winW))},_tpt.getOffset=t=>{var e=t.getBoundingClientRect(),s=window.pageXOffset||document.documentElement.scrollLeft,i=window.pageYOffset||document.documentElement.scrollTop;return{top:e.top+i,left:e.left+s}},_tpt.fillArray=function(t,e){let s,i;t=Array.isArray(t)?t:[t];let n=Array(e),o=t.length;for(i=0;i<t.length;i++)n[i+(e-o)]=t[i],null==s&&"#"!==t[i]&&(s=t[i]);for(let t=0;t<e;t++)void 0!==n[t]&&"#"!=n[t]||(n[t]=s),s=n[t];return n},_tpt.closestGE=function(t,e){let s=Number.MAX_VALUE,i=-1;for(let n=0;n<t.length;n++)t[n]-1>=e&&t[n]-1-e<s&&(s=t[n]-1-e,i=n);return++i}}();</script>
+		<style type="text/css" id="wp-custom-css">
+			
+
+/* ===== CUSTOM STYLES FOR SEEDWAY TEMP HOMEPAGE (Page ID 91309) ===== */
+/* Adjusts wrapper to align hero section properly */
+.page-id-91309 .wrapper {
+  width: 100%;
+  margin-top: -150px;
+}
+/* --------------------------------------------- */
+/* === SLIDER ROCKET FIXES FOR TEST PAGE ======= */
+/* --------------------------------------------- */
+
+
+.mfp-content, .mfp-inline-holder .mfp-content {
+  background: transparent !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+#veggie-sale {
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+#veggie-sale img.veggie-sale-img {
+  max-width: 70vw !important;   /* 70% smaller */
+  max-height: 70vh !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain;
+  display: block !important;
+  margin: 0 auto !important;
+  border-radius: 0px !important;
+}
+
+.mfp-wrap { 
+  z-index: 2147483647 !important;  /* Max browser-safe */
+}
+.mfp-container { 
+  z-index: 2147483647 !important;
+  position: fixed !important;
+  bottom: 20px !important;         /* Bottom screen */
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: auto !important;
+}
+.mfp-bg { 
+  z-index: 2147483646 !important;
+  background: transparent !important; 
+  opacity: 0 !important; 
+}
+body.mfp-ready { overflow: hidden !important; }
+
+
+.mfp-container { 
+  z-index: 2147483647 !important;
+  position: fixed !important;
+  bottom: 100px !important;     /* Farther down - adjust 60px/80px/100px */
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: auto !important;
+}
+		</style>
+		  <link rel="stylesheet" href="https://use.typekit.net/ocm7fpq.css">
+
+</head>
+<body class="error404 wp-theme-seedway theme-seedway woocommerce-no-js tribe-no-js">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXWTBBB" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="wrapper">
+    <!--[if IE]>
+      <div class="alert alert-warning">
+        You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.      </div>
+    <![endif]-->
+    <div class="header-container">
+    <div class="store-header">
+    <span class="links-container">
+      <a href="https://www.seedway.com/cart/" class="cart">
+        Cart: <span>0</span>
+      </a>
+      <a href="https://www.seedway.com/my-account/" class="my-account">Account</a>
+      <a href="https://www.seedway.com/my-seedlist/" id="seedlist-link" class="my-seedlist">My Seed List</a>
+    </span>
+    <div class="clearfix"></div>
+  </div>
+  
+
+
+
+  <header class="header">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs4navbar"
+      aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="icons">
+        <span class="icon-menu"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14">
+            <g class="a">
+              <rect y="-2" width="18" height="18" class="a" />
+              <path d="M13 2L0 2 0 0 13 0 13 2ZM18 8L0 8 0 6 18 6 18 8ZM16 14L0 14 0 12 16 12 16 14Z" class="st0" />
+            </g>
+          </svg></span>
+        <span class="icon-close"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16">
+            <g transform="translate(-3 -4)" fill="none">
+              <rect width="24" height="24" />
+              <polygon
+                points="12 14 18 19.8 20.1 17.8 14.1 12 20.1 6.2 18 4.2 12 10 6 4.2 3.9 6.2 9.9 12 3.9 17.8 6 19.8"
+                class="st0" />
+            </g>
+          </svg></span>
+      </div>
+    </button>
+    <div class="container-fluid">
+      <div class="row align-items-center">
+
+        <div class="col-md-3">
+          <div class="logo-container">
+            <a href="https://www.seedway.com" class="logo" title="Seedway Logo"></a>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-lg-9">
+          <div class="navbar-container"></div>
+          <nav class="navbar navbar-expand-lg bg-faded">
+            <div id="bs4navbar" class="nav collapse navbar-collapse"><ul id="menu-menu-1" class="navbar-nav mr-auto justify-content-end"><li id="menu-item-73502" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-73502 nav-item"><a href="https://www.seedway.com/product-category/vegetable-seed/on-sale/" class="nav-link">Sale Items</a></li>
+<li id="menu-item-49898" class="mega menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-49898 nav-item dropdown"><a href="https://www.seedway.com/farm-seed/" class="nav-link dropdown-toggle" data-toggle="dropdown">Farm Seed</a>
+<div class="dropdown-menu"><div class="dropdown-container">
+<div class="featured" style="background-image: url('https://www.seedway.com/app/uploads/2019/05/Silage_Stock_Pic_Resized-768x512.jpg')"></div>
+<div class="dropdown-content">
+<a href="https://www.seedway.com/farm-seed/" class="title-link menu-item-has-children menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-49952 dropdown-item has-children">Farm Seed</a><ul><li><a href="https://www.seedway.com/product-category/farm-seed/seed-corn/">Seed Corn</a></li><li><a href="https://www.seedway.com/product-category/farm-seed/forage/">Forage</a></li><li><a href="https://www.seedway.com/product-category/farm-seed/small-grains/">Small Grains</a></li><li><a href="https://www.seedway.com/product-category/farm-seed/soybeans/">Soybeans</a></li></ul><a href="https://www.seedway.com/nutrashield-forage-silage-inoculant/" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-87094 dropdown-item">NutraShield Forage &#038; Silage Inoculant</a><a href="https://www.seedway.com/farm-seed/pests-diseases/" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-50005 dropdown-item">Pests &#038; Diseases Identification</a><a href="https://www.seedway.com/agronomy/" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-49879 dropdown-item">Agronomy News</a><a href="https://www.seedway.com/seedway-crop-reports/" class="shop-all menu-item menu-item-type-post_type menu-item-object-page menu-item-49979 dropdown-item">SEEDWAY Crop Reports</a><a href="https://www.seedway.com/product-categories/farm-seed/" class="shop-all menu-item menu-item-type-custom menu-item-object-custom menu-item-49978 dropdown-item">View All Farm Seed Products +</a><a href="https://www.seedway.com/farm-seed/seedway_2026-farm-seed-product-portfolio/" class="shop-all menu-item menu-item-type-custom menu-item-object-custom menu-item-61620 dropdown-item">2026 Farm Seed Product Guide</a><a href="https://www.seedway.com/farm-seed/2026-silage-resource-guide-updated/" class="shop-all menu-item menu-item-type-custom menu-item-object-custom menu-item-92150 dropdown-item">2026 Silage Resource Guide</a><a href="https://www.seedway.com/farm-seed/seedway-2026-western-farm-seed-product-guide/" class="shop-all menu-item menu-item-type-post_type menu-item-object-page menu-item-93200 dropdown-item">2026 Western Farm Seed Product Guide</a></div></div></div>
+</li>
+<li id="menu-item-49916" class="mega menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-49916 nav-item dropdown"><a href="https://www.seedway.com/vegetable-seed/" class="nav-link dropdown-toggle" data-toggle="dropdown">Vegetable Seed</a>
+<div class="dropdown-menu"><div class="dropdown-container">
+<div class="featured" style="background-image: url('https://www.seedway.com/app/uploads/2019/06/Back-Cover-11.18.10-x-768x392.jpg')"></div>
+<div class="dropdown-content">
+<a href="https://www.seedway.com/vegetable-seed/" class="title-link menu-item-has-children menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-49983 dropdown-item has-children">Vegetable Seed</a><ul><li><a href="https://www.seedway.com/product-category/vegetable-seed/">Shop All Vegetable Seed</a></li><li><a href="https://www.seedway.com/sowlogic/">SowLogic&#x2122;</a></li></ul><a href="https://www.seedway.com/vegetable-seed/vegetable-seed-catalog-request/" class="shop-all menu-item menu-item-type-post_type menu-item-object-page menu-item-51281 dropdown-item">Vegetable Seed Catalog Request</a><a href="https://www.seedway.com/2026-seedway-vegetable-seed-catalog/" class="shop-all menu-item menu-item-type-post_type menu-item-object-page menu-item-94340 dropdown-item">Vegetable Seed Catalog</a><a href="https://www.seedway.com/2026-seedway-canadian-vegetable-seed-catalog/" class="shop-all menu-item menu-item-type-post_type menu-item-object-page menu-item-94785 dropdown-item">Canadian Vegetable Seed Catalog</a><a href="https://www.seedway.com/product-category/vegetable-seed/2026-new-products/" class="shop-all menu-item menu-item-type-custom menu-item-object-custom menu-item-67686 dropdown-item">New Products</a><a href="https://www.seedway.com/app/uploads/2023/10/Commercial_OrderForm2024.pdf" class="shop-all menu-item menu-item-type-custom menu-item-object-custom menu-item-50004 dropdown-item">Commercial Order Form ↓</a><a href="https://www.seedway.com/app/uploads/2024/01/Organic_Order-Form2024.pdf" class="shop-all menu-item menu-item-type-custom menu-item-object-custom menu-item-50001 dropdown-item">Organic and Untreated Order Form ↓</a></div></div></div>
+</li>
+<li id="menu-item-86818" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-86818 nav-item dropdown"><a href="https://www.seedway.com/vegetable-seed/controlled-environment-agriculture-microgreens/" class="nav-link dropdown-toggle" data-toggle="dropdown">CEA / Microgreens</a>
+<div class="dropdown-menu"><div class="dropdown-container">
+<div class="featured" style="background-image: url('https://www.seedway.com/app/uploads/2025/03/CEA-Products-1250x613.png')"></div>
+<div class="dropdown-content">
+<a href="https://www.seedway.com/vegetable-seed/controlled-environment-agriculture-microgreens/" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-87304 dropdown-item">Controlled Environment Agriculture / Microgreens</a><a href="https://www.seedway.com/2025-cea-product-portfolio/" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-87303 dropdown-item">2025 CEA Product Portfolio</a><a href="https://www.seedway.com/the-benefits-of-cea/" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-87306 dropdown-item">The Benefits Of CEA</a><a href="https://www.seedway.com/cea-structure-types/" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-87305 dropdown-item">CEA Structure Types</a><a href="https://www.seedway.com/culinary-health-benefits/" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-87616 dropdown-item">Culinary &#038; Health Benefits</a></div></div></div>
+</li>
+<li id="menu-item-90069" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-90069 nav-item"><a href="https://seedwaywildlifegenetics.com/" class="nav-link">Wildlife Genetics</a></li>
+<li id="menu-item-49919" class="mega menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-49919 nav-item dropdown"><a href="https://www.seedway.com/lawn-turf-seed/" class="nav-link dropdown-toggle" data-toggle="dropdown">Lawn &amp; Turf Seed</a>
+<div class="dropdown-menu"><div class="dropdown-container">
+<div class="featured" style="background-image: url('https://www.seedway.com/app/uploads/2020/05/Screen-Shot-2020-05-15-at-1.49.14-PM-768x862.png')"></div>
+<div class="dropdown-content">
+<a href="https://www.seedway.com/lawn-turf-seed/" class="title-link menu-item-has-children menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-49963 dropdown-item has-children">Lawn &amp; Turf Seed</a><ul><li><a href="https://www.seedway.com/product-category/turf-seed/mixtures/">Mixtures</a></li><li><a href="https://www.seedway.com/product-category/turf-seed/soil-additives-clay-products-additives/">Soil Additives &amp; Clay Products</a></li><li><a href="https://www.seedway.com/product-category/turf-seed/">Turf Seed</a></li></ul><a href="https://www.seedway.com/product-category/turf-seed/" class="shop-all menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-49970 dropdown-item">View All Turf Seed Products</a><a href="https://www.seedway.com/lawn-turf-seed/lawn-turf-seed-brochure/" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-82539 dropdown-item">Lawn &#038; Turf Seed Brochure</a></div></div></div>
+</li>
+<li id="menu-item-49884" class="mega menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-49884 nav-item dropdown"><a href="https://www.seedway.com/seedway-promos/" class="nav-link dropdown-toggle" data-toggle="dropdown">SEEDWAY Promos</a>
+<div class="dropdown-menu"><div class="dropdown-container">
+<div class="featured" style="background-image: url('https://www.seedway.com/app/uploads/2020/08/Website-Promo-Header-e1597180649286-768x451.jpg')"></div>
+<div class="dropdown-content">
+<a href="https://www.seedway.com/product-category/seedway-seed-swag/" class="menu-item-has-children menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-49940 dropdown-item has-children">SEEDWAY Seed Swag</a><ul><li><a href="https://www.seedway.com/product-category/seedway-seed-swag/seedway-headwear/">Headwear</a></li><li><a href="https://www.seedway.com/product-category/seedway-seed-swag/seedway-branded-accessories/">Branded Accessories</a></li><li><a href="https://www.seedway.com/product-category/seedway-seed-swag/seedway-apparel/">Apparel</a></li></ul><a href="https://www.seedway.com/product-category/seedway-seed-swag/" class="shop-all menu-item menu-item-type-custom menu-item-object-custom menu-item-49998 dropdown-item">View All Seedway Promo Items</a></div></div></div>
+</li>
+<li id="menu-item-72172" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-72172 nav-item"><a href="https://jobs.growmark.com/seedway/go/Seedway-Jobs/4405800/?q=&#038;sortColumn=referencedate&#038;sortDirection=desc" class="nav-link">Careers</a></li>
+<li id="menu-item-49920" class="left menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-49920 nav-item dropdown"><a href="https://www.seedway.com/about-us/" class="nav-link dropdown-toggle" data-toggle="dropdown">About</a>
+<div class="dropdown-menu"><div class="dropdown-container">
+
+<div class="dropdown-content">
+<a href="https://www.seedway.com/about-us/" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-49958 dropdown-item">About Seedway</a><a href="https://www.seedway.com/contact/" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-49957 dropdown-item">Contact</a><a href="/events/" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-50052 dropdown-item">Events Calendar</a><a href="https://www.seedway.com/about-us/our-team/" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-49927 dropdown-item">Our Team</a><a target="_blank" href="https://jobs.growmark.com/seedway/go/Seedway-Jobs/4405800/?q=&#038;sortColumn=referencedate&#038;sortDirection=desc" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-50016 dropdown-item">Employment</a><a href="https://www.seedway.com/about-us/find-a-farm-partner/" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-49923 dropdown-item">Find a Farm Partner</a><a href="https://www.seedway.com/about-us/locations/" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-49924 dropdown-item">Locations</a><a href="https://www.seedway.com/about-us/news/" class=" menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-49921 dropdown-item">News</a><a href="https://www.seedway.com/about-us/financing/" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-49922 dropdown-item">Financing</a><a href="https://www.seedway.com/legal-documents/" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-49880 dropdown-item">Legal Documents</a></div></div></div>
+</li>
+</ul></div>          </nav>
+
+        </div>
+
+
+      </div>
+    </div>
+  </header>
+</div>    <div class="wrap" role="document">
+      <main class="main">
+                
+
+<section class="margin-top-md margin-bot-md ctr">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+
+      <div class="col-sm-10 col-md-8">
+        <h1>404 Error</h1>
+        <p>Sorry, but the page you were trying to view does not exist.</p>
+
+        <form role="search" method="get" class="search-form" action="https://www.seedway.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form>      </div>
+
+    </div>
+  </div>
+</section>
+      </main><!-- /.main -->
+          </div><!-- /.wrap -->
+
+
+    
+
+
+<footer class="footer">
+  <div class="container-fluid">
+
+    <div class="footer-top-container">
+      <div class="row align-items-center">
+
+                <div class="col-md-6 left mt-2-sm-down">
+                    <p><img loading="lazy" decoding="async" class="alignnone size-medium" src="https://www.seedway.com/app/uploads/2023/06/SW_Logo_Fill.svg" alt="" width="1" height="1" /></p>
+                  </div>
+        
+                <div class="col-md-6 left-center mt-2-sm-down">
+                                      </div>
+        
+      </div>
+      <hr />
+      <div class="row align-items-center">
+
+                <div class="col-md-6 right-center mt-2-sm-down">
+                    <p><strong>SEEDWAY, LLC.</strong><br />
+P.O. Box 250, 1734 Railroad Place<br />
+Hall, NY 14463</p>
+<p>Tel: 800-836-3710</p>
+                  </div>
+        
+                <div class="col-md-6 right mt-2-sm-down">
+                    
+
+<div class="sn">
+
+
+      <a href="http://www.facebook.com/SEEDWAYLLC/" class="fb" aria-label="facebook"><svg x="0px" y="0px" viewBox="0 0 16 34.3" style="enable-background:new 0 0 16 34.3;" xml:space="preserve">
+    <path class="st0" d="M16,6h-3.9c-0.8,0-1.5,0.8-1.5,1.4v4H16c-0.2,3-0.7,5.8-0.7,5.8h-4.8v17.2H3.5V17.1H0v-5.8h3.5V6.6
+    	C3.5,5.8,3.3,0,10.7,0H16V6z"/>
+    </svg></a>
+  
+      <a href="http://twitter.com/seedway_llc" class="twitter" aria-label="Twitter"><svg x="0px" y="0px"
+    	 viewBox="0 0 32 26.3" style="enable-background:new 0 0 32 26.3;" xml:space="preserve">
+    <path class="st0" d="M28.7,6.6c0,0.3,0,0.6,0,0.9c0,8.8-6.6,18.9-18.7,18.9c-3.7,0-7.2-1.1-10.1-3c0.5,0.1,1,0.1,1.6,0.1
+    	c3.1,0,5.9-1.1,8.2-2.8c-2.9,0-5.3-2-6.1-4.6C4,16,4.4,16.1,4.8,16.1c0.6,0,1.2-0.1,1.7-0.2c-3-0.6-5.3-3.3-5.3-6.5V9.2
+    	c0.9,0.5,1.9,0.8,3,0.8C2.5,8.9,1.3,6.9,1.3,4.6c0-1.2,0.3-2.4,0.9-3.3c3.2,4,8.1,6.6,13.5,6.9c-0.1-0.5-0.2-1-0.2-1.5
+    	C15.6,3,18.5,0,22.2,0C24,0,25.8,0.8,27,2.1c1.5-0.3,2.9-0.8,4.2-1.6c-0.5,1.5-1.5,2.8-2.9,3.7c1.3-0.2,2.6-0.5,3.8-1
+    	C31.1,4.4,30,5.6,28.7,6.6z"/>
+    </svg></a>
+  
+      <a href="http://instagram.com/seedway_llc" class="instagram" aria-label="Instagram">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 504 503.9" style="enable-background:new 0 0 504 503.9;" xml:space="preserve">
+<g>
+	<path class="st0" d="M251.9,45.4c67.3,0,75.2,0.3,101.8,1.5c24.6,1.1,37.9,5.2,46.8,8.7c11.8,4.6,20.2,10,29,18.8s14.3,17.2,18.8,29
+		c3.4,8.9,7.6,22.2,8.7,46.8c1.2,26.6,1.5,34.5,1.5,101.8s-0.3,75.2-1.5,101.8c-1.1,24.6-5.2,37.9-8.7,46.8
+		c-4.6,11.8-10,20.2-18.8,29s-17.2,14.3-29,18.8c-8.9,3.4-22.2,7.6-46.8,8.7c-26.6,1.2-34.5,1.5-101.8,1.5s-75.2-0.3-101.8-1.5
+		c-24.6-1.1-37.9-5.2-46.8-8.7c-11.8-4.6-20.2-10-29-18.8s-14.3-17.2-18.8-29c-3.4-8.9-7.6-22.2-8.7-46.8
+		c-1.2-26.6-1.5-34.5-1.5-101.8s0.3-75.2,1.5-101.8c1.1-24.6,5.2-37.9,8.7-46.8c4.6-11.8,10-20.2,18.8-29s17.2-14.3,29-18.8
+		c8.9-3.4,22.2-7.6,46.8-8.7C176.7,45.6,184.6,45.4,251.9,45.4 M251.9,0c-68.4,0-77,0.3-103.9,1.5C121.2,2.7,102.9,7,86.9,13.2
+		c-16.6,6.4-30.6,15.1-44.6,29.1S19.7,70.4,13.2,86.9c-6.2,16-10.5,34.3-11.7,61.2C0.3,174.9,0,183.5,0,251.9s0.3,77,1.5,103.9
+		C2.7,382.6,7,400.9,13.2,417c6.4,16.6,15.1,30.6,29.1,44.6s28.1,22.6,44.6,29.1c16,6.2,34.3,10.5,61.2,11.7s35.4,1.5,103.9,1.5
+		s77-0.3,103.9-1.5c26.8-1.2,45.1-5.5,61.2-11.7c16.6-6.4,30.6-15.1,44.6-29.1s22.6-28.1,29.1-44.6c6.2-16,10.5-34.3,11.7-61.2
+		c1.2-26.9,1.5-35.4,1.5-103.9s-0.3-77-1.5-103.9c-1.2-26.8-5.5-45.1-11.7-61.2c-6.4-16.6-15.1-30.6-29.1-44.6s-28.1-22.6-44.6-29.1
+		c-16-6.2-34.3-10.5-61.2-11.7C328.9,0.3,320.3,0,251.9,0L251.9,0z"/>
+	<path class="st0" d="M251.9,122.5c-71.4,0-129.4,57.9-129.4,129.4s58,129.4,129.4,129.4s129.4-58,129.4-129.4S323.3,122.5,251.9,122.5z
+		 M251.9,335.9c-46.4,0-84-37.6-84-84s37.6-84,84-84s84,37.6,84,84S298.3,335.9,251.9,335.9z"/>
+	<circle class="st0" cx="386.4" cy="117.4" r="30.2"/>
+</g>
+</svg>
+</a>
+  
+      <a href="http://www.youtube.com/@seedwayllc" class="youtube" aria-label="YouTube"><svg x="0px" y="0px" viewBox="0 0 121.5 85" style="enable-background:new 0 0 121.5 85;" xml:space="preserve">
+<path class="st0" d="M118.9,13.3c-1.4-5.2-5.5-9.3-10.7-10.7C98.7,0,60.7,0,60.7,0s-38,0-47.5,2.5C8.1,3.9,3.9,8.1,2.5,13.3
+	C0,22.8,0,42.5,0,42.5s0,19.8,2.5,29.2c1.4,5.2,5.5,9.3,10.7,10.7C22.8,85,60.7,85,60.7,85s38,0,47.5-2.5c5.2-1.4,9.3-5.5,10.7-10.7
+	c2.5-9.5,2.5-29.2,2.5-29.2S121.5,22.8,118.9,13.3z M48.6,60.7V24.3l31.6,18.2L48.6,60.7z"/>
+</svg></a>
+  
+      <a href="http://www.linkedin.com/company/seedwayllc" class="linkedin" aria-label="LinkedIn"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32.01" style="enable-background:new 0 0 32 32.01;" xml:space="preserve">
+<path class="st0" d="M27.13,26.8h-4.84v-7.74c0-1.94-0.7-3.26-2.45-3.26c-1.33,0-2.13,0.89-2.48,1.75
+	c-0.13,0.32-0.16,0.74-0.16,1.17v8.08h-4.83c0,0,0.06-13.1,0-14.46h4.83v2.06c0.64-0.99,1.79-2.4,4.36-2.4
+	c3.18,0,5.57,2.07,5.57,6.51V26.8z M7.27,10.37H7.24c-1.62,0-2.66-1.11-2.66-2.5c0-1.41,1.08-2.49,2.73-2.49s2.67,1.08,2.7,2.49
+	C10.01,9.26,8.96,10.37,7.27,10.37z M9.69,26.8H4.86V12.34h4.83V26.8z M29.63,0H2.37C1.06,0,0,1.03,0,2.3v27.42
+	c0,1.26,1.06,2.29,2.37,2.29h27.26c1.3,0,2.37-1.03,2.37-2.29V2.3C32,1.03,30.93,0,29.63,0z"/>
+</svg>
+
+</svg></a>
+  
+
+</div>
+
+                  </div>
+        
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <!--BE IXF: The following <div> block needs to be placed in the location where the link block will be displayed-->
+        <!--BE IXF: For your website, the location is above/below ... -->
+        <div class="be-ix-link-block">
+          
+<!-- be_ixf, bodystr, body_1 -->
+<div class="be-related-link-container"><div class="be-label">ALSO OF INTEREST</div><ul class="be-list"><li class="be-list-item"><a class="be-related-link" href="https://www.seedway.com/farm-seed/">Farm Seed</a></li><li class="be-list-item"><a class="be-related-link" href="https://www.seedway.com/product-category/turf-seed/">Turf Seed</a></li><li class="be-list-item"><a class="be-related-link" href="https://www.seedway.com/product-category/seedway-seed-swag/">Seedway Seed Swag</a></li></ul></div>
+
+<!-- be_ixf, sdk, is -->
+        </div>
+        <!--BE IXF: end-->
+      </div>
+    </div>
+
+    <div class="row">
+            <div class="col legal"><p>© Copyright 2026 Seedway, LLC. All Rights Reserved. <a href="https://www.tothelab.co" target="_blank">Website by The Lab</a></p>
+</div>
+          </div>
+
+  </div>
+</footer><script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp/wp-*.php","/wp/wp-admin/*","/app/uploads/*","/app/*","/app/plugins/*","/app/themes/seedway/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+		<script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+		</script>
+		<script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script><script type="text/javascript">jQuery(function($){		function load_first_data_payeezy_gateway_credit_card_payment_form_handler() {
+			window.wc_first_data_payeezy_gateway_credit_card_payment_form_handler = new WC_First_Data_Payeezy_Gateway_Payment_Form_Handler( {"plugin_id":"first_data","id":"first_data_payeezy_gateway_credit_card","id_dasherized":"first-data-payeezy-gateway-credit-card","type":"credit-card","csc_required":true,"csc_required_for_tokens":true,"enabled_card_types":["visa","mastercard","amex","discover","dinersclub","jcb"]} );window.jQuery( document.body ).trigger( "update_checkout" );		}
+
+		try {
+
+			if ( 'undefined' !== typeof WC_First_Data_Payeezy_Gateway_Payment_Form_Handler ) {
+				load_first_data_payeezy_gateway_credit_card_payment_form_handler();
+			} else {
+				window.jQuery( document.body ).on( 'wc_first_data_payeezy_gateway_payment_form_handler_loaded', load_first_data_payeezy_gateway_credit_card_payment_form_handler );
+			}
+
+		} catch ( err ) {
+
+			
+		var errorName    = '',
+		    errorMessage = '';
+
+		if ( 'undefined' === typeof err || 0 === err.length || ! err ) {
+			errorName    = 'A script error has occurred.';
+			errorMessage = 'The script WC_First_Data_Payeezy_Gateway_Payment_Form_Handler could not be loaded.';
+		} else {
+			errorName    = 'undefined' !== typeof err.name    ? err.name    : '';
+			errorMessage = 'undefined' !== typeof err.message ? err.message : '';
+		}
+
+		
+		jQuery.post( 'https://www.seedway.com/wp/wp-admin/admin-ajax.php', {
+			action:   'wc_first_data_payeezy_gateway_credit_card_payment_form_log_script_event',
+			security: 'e399f1d8fd',
+			name:     errorName,
+			message:  errorMessage,
+		} );
+
+				}
+		});</script><script type="text/javascript">jQuery(function($){		function load_first_data_payeezy_gateway_echeck_payment_form_handler() {
+			window.wc_first_data_payeezy_gateway_echeck_payment_form_handler = new WC_First_Data_Payeezy_Gateway_Payment_Form_Handler( {"plugin_id":"first_data","id":"first_data_payeezy_gateway_echeck","id_dasherized":"first-data-payeezy-gateway-echeck","type":"echeck","csc_required":false,"csc_required_for_tokens":false} );window.jQuery( document.body ).trigger( "update_checkout" );		}
+
+		try {
+
+			if ( 'undefined' !== typeof WC_First_Data_Payeezy_Gateway_Payment_Form_Handler ) {
+				load_first_data_payeezy_gateway_echeck_payment_form_handler();
+			} else {
+				window.jQuery( document.body ).on( 'wc_first_data_payeezy_gateway_payment_form_handler_loaded', load_first_data_payeezy_gateway_echeck_payment_form_handler );
+			}
+
+		} catch ( err ) {
+
+			
+		var errorName    = '',
+		    errorMessage = '';
+
+		if ( 'undefined' === typeof err || 0 === err.length || ! err ) {
+			errorName    = 'A script error has occurred.';
+			errorMessage = 'The script WC_First_Data_Payeezy_Gateway_Payment_Form_Handler could not be loaded.';
+		} else {
+			errorName    = 'undefined' !== typeof err.name    ? err.name    : '';
+			errorMessage = 'undefined' !== typeof err.message ? err.message : '';
+		}
+
+		
+		jQuery.post( 'https://www.seedway.com/wp/wp-admin/admin-ajax.php', {
+			action:   'wc_first_data_payeezy_gateway_echeck_payment_form_log_script_event',
+			security: '31b84128ea',
+			name:     errorName,
+			message:  errorMessage,
+		} );
+
+				}
+		});</script>	<script type='text/javascript'>
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	        <script data-cfasync="false">
+            window.dFlipLocation = 'https://www.seedway.com/app/plugins/3d-flipbook-dflip-lite/assets/';
+            window.dFlipWPGlobal = {"text":{"toggleSound":"Turn on\/off Sound","toggleThumbnails":"Toggle Thumbnails","toggleOutline":"Toggle Outline\/Bookmark","previousPage":"Previous Page","nextPage":"Next Page","toggleFullscreen":"Toggle Fullscreen","zoomIn":"Zoom In","zoomOut":"Zoom Out","toggleHelp":"Toggle Help","singlePageMode":"Single Page Mode","doublePageMode":"Double Page Mode","downloadPDFFile":"Download PDF File","gotoFirstPage":"Goto First Page","gotoLastPage":"Goto Last Page","share":"Share","mailSubject":"I wanted you to see this FlipBook","mailBody":"Check out this site {{url}}","loading":"DearFlip: Loading "},"viewerType":"flipbook","moreControls":"download,pageMode,startPage,endPage,sound","hideControls":"","scrollWheel":"false","backgroundColor":"#777","backgroundImage":"","height":"auto","paddingLeft":"20","paddingRight":"20","controlsPosition":"bottom","duration":800,"soundEnable":"true","enableDownload":"true","showSearchControl":"false","showPrintControl":"false","enableAnnotation":false,"enableAnalytics":"false","webgl":"true","hard":"none","maxTextureSize":"1600","rangeChunkSize":"524288","zoomRatio":1.5,"stiffness":3,"pageMode":"0","singlePageMode":"0","pageSize":"0","autoPlay":"false","autoPlayDuration":5000,"autoPlayStart":"false","linkTarget":"2","sharePrefix":"flipbook-"};
+        </script>
+      <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-GE7W016NVY" id="google-tag-manager-js" data-wp-strategy="async"></script>
+<script type="text/javascript" src="https://www.seedway.com/wp/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/wp/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.seedway.com/app/plugins/woocommerce-google-analytics-integration/assets/js/build/main.js?ver=51ef67570ab7d58329f5" id="woocommerce-google-analytics-integration-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/app/plugins/the-events-calendar/common/build/js/user-agent.js?ver=da75d0bdea6dde3898df" id="tec-user-agent-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/wp/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/wp/wp-includes/js/jquery/ui/mouse.min.js?ver=1.13.3" id="jquery-ui-mouse-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/wp/wp-includes/js/jquery/ui/resizable.min.js?ver=1.13.3" id="jquery-ui-resizable-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/wp/wp-includes/js/jquery/ui/draggable.min.js?ver=1.13.3" id="jquery-ui-draggable-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/wp/wp-includes/js/jquery/ui/controlgroup.min.js?ver=1.13.3" id="jquery-ui-controlgroup-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/wp/wp-includes/js/jquery/ui/checkboxradio.min.js?ver=1.13.3" id="jquery-ui-checkboxradio-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/wp/wp-includes/js/jquery/ui/button.min.js?ver=1.13.3" id="jquery-ui-button-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/wp/wp-includes/js/jquery/ui/dialog.min.js?ver=1.13.3" id="jquery-ui-dialog-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/app/plugins/3d-flipbook-dflip-lite/assets/js/dflip.min.js?ver=2.4.27" id="dflip-script-js"></script>
+<script type="text/javascript" src="https://www.seedway.com/app/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=10.6.1" id="sourcebuster-js-js"></script>
+<script type="text/javascript" id="wc-order-attribution-js-extra">
+/* <![CDATA[ */
+var wc_order_attribution = {"params":{"lifetime":1.0e-5,"session":30,"base64":false,"ajaxurl":"https://www.seedway.com/wp/wp-admin/admin-ajax.php","prefix":"wc_order_attribution_","allowTracking":true},"fields":{"source_type":"current.typ","referrer":"current_add.rf","utm_campaign":"current.cmp","utm_source":"current.src","utm_medium":"current.mdm","utm_content":"current.cnt","utm_id":"current.id","utm_term":"current.trm","utm_source_platform":"current.plt","utm_creative_format":"current.fmt","utm_marketing_tactic":"current.tct","session_entry":"current_add.ep","session_start_time":"current_add.fd","session_pages":"session.pgs","session_count":"udata.vst","user_agent":"udata.uag"}};
+//# sourceURL=wc-order-attribution-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.seedway.com/app/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=10.6.1" id="wc-order-attribution-js"></script>
+<script type="text/javascript" id="sage/js-js-extra">
+/* <![CDATA[ */
+var vars = {"insta_token":"","insta_uid":"","theme_url":"https://www.seedway.com/app/themes/seedway","brand_color":null,"ajaxurl":"https://www.seedway.com/wp/wp-admin/admin-ajax.php","user_id":"0"};
+//# sourceURL=sage%2Fjs-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.seedway.com/app/themes/seedway/dist/scripts/main.js?ver=1.11" id="sage/js-js"></script>
+<script type="text/javascript" id="woocommerce-google-analytics-integration-data-js-after">
+/* <![CDATA[ */
+window.ga4w = { data: {"cart":{"items":[],"coupons":[],"totals":{"currency_code":"USD","total_price":0,"currency_minor_unit":2}}}, settings: {"tracker_function_name":"gtag","events":["purchase","add_to_cart","remove_from_cart","view_item_list","select_content","view_item","begin_checkout"],"identifier":"product_id","currency":{"decimalSeparator":".","thousandSeparator":",","precision":2}} }; document.dispatchEvent(new Event("ga4w:ready"));
+//# sourceURL=woocommerce-google-analytics-integration-data-js-after
+/* ]]> */
+</script>
+  </div>
+
+
+  <div class="filters-overlay"></div>
+
+  <div class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body"></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+
+</html>
+<!-- Performance optimized by Redis Object Cache. Learn more: https://wprediscache.com -->
