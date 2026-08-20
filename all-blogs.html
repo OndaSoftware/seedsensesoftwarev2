@@ -60,20 +60,20 @@
 
             <!-- Featured Article -->
             <div class="blog-featured">
-                <a href="field-trial-to-sales-pitch.html" class="blog-featured-link">
+                <a href="meet-the-variety-catalog.html" class="blog-featured-link">
                     <div class="blog-featured-image">
-                        <img src="assets/images/girl-farmer-tablet-field.jpg" alt="Agronomist reviewing seed trial data on a tablet in the field" />
-                        <span class="blog-category-badge blog-category-industry">Sales Strategy</span>
+                        <img src="assets/images/seed-trial-meeting-room.jpg" alt="Seed company team reviewing variety trial results in a meeting room" />
+                        <span class="blog-category-badge blog-category-sales">Business Insights</span>
                     </div>
                     <div class="blog-featured-content">
                         <div class="blog-meta">
                             <i class="far fa-clock"></i>
                             <span>5 min read</span>
                             <span class="blog-dot">·</span>
-                            <span>April 2026</span>
+                            <span>August 2026</span>
                         </div>
-                        <h2 class="blog-featured-title">From Field Trial to Sales Pitch: How to Turn Performance Data into Deals</h2>
-                        <p class="blog-featured-excerpt">Your best salespeople aren't closing deals with brochures — they're closing them with proof. Here's how to turn your seed trial data into your strongest sales tool.</p>
+                        <h2 class="blog-featured-title">Meet the Variety Catalog: Find Your Next Winning Variety in Your Trial Data</h2>
+                        <p class="blog-featured-excerpt">Collecting clean trial data is only the first step. The new Variety Catalog turns seasons of evaluations into clear answers about which varieties to promote, sell, and drop.</p>
                         <span class="blog-read-more">Read Article <i class="fas fa-arrow-right"></i></span>
                     </div>
                 </a>
@@ -84,13 +84,38 @@
                 <span>All Articles</span>
             </div>
 
-            <!-- Blog Grid -->
-            <div class="blog-grid">
+            <!-- Tag Filter Bar -->
+            <div class="blog-filter-bar" id="blogFilterBar">
+                <button class="blog-filter-btn active" data-filter="all">All Topics</button>
+                <button class="blog-filter-btn" data-filter="business-insights">Business Insights</button>
+                <button class="blog-filter-btn" data-filter="product-features">Product Features</button>
+            </div>
 
-                <a href="field-trial-to-sales-pitch.html" class="blog-card">
+            <!-- Blog Grid -->
+            <div class="blog-grid" id="blogGrid">
+
+                <a href="meet-the-variety-catalog.html" class="blog-card" data-category="business-insights">
+                    <div class="blog-card-image">
+                        <img src="assets/images/seed-trial-meeting-room.jpg" alt="Seed company team reviewing variety trial results in a meeting room" />
+                        <span class="blog-category-badge blog-category-sales">Business Insights</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <div class="blog-meta">
+                            <i class="far fa-clock"></i>
+                            <span>5 min read</span>
+                            <span class="blog-dot">·</span>
+                            <span>August 2026</span>
+                        </div>
+                        <h3 class="blog-card-title">Meet the Variety Catalog: Find Your Next Winning Variety in Your Trial Data</h3>
+                        <p class="blog-card-excerpt">The new Variety Catalog turns your trial data into a decision tool. Find your next product, compare trialed varieties side by side, and give your sales team proof.</p>
+                        <span class="blog-card-cta">Read Article <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="field-trial-to-sales-pitch.html" class="blog-card" data-category="business-insights">
                     <div class="blog-card-image">
                         <img src="assets/images/girl-farmer-tablet-field.jpg" alt="Agronomist reviewing seed trial data on a tablet in the field" />
-                        <span class="blog-category-badge">Sales Strategy</span>
+                        <span class="blog-category-badge blog-category-sales">Business Insights</span>
                     </div>
                     <div class="blog-card-body">
                         <div class="blog-meta">
@@ -105,10 +130,10 @@
                     </div>
                 </a>
 
-                <a href="dealer-supplier-communication-b2.html" class="blog-card">
+                <a href="dealer-supplier-communication-b2.html" class="blog-card" data-category="business-insights">
                     <div class="blog-card-image">
                         <img src="assets/images/smallplots3.jpg" alt="Seed trial plots in the field" />
-                        <span class="blog-category-badge blog-category-industry">Industry Insights</span>
+                        <span class="blog-category-badge blog-category-sales">Business Insights</span>
                     </div>
                     <div class="blog-card-body">
                         <div class="blog-meta">
@@ -123,10 +148,10 @@
                     </div>
                 </a>
 
-                <a href="software-value-b1.html" class="blog-card">
+                <a href="software-value-b1.html" class="blog-card" data-category="business-insights">
                     <div class="blog-card-image">
                         <img src="assets/images/mixedlettuce.jpg" alt="Mixed lettuce varieties in trial" />
-                        <span class="blog-category-badge">Business Impact</span>
+                        <span class="blog-category-badge blog-category-sales">Business Insights</span>
                     </div>
                     <div class="blog-card-body">
                         <div class="blog-meta">
@@ -141,7 +166,7 @@
                     </div>
                 </a>
 
-                <a href="automated-reports.html" class="blog-card">
+                <a href="automated-reports.html" class="blog-card" data-category="product-features">
                     <div class="blog-card-image">
                         <img src="assets/images/pic01new.jpg" alt="Seed trial automated reporting" />
                         <span class="blog-category-badge">Product Features</span>
@@ -159,10 +184,10 @@
                     </div>
                 </a>
 
-                <a href="wheres-your-trial-data.html" class="blog-card">
+                <a href="wheres-your-trial-data.html" class="blog-card" data-category="product-features">
                     <div class="blog-card-image">
                         <img src="assets/images/pic02new.jpg" alt="Centralized seed trial data" />
-                        <span class="blog-category-badge">Data Management</span>
+                        <span class="blog-category-badge">Product Features</span>
                     </div>
                     <div class="blog-card-body">
                         <div class="blog-meta">
@@ -177,7 +202,7 @@
                     </div>
                 </a>
 
-                <a href="seedsense-spanish-port.html" class="blog-card">
+                <a href="seedsense-spanish-port.html" class="blog-card" data-category="product-features">
                     <div class="blog-card-image">
                         <img src="assets/images/pic03new.jpg" alt="Global seed trial teams" />
                         <span class="blog-category-badge">Product Features</span>
@@ -260,6 +285,24 @@
 
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
+
+        (function () {
+            var buttons = document.querySelectorAll('.blog-filter-btn');
+            var cards = document.querySelectorAll('#blogGrid .blog-card');
+
+            buttons.forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    buttons.forEach(function (b) { b.classList.remove('active'); });
+                    btn.classList.add('active');
+
+                    var filter = btn.getAttribute('data-filter');
+                    cards.forEach(function (card) {
+                        var match = filter === 'all' || card.getAttribute('data-category') === filter;
+                        card.classList.toggle('blog-card-hidden', !match);
+                    });
+                });
+            });
+        })();
     </script>
 
   <script>
