@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+@theme {
+  /* SeedSense palette (ported from seedsense.css) */
+  --color-primary: #28593b; /* deep forest green */
+  --color-primary-dark: #1e472d; /* hover state */
+  --color-secondary: #3e7f4c; /* lighter green */
+  --color-accent: #66bb6a; /* bright green */
+  --color-cream: #f0f8f3; /* light greenish background */
+  --color-mint: #e6f7ed; /* pale mint (tags, icons) */
+  --color-surface: #f5f7f5; /* light gray-green section background */
+  --color-sage: #a3c9a8; /* soft green border */
+  --color-ink: #1a2e22; /* heading color */
+  --color-forest: #0a1a10; /* dark section background */
+  --color-night: #080f0a; /* darkest section background */
+  --color-footer: #0f2318; /* footer background */
+  --color-moss: #4a5e4a; /* nav / bullet text */
+  --color-fern: #607060; /* body copy on light backgrounds */
+  --color-navy: #1d3f5e; /* Business Insights badge */
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), Georgia, serif;
+
+  --animate-fade-up: fade-up 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  --animate-hero-float: hero-float 5.5s ease-in-out infinite 2.2s;
+  --animate-pulse-bar: pulse-bar 2.2s ease-in-out infinite;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes hero-float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-14px);
+    }
+  }
+
+  @keyframes pulse-bar {
+    0%,
+    100% {
+      opacity: 0.4;
+      transform: scaleY(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scaleY(1.12);
+    }
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  background: #fff;
+  color: var(--color-ink);
+  overflow-x: hidden;
+}
+
+/*
+ * Typographic scale — every heading on the site uses one of these four
+ * levels so page titles and section titles stay visually consistent.
+ * Color is applied per-usage (e.g. text-ink, text-white).
+ */
+@layer components {
+  /*
+   * Lock Fraunces to the text optical size (opsz 18) and turn wonk off.
+   * Auto optical sizing at hero sizes pulls the display cut — a hooked "f"
+   * and calligraphic "&" that look like a different typeface than section titles.
+   */
+  .heading-display,
+  .heading-section,
+  .heading-subsection,
+  .heading-card {
+    font-family: var(--font-serif);
+    font-optical-sizing: none;
+    font-variation-settings: "opsz" 18, "WONK" 0;
+    font-weight: 600;
+  }
+
+  /* Page titles (hero h1) */
+  .heading-display {
+    font-size: clamp(2.75rem, 2.15rem + 3vw, 4.15rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  /* Section titles (h2) and article page titles */
+  .heading-section {
+    font-size: clamp(2rem, 1.6rem + 2vw, 2.9rem);
+    line-height: 1.18;
+    letter-spacing: -0.012em;
+  }
+
+  /* Subsection titles (article h2, featured cards) */
+  .heading-subsection {
+    font-size: 1.7rem;
+    line-height: 1.3;
+    letter-spacing: -0.008em;
+  }
+
+  /* Card titles and article h3 */
+  .heading-card {
+    font-size: 1.25rem;
+    line-height: 1.35;
+  }
+}
+
+/* Scroll-reveal (shared across pages, toggled by the Reveal component) */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
