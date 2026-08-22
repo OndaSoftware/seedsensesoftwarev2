@@ -1,12 +1,12 @@
 import { render, screen } from "@testing-library/react";
 import type { ComponentType } from "react";
-import AutomatedReportsPage from "@/app/automated-reports/page";
-import DealerSupplierCommunicationPage from "@/app/dealer-supplier-communication-b2/page";
-import FieldTrialToSalesPitchPage from "@/app/field-trial-to-sales-pitch/page";
-import MeetTheVarietyCatalogPage from "@/app/meet-the-variety-catalog/page";
-import SeedsenseSpanishPortPage from "@/app/seedsense-spanish-port/page";
-import SoftwareValuePage from "@/app/software-value-b1/page";
-import WheresYourTrialDataPage from "@/app/wheres-your-trial-data/page";
+import AutomatedReportsPage from "@/app/(site)/automated-reports/page";
+import DealerSupplierCommunicationPage from "@/app/(site)/dealer-supplier-communication-b2/page";
+import FieldTrialToSalesPitchPage from "@/app/(site)/field-trial-to-sales-pitch/page";
+import MeetTheVarietyCatalogPage from "@/app/(site)/meet-the-variety-catalog/page";
+import SeedsenseSpanishPortPage from "@/app/(site)/seedsense-spanish-port/page";
+import SoftwareValuePage from "@/app/(site)/software-value-b1/page";
+import WheresYourTrialDataPage from "@/app/(site)/wheres-your-trial-data/page";
 import { categoryLabels, getPost } from "@/lib/posts";
 
 const pages: [slug: string, Page: ComponentType][] = [

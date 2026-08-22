@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
+/*
+ * The help center under /resources is a separate document with its own root
+ * layout and its own stylesheet, src/app/(resources)/resources.css. Tailwind
+ * scans the whole project by default, which would compile every help-center
+ * utility class into this file too — ~30KB of rules no marketing page can use.
+ * Excluding those sources keeps this stylesheet to what the marketing site
+ * actually renders.
+ */
+@source not "./(resources)";
+@source not "../components/resources";
+@source not "../../content";
+
 @theme {
   /* SeedSense palette (ported from seedsense.css) */
   --color-primary: #28593b; /* deep forest green */
@@ -17,6 +29,15 @@
   --color-moss: #4a5e4a; /* nav / bullet text */
   --color-fern: #607060; /* body copy on light backgrounds */
   --color-navy: #1d3f5e; /* Business Insights badge */
+
+  /*
+   * Mirrors CheckDeviceSupport.isMobileOrTablet in the Flutter app
+   * (lib/src/core/utils/check_device_support/check_device_support.dart), which
+   * refuses to render the web app below 1050px and shows a "use our app
+   * instead" dialog. Sharing the constant means any viewport the app would
+   * turn away, the marketing site diverts to "Open App" first.
+   */
+  --breakpoint-app: 1050px;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-fraunces), Georgia, serif;

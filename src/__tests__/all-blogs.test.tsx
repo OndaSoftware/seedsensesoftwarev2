@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import AllBlogsPage from "@/app/all-blogs/page";
+import AllBlogsPage from "@/app/(site)/all-blogs/page";
 import { posts } from "@/lib/posts";
 
 describe("AllBlogsPage", () => {

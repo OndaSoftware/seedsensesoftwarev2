@@ -1,0 +1,92 @@
+---
+title: Export and email trial reports
+description: Generating the trial map and evaluations report as PDFs, and emailing them to farmers, suppliers, and teams.
+order: 6
+popular: true
+videoPending: true
+updated: "2026-08-22"
+keywords: ["report", "pdf", "email", "trial map", "evaluations", "export", "send"]
+---
+
+Every trial has a **Reports & Emails** section at the bottom of its detail
+screen. It does two things: it builds PDFs you can download, and it sends those
+same PDFs out by email.
+
+## The two reports
+
+**Trial Map** is the plot layout — the map image with the trial's farmer, crop,
+zone, planting date, harvest date, and chemical type printed alongside it. It is
+the sheet you hand to someone walking the field.
+
+**Evaluations Report** is the scoring: every evaluated variety with its traits,
+score, pros, cons, conclusion, and photos. Check varieties are marked `(CH)` and
+field varieties `(FV)` so a reader can see what everything was measured against.
+
+## Downloading a PDF
+
+<Steps>
+  <Step title="Open the trial and scroll to Reports & Emails">
+    On mobile, get there by tapping a task; on the web, from the trial catalog.
+  </Step>
+  <Step title="Choose Generate Trial Map or Generate Evaluations Report">
+    The PDF is built on the server, so this needs a connection — with no signal
+    the app says so instead of producing an empty file.
+  </Step>
+  <Step title="Wait for the download">
+    You will see "Downloading PDF", then a confirmation. On the web the file
+    lands in your browser's downloads; on mobile it goes to your device.
+  </Step>
+</Steps>
+
+## Emailing a report
+
+**Send Emails** sends the same two reports without downloading them first.
+
+<Steps>
+  <Step title="Pick the email type">
+    Trial Map or Evaluations Report — one per send.
+  </Step>
+  <Step title="Pick the recipients">
+    Evaluator, Farmer, Supplier Reps, and Teams. Supplier Reps and Teams expand
+    so you can tick individual suppliers or individual teams rather than all of
+    them.
+  </Step>
+  <Step title="Decide on CC Evaluator">
+    Leave this on to copy yourself on whatever goes out.
+  </Step>
+  <Step title="Send">
+    You need both an email type and at least one recipient before the Send
+    button will do anything.
+  </Step>
+</Steps>
+
+## Where each recipient's address comes from
+
+This is worth knowing, because a missing address is the usual reason an email
+does not arrive.
+
+| Recipient | Address used |
+| --- | --- |
+| Evaluator | Your own account email |
+| Farmer | Every address under Data Settings → Farmer Emails for the trial's farmer |
+| Supplier Reps | Reps of the suppliers whose varieties are in this trial |
+| Teams | Active members of the teams you ticked |
+
+Supplier reps are filtered further: a rep is included only if they are marked
+for all areas, or assigned to this trial's area under **Supplier Rep Areas**. A
+rep who covers a different area will not be emailed about this trial, which is
+usually what you want and occasionally a surprise.
+
+<Callout variant="warning">
+  "Error when sending email. Please verify that valid email addresses are
+  defined on Data Settings" means the recipients you chose resolved to nothing.
+  Check [Farmers, suppliers, and reps](/data-and-sync/farmers-suppliers-and-reps)
+  before assuming the send failed.
+</Callout>
+
+## Exporting a whole catalog instead
+
+The reports above cover one trial. To export many at once, use **Export
+Catalog** in the [trial catalog](/trials/the-trial-catalog) or the
+[evaluation catalog](/evaluations/the-evaluation-catalog) — both offer CSV and
+PDF, and both export exactly what your current filters have selected.

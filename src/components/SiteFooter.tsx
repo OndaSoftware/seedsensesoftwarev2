@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { navLinks, site } from "@/lib/site";
+import OpenAppButton from "@/components/OpenAppButton";
+import SessionCta from "@/components/SessionCta";
 
 export default function SiteFooter() {
   const year = new Date().getFullYear();
@@ -64,12 +66,13 @@ export default function SiteFooter() {
             >
               {site.email}
             </a>
-            <a
-              href={site.portalUrl}
-              className="border-b border-white/[0.07] py-2.5 text-sm text-white/75 transition-colors hover:text-white"
-            >
-              Login to SeedSense
-            </a>
+            {/* Same device/session split as the header — see SiteHeader. */}
+            <OpenAppButton className="block border-b border-white/[0.07] py-2.5 text-sm text-white/75 transition-colors hover:text-white app:hidden" />
+            <SessionCta
+              className="hidden border-b border-white/[0.07] py-2.5 text-sm text-white/75 transition-colors hover:text-white app:block"
+              signedInLabel="Go to Dashboard"
+              signedOutLabel="Login to SeedSense"
+            />
           </div>
         </div>
       </div>

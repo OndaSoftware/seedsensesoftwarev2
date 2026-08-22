@@ -1,0 +1,33 @@
+---
+title: How syncing works
+description: What happens to your field work between recording it and it reaching the server.
+order: 1
+videoPending: true
+updated: "2026-08-19"
+keywords: ["sync", "upload", "server", "offline", "data"]
+---
+
+Everything you record is written to your device first and sent to the server
+second. That order is the whole design: losing signal can never lose work.
+
+## The cycle
+
+When the app has a connection, it sends anything queued and pulls down changes
+made by other people. This happens in the background — you do not have to
+trigger it.
+
+## What "synced" means
+
+A trial marked synced has no local changes waiting. Unsynced means at least one
+change is still queued on this device.
+
+<Callout variant="warning">
+  Unsynced work lives on one device. If that tablet is lost or wiped before it
+  reconnects, the work goes with it. Sync before the end of a trip, not at the
+  end of the week.
+</Callout>
+
+## When two people edit the same thing
+
+Evaluations are stored per evaluator, so two people scoring the same trial do
+not collide. For shared records like trial details, the most recent change wins.

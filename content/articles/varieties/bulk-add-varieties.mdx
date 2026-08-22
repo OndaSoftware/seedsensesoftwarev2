@@ -1,0 +1,71 @@
+---
+title: Import varieties in bulk
+description: Adding a season's worth of varieties to Data Settings from a CSV, and reading the failure report when rows are rejected.
+order: 2
+popular: true
+videoPending: true
+updated: "2026-08-22"
+keywords: ["bulk", "import", "csv", "upload", "many varieties", "template"]
+---
+
+Go to **Data Settings → Varieties** and choose **Bulk Upload**. The dialog walks
+through three steps, and the first two are downloads.
+
+<Steps>
+  <Step title="Download the CSV template">
+    Shows the correct format and the required columns.
+  </Step>
+  <Step title="Download your existing data">
+    The same template filled with what is already in the system. Use it to copy
+    exact supplier and classification spellings rather than guessing them.
+  </Step>
+  <Step title="Upload your finished CSV">
+    Pick the file and the import runs.
+  </Step>
+</Steps>
+
+## The four columns
+
+| Column | Must match |
+| --- | --- |
+| Variety Name | Nothing — but it must be unique in your organization |
+| Variety Type | One of the eight types below |
+| Classification | An existing crop classification |
+| Supplier | An existing supplier |
+
+Valid variety types are Commercial, Dropped, Pre-commercial, Screening,
+Slotting, Research, Experimental, and Advanced Research. Matching is
+case-insensitive, so `commercial` is accepted.
+
+There is no crop column. A variety gets its crop from its classification, which
+is why the classification has to exist first — see
+[Managing data settings](/data-and-sync/data-settings).
+
+## What happens to bad rows
+
+Rows are validated one at a time, so a bad row does not stop the import. You get
+a count of both outcomes: *"Successfully uploaded 42 varieties, but failed to
+upload 3 varieties."*
+
+On the web, **Download Details (CSV)** then gives you the failed rows back with
+an `Error` column explaining each one. The usual four:
+
+- `Variety name "X" already exists` — it is already in the catalog
+- `Invalid variety type: "x"` — not one of the eight
+- `Classification "X" not found` — create it under Crop Classifications first
+- `Supplier "X" not found` — create it under Suppliers first
+
+Fix that file and upload it again; the rows that succeeded the first time are
+already in and will be rejected as duplicates if you resend them.
+
+<Callout variant="warning">
+  Duplicate names are rejected on import, which is a feature. Two spellings of
+  the same variety are painful to untangle once evaluations are attached to
+  both.
+</Callout>
+
+## Adding to a trial instead
+
+This page is about the shared catalog. Putting varieties into a specific trial
+is a different screen — see
+[Assign varieties to a trial](/trials/assign-varieties-to-a-trial).

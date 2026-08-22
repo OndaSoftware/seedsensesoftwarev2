@@ -1,0 +1,89 @@
+---
+title: Managing data settings
+description: The six groups of reference data every trial is built from, and the order they have to be created in.
+order: 4
+videoPending: true
+updated: "2026-08-22"
+keywords: ["data settings", "reference data", "setup", "admin", "crops", "zones"]
+---
+
+**Data Settings** holds everything a trial is assembled from. Nothing here is
+field work — it is the lists that the trial form, the evaluation form, and the
+email recipients all draw on. Get it right once and the rest of the season is
+picking from dropdowns.
+
+There is a search box at the top of the page; with eighteen options it is
+usually faster than scanning.
+
+## The six groups
+
+### Crop Management
+
+**Crops** are the top level. **Crop Classifications** sit under a crop, and
+**Varieties** sit under a classification — which is how a variety knows which
+crop it belongs to without you setting it directly. See
+[Import varieties in bulk](/varieties/bulk-add-varieties).
+
+### Farmer Management
+
+**Farmers** are the growers whose ground you trial on. **Farmer Emails** are the
+addresses that receive trial reports — a farmer can have several, and a farmer
+with none simply gets skipped when you email a report.
+
+### Geographical Data
+
+Five levels, each one nested in the one before it:
+
+**Coasts → Regions → States → Areas → Zones**
+
+A trial is placed on a **zone**, then given a ranch and field name as free text.
+So a zone has to exist before the trial can, and creating one means the area,
+state, region, and coast above it already exist.
+
+### Supplier Management
+
+**Suppliers** provide the varieties you test. **Supplier Reps** are the people
+at those suppliers, and **Supplier Rep Areas** control which areas each rep
+covers. That last one decides who actually receives a trial report — see
+[Export and email trial reports](/trials/reports-and-emails).
+
+### Trait Management
+
+**Traits** are what evaluators score, and **Trait Options** are the answers each
+trait accepts. Traits are then attached to crops, so the evaluation form only
+ever shows what is relevant to what is planted.
+
+### Team Management
+
+**Teams** group people, and **Team Members** are the people in them. Teams are a
+recipient option when emailing reports, so they are worth setting up even in a
+small organization.
+
+## The order to build in
+
+<Steps>
+  <Step title="Geography, top down">
+    Coasts, then regions, then states, then areas, then zones.
+  </Step>
+  <Step title="Crops, then classifications">
+    Varieties cannot be added until a classification exists for their crop.
+  </Step>
+  <Step title="Suppliers, then reps, then rep areas">
+    Rep areas depend on both the reps and the areas existing.
+  </Step>
+  <Step title="Farmers, then farmer emails">
+    An email row has to attach to a farmer.
+  </Step>
+  <Step title="Traits, then trait options, then crop traits">
+    Attaching traits to a crop is the step people forget, and it is the reason
+    an evaluation form comes up empty.
+  </Step>
+  <Step title="Varieties last">
+    They need a classification and a supplier to already be there.
+  </Step>
+</Steps>
+
+<Callout variant="tip">
+  Data Settings is also on the mobile app's bottom bar, so a correction can be
+  made in the field rather than waiting until you are back at a desk.
+</Callout>

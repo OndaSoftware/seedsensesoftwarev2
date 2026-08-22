@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { navLinks, site } from "@/lib/site";
+import { navLinks } from "@/lib/site";
+import OpenAppButton from "@/components/OpenAppButton";
+import SessionCta from "@/components/SessionCta";
 
 export default function SiteHeader() {
   return (
@@ -37,12 +39,13 @@ export default function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-2.5">
-          <a
-            href={site.portalUrl}
-            className="hidden rounded-full border-[1.5px] border-primary/30 px-6 py-2.5 text-[0.95rem] font-semibold text-primary transition-all hover:border-primary hover:bg-primary/5 md:inline-block"
-          >
-            Login
-          </a>
+          {/*
+            Below 1050px the session is irrelevant: the web app refuses to
+            render at that width anyway, so every visitor gets "Open App".
+            Above it, the label reflects whether they are signed in.
+          */}
+          <OpenAppButton className="rounded-full border-[1.5px] border-primary/30 px-3 py-2 text-sm font-semibold text-primary transition-all hover:border-primary hover:bg-primary/5 sm:px-5 sm:py-2.5 sm:text-[0.95rem] app:hidden" />
+          <SessionCta className="hidden rounded-full border-[1.5px] border-primary/30 px-6 py-2.5 text-[0.95rem] font-semibold text-primary transition-all hover:border-primary hover:bg-primary/5 app:inline-block" />
           <a
             href="#contact"
             className="rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white transition-all hover:-translate-y-px hover:bg-primary-dark hover:shadow-[0_6px_20px_rgba(40,89,59,0.25)] sm:px-6 sm:py-2.5 sm:text-[0.95rem]"

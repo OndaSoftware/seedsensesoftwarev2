@@ -1,0 +1,543 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+/*
+ * Mirror of the exclusion in src/app/globals.css: the marketing site is a
+ * separate document, so its utility classes do not belong in this bundle.
+ * `components/*.tsx` matches only the top-level marketing components —
+ * components/resources/** is a subdirectory and is still scanned.
+ */
+@source not "../(site)";
+@source not "../../components/*.tsx";
+@source not "../../components/benefits";
+@source not "../../components/blog";
+@source not "../../components/home";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  /*
+   * Matches --breakpoint-app in src/app/globals.css and
+   * CheckDeviceSupport.isMobileOrTablet in the Flutter app: below 1050px the
+   * web app refuses to render, so the help center offers "Open App" instead of
+   * a dashboard link. The two stylesheets are separate documents, so the
+   * constant has to be declared in both.
+   */
+  --breakpoint-app: 1050px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), Georgia, serif;
+  --font-heading: var(--font-serif);
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+
+  /*
+   * Headings are Fraunces, matching the marketing site. The optical-size lock
+   * is carried over verbatim from `globals.css`: left on auto, Fraunces swaps
+   * to its display cut at large sizes — a hooked "f" and calligraphic "&" that
+   * read as a different typeface than the section titles beside them.
+   */
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-serif);
+    font-optical-sizing: none;
+    font-variation-settings: "opsz" 18, "WONK" 0;
+    font-weight: 600;
+  }
+
+  /*
+   * Card, dialog, and sheet titles render as <div>s, so they opt into the
+   * heading face with `font-heading` rather than a tag. They need the same
+   * optical-size lock.
+   */
+  .font-heading {
+    font-optical-sizing: none;
+    font-variation-settings: "opsz" 18, "WONK" 0;
+  }
+}
+/* ─────────────────────────────────────────────────────────────────────────
+   SeedSense brand palette.
+
+   Ported from seedsense_v2/src/core/theme/colors.ts so the help center reads
+   as part of the product. Defined after shadcn's defaults so these win.
+
+   Accessibility note carried over from the app: #0D5E00 only reaches 2.3:1 on
+   the dark scaffold. In dark mode it is replaced by #187A00 for filled
+   controls, and green *text* uses --brand-link (#5BC46F), never the primary.
+   ───────────────────────────────────────────────────────────────────────── */
+
+:root {
+  --radius: 0.625rem;
+
+  --background: #ffffff;
+  --foreground: #212121;
+
+  --card: #ffffff;
+  --card-foreground: #212121;
+  --popover: #ffffff;
+  --popover-foreground: #212121;
+
+  --primary: #0d5e00;
+  --primary-foreground: #ffffff;
+
+  --secondary: #f6f7fc;
+  --secondary-foreground: #212121;
+
+  --muted: #f6f7fc;
+  --muted-foreground: #6b7280;
+
+  --accent: #e8f3ea;
+  --accent-foreground: #0d5e00;
+
+  --destructive: #c62828;
+  --border: #e5e7eb;
+  --input: #e5e7eb;
+  --ring: #34a853;
+
+  --sidebar: #f6f7fc;
+  --sidebar-foreground: #212121;
+  --sidebar-primary: #0d5e00;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #e8f3ea;
+  --sidebar-accent-foreground: #0d5e00;
+  --sidebar-border: #e5e7eb;
+  --sidebar-ring: #34a853;
+
+  /* Brand extras, not part of the shadcn token set. */
+  --brand-canvas: #f3f7f2;
+  --brand-link: #0d5e00;
+  /*
+    Wash colour for tinted surfaces. #0D5E00 is nearly black-green: at 10% it
+    composites to grey, not green — which is exactly why the app's own `accent`
+    token is built from #34A853 rather than from the primary. Same choice here.
+  */
+  --brand-tint: #34a853;
+}
+
+.dark {
+  --background: #161616;
+  --foreground: #ffffff;
+
+  --card: #1e1e1e;
+  --card-foreground: #ffffff;
+  --popover: #1e1e1e;
+  --popover-foreground: #ffffff;
+
+  /* Filled-control green for dark surfaces: 3.6:1 on scaffold. */
+  --primary: #187a00;
+  --primary-foreground: #ffffff;
+
+  --secondary: #232323;
+  --secondary-foreground: #ffffff;
+
+  --muted: #232323;
+  --muted-foreground: #a1a1aa;
+
+  --accent: #1b2e1f;
+  --accent-foreground: #6fcf87;
+
+  --destructive: #ef5350;
+  --border: rgb(255 255 255 / 12%);
+  --input: rgb(255 255 255 / 16%);
+  --ring: #34a853;
+
+  --sidebar: #1a1a1a;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #187a00;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #1b2e1f;
+  --sidebar-accent-foreground: #6fcf87;
+  --sidebar-border: rgb(255 255 255 / 12%);
+  --sidebar-ring: #34a853;
+
+  --brand-canvas: #161616;
+  /* Green that stays legible as *text* on the dark scaffold. */
+  --brand-link: #5bc46f;
+  --brand-tint: #34a853;
+}
+
+@theme inline {
+  --color-brand-canvas: var(--brand-canvas);
+  --color-brand-link: var(--brand-link);
+  --color-brand-tint: var(--brand-tint);
+}
+
+@layer base {
+  /* Long-form article typography. */
+  .prose-article {
+    color: var(--foreground);
+    line-height: 1.75;
+  }
+  .prose-article h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+    scroll-margin-top: 6rem;
+  }
+  .prose-article h3 {
+    font-size: 1.175rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    scroll-margin-top: 6rem;
+  }
+  .prose-article p {
+    margin-bottom: 1.125rem;
+  }
+  .prose-article ul,
+  .prose-article ol {
+    margin: 0 0 1.125rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .prose-article ul {
+    list-style: disc;
+  }
+  .prose-article ol {
+    list-style: decimal;
+  }
+  .prose-article a {
+    color: var(--brand-link);
+    text-underline-offset: 3px;
+    text-decoration-line: underline;
+  }
+  .prose-article strong {
+    font-weight: 600;
+  }
+  .prose-article code {
+    background: var(--muted);
+    border: 1px solid var(--border);
+    border-radius: 0.35rem;
+    padding: 0.1rem 0.35rem;
+    font-size: 0.875em;
+  }
+  .prose-article blockquote {
+    border-left: 3px solid var(--border);
+    padding-left: 1rem;
+    color: var(--muted-foreground);
+    margin-bottom: 1.125rem;
+  }
+  .prose-article table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.25rem;
+    font-size: 0.925rem;
+  }
+  .prose-article th,
+  .prose-article td {
+    border: 1px solid var(--border);
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+  }
+  .prose-article th {
+    background: var(--muted);
+    font-weight: 600;
+  }
+  .prose-article h2 a[aria-hidden],
+  .prose-article h3 a[aria-hidden] {
+    color: var(--muted-foreground);
+    margin-left: 0.4rem;
+    opacity: 0;
+    text-decoration: none;
+  }
+  .prose-article h2:hover a[aria-hidden],
+  .prose-article h3:hover a[aria-hidden] {
+    opacity: 1;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   Design layer.
+
+   Direction: field manual, not SaaS landing page. Trial teams read this on a
+   tablet between plots, so it favours scanning and quiet density over hero
+   drama. The one expressive idea is the plot grid — the object the whole
+   product is built around.
+   ───────────────────────────────────────────────────────────────────────── */
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Headings and short labels break badly at their natural wrap points. */
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+
+  /* Counters and dates must not jitter as digits change. */
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Photographic content needs an edge so it does not bleed into the surface.
+     Neutral alpha, never brand-tinted. */
+  .media-edge {
+    outline: 1px solid rgb(0 0 0 / 10%);
+    outline-offset: -1px;
+  }
+  .dark .media-edge {
+    outline-color: rgb(255 255 255 / 10%);
+  }
+}
+
+@layer components {
+  /*
+    The plot grid: SeedSense lays a trial out as a grid of plots, so the help
+    center's one decorative motif is that same grid, faded out behind the hero.
+    Pure CSS — no image request, no layout cost.
+  */
+  .plot-grid {
+    --plot-size: 56px;
+    --plot-line: color-mix(in srgb, var(--brand-tint) 26%, transparent);
+    background-image:
+      repeating-linear-gradient(
+        to right,
+        var(--plot-line) 0 1px,
+        transparent 1px var(--plot-size)
+      ),
+      repeating-linear-gradient(
+        to bottom,
+        var(--plot-line) 0 1px,
+        transparent 1px var(--plot-size)
+      );
+    -webkit-mask-image: radial-gradient(
+      ellipse 75% 70% at 50% 35%,
+      #000 20%,
+      transparent 78%
+    );
+    mask-image: radial-gradient(
+      ellipse 75% 70% at 50% 35%,
+      #000 20%,
+      transparent 78%
+    );
+  }
+
+  /* The tint is far weaker against a dark scaffold than a light one, so the
+     dark ruling is lifted or the planted cells float instead of sitting in
+     plots. */
+  .dark .plot-grid {
+    --plot-line: color-mix(in srgb, var(--brand-tint) 20%, transparent);
+  }
+
+  /*
+    No elevation anywhere: surfaces are separated by hairlines and background
+    tone, never by shadow. Hover changes colour only, so nothing lifts off the
+    page and inputs stay flat.
+  */
+}
+
+@layer base {
+  /* Long-form reading. 17px with a generous measure reads better on a tablet
+     held at arm's length than the 16px default. */
+  .prose-article {
+    font-size: 1.0625rem;
+  }
+  .prose-article > p,
+  .prose-article li {
+    text-wrap: pretty;
+  }
+  .prose-article > p:first-child {
+    font-size: 1.125rem;
+    color: var(--foreground);
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   Touch adaptation.
+
+   The desktop layout is deliberately dense; on a touch screen that density
+   puts several controls under the 44px accessible floor. These rules raise
+   only what a finger has to hit, and only when the primary input is coarse —
+   mouse users keep the tighter spacing.
+   ───────────────────────────────────────────────────────────────────────── */
+
+@media (pointer: coarse) {
+  .touch-target {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  .touch-target-icon {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  /*
+    Inline links inside running text — breadcrumbs especially — cannot be grown
+    to 44px without wrecking the line they sit on. Expand the hit area with a
+    pseudo-element instead, so the target grows while the text stays put. Kept
+    modest horizontally so neighbouring crumbs do not overlap.
+  */
+  .touch-target-inline {
+    position: relative;
+  }
+  .touch-target-inline::after {
+    content: "";
+    position: absolute;
+    inset: -12px -5px;
+  }
+
+  /*
+    Heading anchor links reveal on hover, which a touch screen cannot do — so
+    on touch they are permanently invisible clutter in the tab order.
+  */
+  .prose-article h2 a[aria-hidden],
+  .prose-article h3 a[aria-hidden] {
+    display: none;
+  }
+}
+
+@layer base {
+  /*
+    Wide content must scroll inside itself. Nothing currently overflows at
+    375px, but a five-column table or a long code line would otherwise push
+    the whole page sideways.
+  */
+  .prose-article table {
+    min-width: 30rem;
+  }
+  .prose-article .table-scroll {
+    overflow-x: auto;
+    margin-bottom: 1.25rem;
+    -webkit-overflow-scrolling: touch;
+  }
+  .prose-article .table-scroll table {
+    margin-bottom: 0;
+  }
+  .prose-article pre {
+    overflow-x: auto;
+    max-width: 100%;
+  }
+}

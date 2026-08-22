@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import BenefitsPage from "@/app/benefits/page";
+import BenefitsPage from "@/app/(site)/benefits/page";
 
 describe("BenefitsPage", () => {
   it("renders the hero headline", () => {
