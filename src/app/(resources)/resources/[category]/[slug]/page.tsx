@@ -84,6 +84,8 @@ export default async function ArticlePage(
             youtubeId={article.youtubeId}
             title={article.title}
             duration={article.videoDuration}
+            videoTitle={article.videoTitle}
+            related={article.videoRelated}
           />
         ) : article.videoPending ? (
           <VideoPlaceholder title={article.title} />

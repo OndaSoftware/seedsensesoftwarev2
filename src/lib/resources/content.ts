@@ -46,13 +46,34 @@ const frontmatterSchema = z.strictObject({
     .string()
     .regex(/^\d{1,2}:\d{2}$/, "videoDuration must look like 4:05")
     .optional(),
+  /**
+   * The recording's own title on YouTube. One video often covers several
+   * articles, and the player otherwise labels itself with the article's title —
+   * which would promise a walkthrough of a page the video never opens.
+   */
+  videoTitle: z.string().min(1, "videoTitle must not be empty").optional(),
+  /** The video covers this topic but was recorded for a different article. */
+  videoRelated: z.boolean().default(false),
   featured: z.boolean().default(false),
   popular: z.boolean().default(false),
   updated: z
     .string()
     .regex(/^\d{4}-\d{2}-\d{2}$/, "updated must be an ISO date, e.g. 2026-08-19"),
   keywords: z.array(z.string()).default([]),
-});
+})
+  /** A video label with no video behind it is a content mistake, not a no-op. */
+  .superRefine((value, ctx) => {
+    if (value.youtubeId) return;
+    for (const field of ["videoTitle", "videoRelated"] as const) {
+      if (value[field]) {
+        ctx.addIssue({
+          code: "custom",
+          path: [field],
+          message: `${field} only applies when youtubeId is set`,
+        });
+      }
+    }
+  });
 
 export type Frontmatter = z.infer<typeof frontmatterSchema>;
 
