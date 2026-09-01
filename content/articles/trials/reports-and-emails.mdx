@@ -1,46 +1,54 @@
 ---
 title: Export and email trial reports
-description: Generating the trial map and evaluations report as PDFs, and emailing them to farmers, suppliers, and teams.
+description: Generating the trial map and evaluations report as PDFs, emailing them to farmers, suppliers, and teams, and what each recipient is allowed to see.
 order: 6
 popular: true
 videoPending: true
-updated: "2026-08-22"
-keywords: ["report", "pdf", "email", "trial map", "evaluations", "export", "send"]
+updated: "2026-09-01"
+keywords: ["report", "pdf", "email", "trial map", "evaluations", "export", "send", "supplier"]
 ---
 
-Every trial has a **Reports & Emails** section at the bottom of its detail
-screen. It does two things: it builds PDFs you can download, and it sends those
-same PDFs out by email.
+Every trial can produce two PDFs, and send them out by email without you
+downloading anything first.
+
+On **mobile** they sit at the bottom of the trial detail screen. On the **web**
+they are under the trial's **Actions** menu. Same two reports either way.
 
 ## The two reports
 
 **Trial Map** is the plot layout — the map image with the trial's farmer, crop,
 zone, planting date, harvest date, and chemical type printed alongside it. It is
-the sheet you hand to someone walking the field.
+the sheet you hand to someone walking the field, and most of the industry already
+knows what one looks like.
 
-**Evaluations Report** is the scoring: every evaluated variety with its traits,
-score, pros, cons, conclusion, and photos. Check varieties are marked `(CH)` and
-field varieties `(FV)` so a reader can see what everything was measured against.
+**Evaluations Report** is the scoring: every evaluated variety with its traits
+and trait attributes, score, pros, cons, conclusion, and photos. Check varieties
+are marked `(CH)` and field varieties `(FV)` so a reader can see what everything
+was measured against.
 
 ## Downloading a PDF
 
 <Steps>
-  <Step title="Open the trial and scroll to Reports & Emails">
-    On mobile, get there by tapping a task; on the web, from the trial catalog.
+  <Step title="Open the trial">
+    On mobile, scroll to the bottom; on the web, open **Actions**.
   </Step>
   <Step title="Choose Generate Trial Map or Generate Evaluations Report">
     The PDF is built on the server, so this needs a connection — with no signal
     the app says so instead of producing an empty file.
   </Step>
-  <Step title="Wait for the download">
-    You will see "Downloading PDF", then a confirmation. On the web the file
-    lands in your browser's downloads; on mobile it goes to your device.
+  <Step title="Give it a moment">
+    Both take a few seconds to build. When it finishes you can open it, and from
+    there view, download, or print.
   </Step>
 </Steps>
 
+Marking the trial complete first is good housekeeping rather than a requirement —
+you can generate either report at any point.
+
 ## Emailing a report
 
-**Send Emails** sends the same two reports without downloading them first.
+**Send Emails** sends the same two reports as a link. Recipients open the link to
+view, download, or print; nothing arrives as an attachment.
 
 <Steps>
   <Step title="Pick the email type">
@@ -52,7 +60,8 @@ field varieties `(FV)` so a reader can see what everything was measured against.
     them.
   </Step>
   <Step title="Decide on CC Evaluator">
-    Leave this on to copy yourself on whatever goes out.
+    Leave this on. Large organizations run mail filters that quietly eat these
+    messages, and a copy in your own inbox is how you find out the send worked.
   </Step>
   <Step title="Send">
     You need both an email type and at least one recipient before the Send
@@ -60,10 +69,41 @@ field varieties `(FV)` so a reader can see what everything was measured against.
   </Step>
 </Steps>
 
+## Suppliers see only their own material
+
+This is the most important thing on this page.
+
+**A supplier rep receives a version of the report containing their own
+varieties, plus the field variety and the check variety — and nothing else.**
+Their competitors' entries are removed before the PDF is built.
+
+So a trial with ten Sakata entries, two Enza entries, and one check produces a
+Sakata report showing eleven rows and an Enza report showing three. Each supplier
+sees what they need to judge their own material against the standard, and cannot
+see what anyone else put in the ground.
+
+<Callout variant="note">
+  The filtering happens per recipient, so a single send to "all suppliers"
+  produces a correctly trimmed report for each of them. You do not have to run
+  the send once per supplier.
+</Callout>
+
+## Teams see everything
+
+Teams are the opposite case. Whoever is on a team — internal or external — gets
+the **full internal copy**, unedited, with nothing held back.
+
+That is what teams are for: a sales team, a breeding team, West Coast product
+development, everyone in PD. Set them up under
+[Data Settings](/data-and-sync/data-settings) and they become a recipient group
+you can tick.
+
+Because a team can contain external addresses and still receives the unredacted
+report, check who is on a team before using it for a send.
+
 ## Where each recipient's address comes from
 
-This is worth knowing, because a missing address is the usual reason an email
-does not arrive.
+A missing address is the usual reason an email does not arrive.
 
 | Recipient | Address used |
 | --- | --- |
@@ -84,9 +124,10 @@ usually what you want and occasionally a surprise.
   before assuming the send failed.
 </Callout>
 
-## Exporting a whole catalog instead
+## Exporting many trials instead
 
-The reports above cover one trial. To export many at once, use **Export
-Catalog** in the [trial catalog](/trials/the-trial-catalog) or the
-[evaluation catalog](/evaluations/the-evaluation-catalog) — both offer CSV and
-PDF, and both export exactly what your current filters have selected.
+The reports above cover one trial. To export across trials, use **Export
+Catalog** in the [trial catalog](/trials/the-trial-catalog) — CSV — or the
+[evaluation catalog](/evaluations/the-evaluation-catalog) — CSV or PDF. Both
+export exactly what your current filters have selected, and both are on the web
+only.

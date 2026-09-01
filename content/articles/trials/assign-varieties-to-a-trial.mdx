@@ -1,31 +1,97 @@
 ---
 title: Assign varieties to a trial
-description: Adding the varieties you are comparing, including the check variety, and changing the list later.
+description: Putting the varieties you are comparing onto a trial, numbering the stakes, flagging the check and field varieties, and adding one that is not in the system.
 order: 4
 youtubeId: 0NETY1GYu7g
 videoDuration: "8:34"
 videoTitle: "Adding Trial Varieties to a Trial"
-updated: "2026-08-19"
-keywords: ["varieties", "entries", "check variety", "assign"]
+updated: "2026-09-01"
+keywords: ["varieties", "entries", "check variety", "field variety", "assign", "planting number", "stake"]
 ---
 
 The varieties on a trial are what you are comparing. They appear in the trial
 layout, and every evaluation scores against this list.
 
-## Adding varieties
+Open the trial, scroll to **Trial Varieties**, and choose **Manage Trial
+Varieties**. Everything below happens there, and it is the same screen you come
+back to whenever the list changes.
 
-Open the trial, go to **Varieties**, and add from the variety catalog. If a
-variety is not in the catalog yet, see [Add a variety](/varieties/add-a-variety)
-or [Bulk add varieties](/varieties/bulk-add-varieties).
+The varieties themselves come from the shared catalog in
+[Data Settings](/data-and-sync/data-settings). This screen picks from that
+catalog — it does not replace it.
 
-## The check variety
+## Two ways to add
 
-Mark the known commercial standard as your check. It is what everything else is
-judged against, and it is called out separately in evaluation results and in the
-variety detail charts.
+**Multiple records (Table)** gives you a row per variety and is what you want
+when you are entering a planting. **Single record** adds one at a time, which is
+right for the one you forgot.
+
+Either way each entry takes the same three things.
+
+<Steps>
+  <Step title="Planting number">
+    The stake number — where this entry sits in the field. Start the check at
+    zero and number the rest from one, and the evaluation screens will walk the
+    trial in the order you planted it.
+  </Step>
+  <Step title="The variety">
+    Type to search. Breeder numbers work as well as names, so `BP777` finds it
+    if that is how the seed is labelled.
+  </Step>
+  <Step title="Field Check and Variety Check">
+    Two independent checkboxes — see below.
+  </Step>
+</Steps>
+
+Then **Create All**, and they are tied to the trial.
+
+## Field Check and Variety Check
+
+These are two separate flags, and the distinction matters more than it looks.
+
+**Field Check** is the grower's own variety — what is already planted on that
+ground. **Variety Check** is the standard you are measuring the trial against.
+
+Very often they are the same plant, and in that case tick both. Sometimes they
+are not: the grower runs one thing commercially and your programme benchmarks
+against another. Ticking them separately is what lets the reports say which is
+which.
+
+Both flags matter downstream. Field and check varieties are the only entries a
+supplier is allowed to see besides their own — see
+[Export and email trial reports](/trials/reports-and-emails).
+
+## When the variety is not in the system
+
+If a breeder number has arrived that nobody has entered yet, you do not have to
+leave the screen. **Add Data Variety** creates it in Data Settings from here,
+and it becomes available to select immediately.
+
+It asks for the same four things as
+[Add a variety](/varieties/add-a-variety): name, classification, supplier, and
+variety type. Names have to be unique across the organization — duplicates are
+rejected rather than merged.
+
+<Callout variant="tip">
+  Search the catalog before you create anything. A variety entered twice under
+  two spellings is painful to untangle once evaluations are attached to both,
+  and the search box is right there.
+</Callout>
+
+## On the web, open the window fully
+
+The web app expects a full screen. Squeeze it into half a monitor and columns
+drop off this table; make it smaller still and the app tells you outright that
+it does not work at that size. Nothing is broken — maximise the window.
 
 ## Changing the list later
 
 You can add a variety mid-season. Removing one that already has evaluation
 scores is a different matter — the scores go with it, so most teams leave it in
-place and grade it as not recommended instead.
+place and grade it *Not Recommended* or *Drop from Trialing* instead.
+
+## What comes next
+
+The layout puts these entries on the ground — see
+[Trial layout and the plot map](/trials/trial-layout-and-plot-map). After that
+they are ready to score: [Evaluate a trial variety](/evaluations/score-a-variety).

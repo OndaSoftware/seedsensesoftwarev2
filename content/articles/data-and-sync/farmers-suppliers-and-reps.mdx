@@ -1,25 +1,48 @@
 ---
 title: Farmers, suppliers, and reps
-description: Managing the growers whose ground you trial on and the suppliers whose varieties you test.
+description: Managing the growers whose ground you trial on and the suppliers whose varieties you test, and how both decide who receives a report.
 order: 6
 youtubeId: jPPzqS8VgT0
 videoDuration: "8:38"
 videoTitle: "Data Settings and Adding in New Varieties"
 videoRelated: true
-updated: "2026-08-19"
-keywords: ["farmers", "suppliers", "reps", "contacts", "emails"]
+updated: "2026-09-01"
+keywords: ["farmers", "suppliers", "reps", "contacts", "emails", "rep areas"]
 ---
 
 Two sets of external people matter to a trial: the farmer providing the ground,
-and the supplier providing the seed.
+and the supplier providing the seed. Both are set up in
+[Data Settings](/data-and-sync/data-settings), and both feed the same thing —
+who receives a report when you send one.
 
 ## Farmers
 
-A farmer is attached to a trial's location. Keeping farmer email addresses
-current matters because trial reports go to them.
+A farmer is attached to a trial, and **Farmer Emails** are the addresses that
+receive its reports. A farmer can have several; a farmer with none is silently
+skipped when you email a report, which is the usual reason a grower says they
+never got it.
 
 ## Suppliers and their reps
 
-Varieties belong to suppliers, and suppliers have reps assigned to areas. That
-association is what lets results be grouped and sent to the right person without
-assembling a list by hand each season.
+Varieties belong to suppliers. **Supplier Reps** are the people at those
+suppliers, and **Supplier Rep Areas** control which areas each rep covers.
+
+A rep receives a trial's report only if they are marked for all areas, or
+assigned to the area that trial sits in. That is what stops a Salinas rep being
+emailed about a trial in Yuma, and it is worth checking when someone expected an
+email and did not get one.
+
+<Callout variant="note">
+  Getting this association right is what lets a season's results reach the right
+  person without anyone assembling a distribution list by hand.
+</Callout>
+
+## What a supplier actually receives
+
+Worth knowing before you send anything: a supplier rep's copy of a report
+contains **their own varieties plus the field and check varieties, and nothing
+else**. Competitors' entries are stripped out before the PDF is built.
+
+That is what makes it safe to send a mixed trial to every supplier in it at
+once. See
+[Export and email trial reports](/trials/reports-and-emails).

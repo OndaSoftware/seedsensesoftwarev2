@@ -1,12 +1,12 @@
 ---
 title: Add a variety
-description: Adding a single variety to the catalog, and the four fields it asks for.
+description: Adding a single variety to the catalog, the four fields it asks for, and how to name it so people can still find it in three years.
 order: 1
 youtubeId: jPPzqS8VgT0
 videoDuration: "8:38"
 videoTitle: "Data Settings and Adding in New Varieties"
-updated: "2026-08-22"
-keywords: ["variety", "add", "entry", "catalog", "supplier"]
+updated: "2026-09-01"
+keywords: ["variety", "add", "entry", "catalog", "supplier", "breeder number", "naming"]
 ---
 
 Varieties live in a shared catalog under **Data Settings → Varieties**, so one
@@ -20,11 +20,40 @@ recognise on the seed packet. It has to be unique in your organization.
 **Variety Type** is one of Commercial, Dropped, Pre-commercial, Screening,
 Slotting, Research, Experimental, or Advanced Research.
 
-**Classification** is the crop classification it belongs to. This is also how
-the variety gets its crop — there is no separate crop field.
+**Classification** is the crop classification it belongs to — *Bell Pepper Red*,
+*Jalapeño*, *Onion Short Day*. This is also how the variety gets its crop; there
+is no separate crop field.
 
 **Supplier** is who it came from, and it decides which supplier reps are offered
 as recipients when you email a trial's reports.
+
+## Search before you add
+
+Type the name into the search bar first. A variety entered twice under two
+spellings splits its own history in the
+[variety catalog](/varieties/the-variety-catalog), and untangling that after
+evaluations are attached to both is real work. Duplicate names are rejected on
+save, but near-duplicates — a name where somebody else used the breeder number —
+are not caught for you.
+
+## Name it so it stays findable
+
+Material arrives as a breeder number and later gets a commercial name. Keep both
+in the name field:
+
+```
+Ruby Red (BP123)
+Hunter - JP1234
+```
+
+Parentheses or a dash, either is fine. The point is that the whole field is
+searchable, so somebody who only ever knew the variety as `BP123` still finds it
+after it is named, and somebody who only knows the commercial name still finds
+it too.
+
+This matters more than it sounds. Breeder numbers are how suppliers talk about
+material and how your own trial records from three seasons ago refer to it. Drop
+the number when the name arrives and that history stops being searchable.
 
 <Callout variant="note">
   If the Classification or Supplier dropdown is empty, that list has to be
@@ -35,3 +64,10 @@ as recipients when you email a trial's reports.
   Adding more than a handful? [Import varieties in bulk](/varieties/bulk-add-varieties)
   is much faster and keeps the spelling consistent.
 </Callout>
+
+## Adding one mid-trial
+
+If you are already on a trial and the variety is not in the system, you do not
+have to come here — **Add Data Variety** on the trial varieties screen creates it
+in place. See
+[Assign varieties to a trial](/trials/assign-varieties-to-a-trial).

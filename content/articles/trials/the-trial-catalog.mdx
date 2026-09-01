@@ -1,21 +1,23 @@
 ---
 title: The trial catalog
-description: Finding a trial among hundreds using the status tabs, the mine/all toggle, filters, and search — then exporting what you found.
+description: Finding a trial among hundreds using the status tabs, the mine/all toggle, filters, and search — then opening it, mapping it, or exporting what you found.
 order: 2
 youtubeId: rBZCkj5rPx0
 videoDuration: "7:19"
 videoTitle: "Navigating the Evaluation and Trial Catalogs"
-updated: "2026-08-22"
-keywords: ["catalog", "list", "filter", "search", "active", "completed", "export"]
+updated: "2026-09-01"
+keywords: ["catalog", "list", "filter", "search", "active", "completed", "export", "sync", "map"]
 ---
 
-**Trial Catalog** in the sidebar browses every trial in your organization. Four
-controls narrow it, and they stack.
+**Trial Catalog** in the sidebar browses every trial in your organization. It is
+the page you will spend the most time on, and four controls narrow it — they
+stack.
 
 ## Status tabs
 
-**Active**, **Completed**, and **All**. A trial moves to Completed when someone
-marks it complete on the trial itself — see
+**Active**, **Completed**, and **All**. Active means trials in the ground that
+have not been evaluated, completed, and wrapped up. A trial moves to Completed
+when someone marks it complete on the trial itself — see
 [Trial details and status](/trials/trial-details-and-status).
 
 ## Mine or everyone's
@@ -30,24 +32,52 @@ Crop, evaluator, farmer, zone, ranch, field, trial type, and planting date. On
 the web these are chips along the top; on mobile they are behind the filter
 button.
 
-Filters combine, and they apply to the export too — which is the point of
-setting them up carefully before exporting.
+**Zone** is the smallest geographical unit you have defined — "Southern
+Bakersfield", "west of the 101 in Santa Maria", whatever ties together ground
+that shares weather and soil. That is what makes it the useful filter when you
+want trials that are genuinely comparable.
+
+Filters combine, and they apply to the export too.
 
 ## Search
 
-Free text over the trials, for when you already know the name.
+Free text over the trials, for when you already know the name. This is what the
+ranch and field names on the trial are for — see
+[Input a new trial](/trials/create-a-trial).
 
-## Sync filters
+## On mobile, hit Sync
 
-Synced and unsynced views sit alongside the tabs, for confirming nothing is
-still sitting on a device. See
+**The catalog does not refresh itself, even when you are online.** Sync is a
+button you press. If a colleague added a trial an hour ago and you cannot see
+it, sync before assuming anything is wrong.
+
+Synced and unsynced views sit alongside the tabs for confirming nothing is still
+sitting on a device — see
 [Synced and unsynced trials](/data-and-sync/synced-and-unsynced-trials).
+
+## Opening a trial
+
+**Show Trial** opens the detail screen: everything that makes up the trial, plus
+the routes into its tasks, varieties, layout, and evaluations.
+
+**Open Map** hands the trial's coordinates to Google Maps and drops you straight
+on the pin — the same pin whoever created the trial stood on. It is the fastest
+way to turn a row in a list into directions.
 
 ## Exporting
 
-**Export Catalog** offers CSV and PDF. Before it runs, a summary shows every
-filter you have applied and how many trials that comes to — read it, because
-what it lists is exactly what will be in the file.
+**Export Catalog** produces a CSV of everything your filters have selected,
+including the evaluation data for any trial that has been evaluated. Before it
+runs, a summary shows every filter you have applied and how many trials that
+comes to — read it, because what it lists is exactly what will be in the file.
+
+Two limits worth knowing:
+
+- The trial catalog exports **CSV only**. PDF export lives on the
+  [evaluation catalog](/evaluations/the-evaluation-catalog), which is the
+  right shape for a document you hand to someone.
+- Export is **web only**. You can filter and browse the catalog on mobile, but
+  the export button is not there.
 
 <Callout variant="tip">
   Exporting the whole catalog is rarely what anyone wants. Filter to the crop

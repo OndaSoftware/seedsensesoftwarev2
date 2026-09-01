@@ -1,27 +1,52 @@
 ---
 title: Crops, regions, and areas
-description: The reference data that trials are built from, and the order to set it up in.
+description: The reference data that trials are built from — crops and their classifications, and the five levels of geography — and the order to set it up in.
 order: 5
 youtubeId: jPPzqS8VgT0
 videoDuration: "8:38"
 videoTitle: "Data Settings and Adding in New Varieties"
 videoRelated: true
-updated: "2026-08-19"
-keywords: ["crops", "regions", "states", "areas", "coasts", "reference data"]
+updated: "2026-09-01"
+keywords: ["crops", "regions", "states", "areas", "coasts", "zones", "classifications", "reference data"]
 ---
 
-Under **Settings → Data settings** sits the reference data every trial draws
-on. It is worth getting right once.
+Under **Data Settings** sits the reference data every trial draws on. It is worth
+getting right once.
 
 ## Crops and classifications
 
-Crops are the top of the tree — traits and evaluations attach to them.
-Classifications group crops for reporting.
+Three levels, narrowing as you go:
 
-## Coasts, regions, states, and areas
+**Crop → Crop Classification → Variety**
 
-These nest, from broad to specific, and are how trials are located and how work
-is divided between evaluators.
+The crop is *Pepper* or *Onion*. The classification is the commercial split
+inside it — *Bell Pepper Green*, *Bell Pepper Yellow*, *Bell Pepper Red*,
+*Jalapeño*, or for onions *Short Day* and *Long Day*. The variety is the
+individual line you plant.
+
+This is also how a variety knows its crop. You never set a crop on a variety
+directly — it inherits one through its classification, which is why the
+classification has to exist before the variety can.
+
+Traits attach at the **crop** level, so every classification under *Pepper* is
+evaluated on the same trait list. See [Crop traits](/evaluations/crop-traits).
+
+## Geography: five nested levels
+
+**Coast → Region → State → Area → Zone**
+
+A trial is placed on a **zone**, which is the smallest and most specific unit —
+"Southern Bakersfield" being everything south of a given highway, "western Santa
+Maria" being west of the 101. Draw them so that everything inside one zone
+shares its weather and soil, because that is what makes two trials in the same
+zone genuinely comparable.
+
+Ranch and field are then free text on the trial itself, not part of this
+hierarchy.
+
+Zones also drive **Supplier Rep Areas**, which decide who gets emailed about a
+trial — see
+[Export and email trial reports](/trials/reports-and-emails).
 
 <Callout variant="tip">
   Set these up before creating trials. Adding a region later is easy; moving
